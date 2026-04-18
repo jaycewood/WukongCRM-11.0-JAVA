@@ -100,6 +100,10 @@ public class CrmSceneServiceImpl extends BaseServiceImpl<CrmSceneMapper, CrmScen
                 sceneList.add(new CrmScene(crmEnum.getType(), "全部合同", userId, 0, "", 0, 1, CrmSceneEnum.ALL.getName()));
                 sceneList.add(new CrmScene(crmEnum.getType(), "我负责的合同", userId, 0, "", 0, 1, CrmSceneEnum.SELF.getName()));
                 sceneList.add(new CrmScene(crmEnum.getType(), "下属负责的合同", userId, 0, "", 0, 1, CrmSceneEnum.CHILD.getName()));
+            } else if (CrmEnum.ORDER == crmEnum) {
+                sceneList.add(new CrmScene(crmEnum.getType(), "全部订单", userId, 0, "", 0, 1, CrmSceneEnum.ALL.getName()));
+                sceneList.add(new CrmScene(crmEnum.getType(), "我负责的订单", userId, 0, "", 0, 1, CrmSceneEnum.SELF.getName()));
+                sceneList.add(new CrmScene(crmEnum.getType(), "下属负责的订单", userId, 0, "", 0, 1, CrmSceneEnum.CHILD.getName()));
             } else if (CrmEnum.RECEIVABLES == crmEnum) {
                 sceneList.add(new CrmScene(crmEnum.getType(), "全部回款", userId, 0, "", 0, 1, CrmSceneEnum.ALL.getName()));
                 sceneList.add(new CrmScene(crmEnum.getType(), "我负责的回款", userId, 0, "", 0, 1, CrmSceneEnum.SELF.getName()));

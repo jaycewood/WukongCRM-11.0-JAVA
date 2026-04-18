@@ -576,8 +576,8 @@ public class CrmFieldServiceImpl extends BaseServiceImpl<CrmFieldMapper, CrmFiel
         CrmEnum crmEnum = CrmEnum.parse(crmModel.getLabel());
         if (crmEnum == CrmEnum.RECEIVABLES || crmEnum == CrmEnum.CONTRACT || crmEnum == CrmEnum.RETURN_VISIT || crmEnum == CrmEnum.INVOICE || crmEnum == CrmEnum.ORDER) {
             AdminConfig numberSetting = adminService.queryFirstConfigByNameAndValue("numberSetting", crmEnum.getType().toString()).getData();
-            Integer status = numberSetting.getStatus();
-            if (status == 1) {
+            Integer status = numberSetting != null ? numberSetting.getStatus() : null;
+            if (Objects.equals(status, 1)) {
                 for (CrmModelFiledVO field : fieldList) {
                     String fieldName = field.getFieldName();
                     boolean b = Arrays.asList("num","number","visitNumber","invoiceApplyNumber", "orderNumber").contains(fieldName);
