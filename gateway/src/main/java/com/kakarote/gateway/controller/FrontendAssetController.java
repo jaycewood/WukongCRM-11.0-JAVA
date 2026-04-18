@@ -1,5 +1,6 @@
 package com.kakarote.gateway.controller;
 
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.MediaType;
@@ -10,6 +11,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
@@ -38,8 +43,9 @@ public class FrontendAssetController {
 
     private Resource resolveResource(String path) {
         String relativePath = path.startsWith("/") ? path.substring(1) : path;
-        Resource fileResource = resourceLoader.getResource("file:public/" + relativePath);
-        if (fileResource.exists() && fileResource.isReadable()) {
+        Path filePath = Paths.get(System.getProperty("user.dir"), "public", relativePath).normalize();
+        if (Files.isRegularFile(filePath) && Files.isReadable(filePath)) {
+            Resource fileResource = new FileSystemResource(filePath);
             return fileResource;
         }
         Resource classpathResource = resourceLoader.getResource("classpath:/public/" + relativePath);
