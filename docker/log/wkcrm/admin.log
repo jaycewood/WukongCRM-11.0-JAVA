@@ -1,0 +1,730 @@
+2026-04-15 18:26:19 admin [main] INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/root/nacos/config 
+2026-04-15 18:26:20 admin [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0 
+2026-04-15 18:26:20 admin [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[admin] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:20 admin [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[admin.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:20 admin [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[admin-core.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:20 admin [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[admin-test.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:20 admin [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[admin-dev.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:20 admin [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-admin-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-admin-test.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-admin-core.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-admin.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-admin,DEFAULT_GROUP'}] 
+2026-04-15 18:26:20 admin [main] INFO  com.kakarote.admin.AdminApplication - The following profiles are active: core,test,dev 
+2026-04-15 18:26:28 admin [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:26:28 admin [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode. 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130ms. Found 0 Elasticsearch repository interfaces. 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode. 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66ms. Found 0 Reactive Elasticsearch repository interfaces. 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2026-04-15 18:26:30 admin [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces. 
+2026-04-15 18:26:31 admin [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:26:33 admin [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=09e106ca-fc82-3d2e-a826-7a647f602bcd 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.admin.service.AdminFileService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.admin.service.AdminMessageService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.admin.service.AdminService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.admin.service.CallUserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.admin.service.LogService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.crm.service.CrmAnalysisService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.crm.service.CrmEventService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.crm.service.CrmExamineService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.crm.service.CrmService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.email.EmailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.examine.service.ExamineService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.hrm.service.HrmService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.hrm.service.SalaryRecordService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.jxc.service.JxcExamineService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.km.KmService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.oa.OaService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.kakarote.core.feign.work.WorkService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:34 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$98f58e9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:35 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:35 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:35 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:35 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:35 admin [main] INFO  io.seata.spring.boot.autoconfigure.SeataAutoConfiguration - Automatically configure Seata 
+2026-04-15 18:26:35 admin [main] INFO  io.seata.config.ConfigurationFactory - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb 
+2026-04-15 18:26:36 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.registry.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:36 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configNacosProperties' of type [io.seata.spring.boot.autoconfigure.properties.registry.ConfigNacosProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:36 admin [main] INFO  io.seata.spring.annotation.GlobalTransactionScanner - Initializing Global Transaction Clients ...  
+2026-04-15 18:26:36 admin [main] INFO  io.seata.core.rpc.netty.AbstractRpcRemotingClient - RpcClientBootstrap has started 
+2026-04-15 18:26:36 admin [main] INFO  io.seata.spring.annotation.GlobalTransactionScanner - Transaction Manager Client is initialized. applicationId[admin] txServiceGroup[admin_tx_group] 
+2026-04-15 18:26:36 admin [main] INFO  io.seata.rm.datasource.AsyncWorker - Async Commit Buffer Limit: 10000 
+2026-04-15 18:26:36 admin [main] INFO  io.seata.rm.datasource.xa.ResourceManagerXA - ResourceManagerXA init ... 
+2026-04-15 18:26:36 admin [main] INFO  io.seata.core.rpc.netty.AbstractRpcRemotingClient - RpcClientBootstrap has started 
+2026-04-15 18:26:36 admin [main] INFO  io.seata.spring.annotation.GlobalTransactionScanner - Resource Manager is initialized. applicationId[admin] txServiceGroup[admin_tx_group] 
+2026-04-15 18:26:36 admin [main] INFO  io.seata.spring.annotation.GlobalTransactionScanner - Global Transaction Clients are initialized.  
+2026-04-15 18:26:38 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alicp.jetcache.anno.config.JetCacheProxyConfiguration' of type [com.alicp.jetcache.anno.config.JetCacheProxyConfiguration$$EnhancerBySpringCGLIB$$dba35358] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:39 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alicp.jetcache.anno.config.CommonConfiguration' of type [com.alicp.jetcache.anno.config.CommonConfiguration$$EnhancerBySpringCGLIB$$5aa998d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:39 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:40 admin [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:42 admin [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used 
+2026-04-15 18:26:42 admin [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext 
+2026-04-15 18:26:42 admin [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 21483 ms 
+2026-04-15 18:26:44 admin [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null 
+2026-04-15 18:26:44 admin [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null 
+2026-04-15 18:26:44 admin [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null 
+2026-04-15 18:26:47 admin [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2026-04-15 18:26:49 admin [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2026-04-15 18:26:49 admin [main] INFO  io.seata.spring.annotation.datasource.SeataAutoDataSourceProxyCreator - Auto proxy of [dataSource] 
+2026-04-15 18:26:52 admin [main] INFO  com.alibaba.nacos.client.config.utils.JVMUtil - isMultiInstance:false 
+2026-04-15 18:26:52 admin [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null 
+2026-04-15 18:26:52 admin [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null 
+2026-04-15 18:26:52 admin [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null 
+2026-04-15 18:26:53 admin [main] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@seata-server@@default -> [{"clusterName":"default","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"172.18.0.5#8091#default#DEFAULT_GROUP@@seata-server","instanceIdGenerator":"simple","ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{},"port":8091,"serviceName":"DEFAULT_GROUP@@seata-server","weight":1.0}] 
+2026-04-15 18:26:53 admin [main] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@seata-server@@default -> [{"clusterName":"default","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"172.18.0.5#8091#default#DEFAULT_GROUP@@seata-server","instanceIdGenerator":"simple","ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{},"port":8091,"serviceName":"DEFAULT_GROUP@@seata-server","weight":1.0}] 
+2026-04-15 18:26:53 admin [main] INFO  com.alibaba.nacos.client.naming - [LISTENER] adding DEFAULT_GROUP@@seata-server with default to listener map 
+2026-04-15 18:26:54 admin [main] INFO  io.seata.core.rpc.netty.NettyClientChannelManager - will connect to 172.18.0.5:8091 
+2026-04-15 18:26:54 admin [main] INFO  io.seata.core.rpc.netty.RmRpcClient - RM will register :jdbc:mysql://mysql:3306/wk_crm_single 
+2026-04-15 18:26:54 admin [main] INFO  io.seata.core.rpc.netty.NettyPoolableFactory - NettyPool create channel to transactionRole:RMROLE,address:172.18.0.5:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://mysql:3306/wk_crm_single', applicationId='admin', transactionServiceGroup='admin_tx_group'} > 
+2026-04-15 18:26:55 admin [NettyClientSelector_RMROLE_1] WARN  io.seata.common.loader.EnhancedServiceLoader$InnerEnhancedServiceLoader - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput 
+2026-04-15 18:26:55 admin [main] INFO  io.seata.core.rpc.netty.RmRpcClient - register RM success. server version:1.2.0,channel:[id: 0x42e5983b, L:/172.18.0.5:43540 - R:/172.18.0.5:8091] 
+2026-04-15 18:26:55 admin [main] INFO  io.seata.core.rpc.netty.NettyPoolableFactory - register success, cost 454 ms, version:1.2.0,role:RMROLE,channel:[id: 0x42e5983b, L:/172.18.0.5:43540 - R:/172.18.0.5:8091] 
+2026-04-15 18:27:26 admin [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'adminThreadPoolExecutor' 
+2026-04-15 18:27:30 admin [main] WARN  org.springframework.boot.autoconfigure.web.format.WebConversionService - Auto-configuration of Joda-Time formatters is deprecated in favor of using java.time (JSR-310). 
+2026-04-15 18:27:33 admin [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator' 
+2026-04-15 18:27:36 admin [timeoutChecker_1] INFO  io.seata.core.rpc.netty.NettyClientChannelManager - will connect to 172.18.0.5:8091 
+2026-04-15 18:27:36 admin [timeoutChecker_1] INFO  io.seata.core.rpc.netty.NettyPoolableFactory - NettyPool create channel to transactionRole:TMROLE,address:172.18.0.5:8091,msg:< RegisterTMRequest{applicationId='admin', transactionServiceGroup='admin_tx_group'} > 
+2026-04-15 18:27:36 admin [timeoutChecker_1] INFO  io.seata.core.rpc.netty.TmRpcClient - register TM success. server version:1.2.0,channel:[id: 0x1e8f55ba, L:/172.18.0.5:43544 - R:/172.18.0.5:8091] 
+2026-04-15 18:27:36 admin [timeoutChecker_1] INFO  io.seata.core.rpc.netty.NettyPoolableFactory - register success, cost 43 ms, version:1.2.0,role:TMROLE,channel:[id: 0x1e8f55ba, L:/172.18.0.5:43544 - R:/172.18.0.5:8091] 
+2026-04-15 18:27:37 admin [main] INFO  com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit - init cache area default , type= redis 
+2026-04-15 18:27:37 admin [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler' 
+2026-04-15 18:27:38 admin [main] INFO  springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)] 
+2026-04-15 18:27:38 admin [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources. 
+2026-04-15 18:27:38 admin [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. 
+2026-04-15 18:27:38 admin [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources. 
+2026-04-15 18:27:38 admin [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. 
+2026-04-15 18:27:50 admin [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped 
+2026-04-15 18:27:50 admin [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2026-04-15 18:27:50 admin [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: queryCustomSettingUsingPOST_1 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteByBatchIdUsingPOST_1 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: downUsingPOST_1 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: downUsingPOST_2 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: downUsingPOST_3 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: downUsingPOST_4 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: downUsingPOST_5 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: downUsingPOST_6 
+2026-04-15 18:27:52 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: downUsingPOST_7 
+2026-04-15 18:27:53 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingPOST_1 
+2026-04-15 18:27:54 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findByUsernameUsingPOST_1 
+2026-04-15 18:27:54 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findByUsernameUsingPOST_2 
+2026-04-15 18:27:54 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findByUsernameUsingPOST_3 
+2026-04-15 18:27:54 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findByUsernameUsingPOST_4 
+2026-04-15 18:27:54 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findByUsernameUsingPOST_5 
+2026-04-15 18:27:54 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findByUsernameUsingPOST_6 
+2026-04-15 18:27:54 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findByUsernameUsingPOST_7 
+2026-04-15 18:27:55 admin [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: downloadExcelUsingPOST_1 
+2026-04-15 18:27:55 admin [main] INFO  io.undertow - starting server: Undertow - 2.0.29.Final 
+2026-04-15 18:27:55 admin [main] INFO  org.xnio - XNIO version 3.3.8.Final 
+2026-04-15 18:27:55 admin [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final 
+2026-04-15 18:27:55 admin [main] INFO  org.springframework.boot.web.embedded.undertow.UndertowServletWebServer - Undertow started on port(s) 39507 (http) with context path '' 
+2026-04-15 18:27:55 admin [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"172.18.0.5","metadata":{"projectPath":"/opt/package/admin","preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39507,"scheduled":false,"serviceName":"DEFAULT_GROUP@@admin","stopped":false,"weight":1.0} to beat map. 
+2026-04-15 18:27:55 admin [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@admin with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{"projectPath":"/opt/package/admin","preserved.register.source":"SPRING_CLOUD"},"port":39507,"weight":1.0} 
+2026-04-15 18:27:55 admin [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP admin 172.18.0.5:39507 register finished 
+2026-04-15 18:27:56 admin [main] INFO  com.kakarote.admin.AdminApplication - Started AdminApplication in 103.408 seconds (JVM running for 106.297) 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] admin-core.yaml+DEFAULT_GROUP 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=admin-core.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] admin+DEFAULT_GROUP 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=admin, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] admin.yaml+DEFAULT_GROUP 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=admin.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] admin-test.yaml+DEFAULT_GROUP 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=admin-test.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] admin-dev.yaml+DEFAULT_GROUP 
+2026-04-15 18:27:56 admin [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=admin-dev.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:56 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:27:56 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:28:25 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:28:35 admin [rpcDispatch_RMROLE_1_8] INFO  io.seata.core.rpc.netty.RmMessageListener - onMessage:UndoLogDeleteRequest{resourceId='jdbc:mysql://mysql:3306/wk_crm_single', saveDays=7, branchType=AT} 
+2026-04-15 18:28:55 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:29:24 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:29:54 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:30:23 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:30:53 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:31:22 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:31:50 admin [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2026-04-15 18:31:50 admin [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2026-04-15 18:31:50 admin [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 124 ms 
+2026-04-15 18:31:51 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==>  Preparing: SELECT COUNT( 1 ) FROM wk_admin_user  
+2026-04-15 18:31:51 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==> Parameters:  
+2026-04-15 18:31:51 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - <==      Total: 1 
+2026-04-15 18:31:52 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==>  Preparing: SELECT COUNT( 1 ) FROM wk_admin_user  
+2026-04-15 18:31:52 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==> Parameters:  
+2026-04-15 18:31:52 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - <==      Total: 1 
+2026-04-15 18:31:52 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:32:21 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:32:51 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:33:20 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:33:50 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:34:19 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==>  Preparing: SELECT COUNT( 1 ) FROM wk_admin_user  
+2026-04-15 18:34:19 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==> Parameters:  
+2026-04-15 18:34:19 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - <==      Total: 1 
+2026-04-15 18:34:19 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:34:20 admin [XNIO-1 task-3] ERROR com.kakarote.core.exception.ExceptionHandlerAdvice - 默认异常需要处理 
+com.kakarote.core.exception.CrmException: 1120:手机号校验出错！
+	at com.kakarote.admin.service.impl.AdminUserServiceImpl.initUser(AdminUserServiceImpl.java:889)
+	at com.kakarote.admin.service.impl.AdminUserServiceImpl$$FastClassBySpringCGLIB$$369b942a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.kakarote.admin.service.impl.AdminUserServiceImpl$$EnhancerBySpringCGLIB$$39476c8e.initUser(<generated>)
+	at com.kakarote.admin.controller.AdminUserController.initUser(AdminUserController.java:428)
+	at com.kakarote.admin.controller.AdminUserController$$FastClassBySpringCGLIB$$20dd272a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.kakarote.admin.controller.AdminUserController$$EnhancerBySpringCGLIB$$62b8e3e4.initUser(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:523)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at com.kakarote.core.config.BodyReaderFilter.doFilter(BodyReaderFilter.java:35)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:376)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2026-04-15 18:34:49 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:35:18 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:35:48 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:36:17 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:36:47 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:37:16 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:37:46 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:38:15 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:38:45 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:39:14 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:39:44 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:40:13 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:40:43 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:41:12 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:41:42 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:42:12 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:42:41 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:43:11 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:43:40 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:44:10 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:44:39 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:45:09 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:45:38 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:46:08 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:46:37 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==>  Preparing: SELECT COUNT( 1 ) FROM wk_admin_user  
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==> Parameters:  
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - <==      Total: 1 
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.insert - ==>  Preparing: INSERT INTO wk_admin_user ( username, password, salt, create_time, realname, mobile, dept_id, post, status, parent_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )  
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.insert - ==> Parameters: 18565282679(String), ee775ffd59e45d916d277bbc9b963e2c(String), 6266c7a648be423680e6090082f1ff4e(String), 2026-04-15 18:46:55.789(Timestamp), admin(String), 18565282679(String), 14852(Integer), 标准岗位(String), 1(Integer), 0(Long) 
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.insert - <==    Updates: 1 
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.update - ==>  Preparing: UPDATE wk_admin_user SET user_id=? WHERE (user_id = ?)  
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.update - ==> Parameters: 14773(Long), 1(Long) 
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserMapper.update - <==    Updates: 1 
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.insert - ==>  Preparing: INSERT INTO wk_admin_user_config ( user_id, status, name, value, description ) VALUES ( ?, ?, ?, ?, ? )  
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.insert - ==> Parameters: 14773(Long), 1(Integer), InitUserConfig(String), {"date":"2022-01-10","companyId":1198775893045153792,"companyName":"SARD11","mobile":"15288723344","name":"admin","id":"S9IZKIHN"}(String), 用户信息(String) 
+2026-04-15 18:46:55 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.insert - <==    Updates: 1 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.driverClassName, group=SEATA_GROUP, tenant=, config=com.mysql.jdbc.Driver 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=service.vgroupMapping.oa_tx_group, group=SEATA_GROUP, tenant=, config=default 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.minConn, group=SEATA_GROUP, tenant=, config=5 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=service.vgroupMapping.hrm_tx_group, group=SEATA_GROUP, tenant=, config=default 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.maxConn, group=SEATA_GROUP, tenant=, config=30 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=service.vgroupMapping.crm_tx_group, group=SEATA_GROUP, tenant=, config=default 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.password, group=SEATA_GROUP, tenant=, config=password 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.queryLimit, group=SEATA_GROUP, tenant=, config=100 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.mode, group=SEATA_GROUP, tenant=, config=db 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.datasource, group=SEATA_GROUP, tenant=, config=druid 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=service.vgroupMapping.examine_tx_group, group=SEATA_GROUP, tenant=, config=default 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.lockTable, group=SEATA_GROUP, tenant=, config=lock_table 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.branchTable, group=SEATA_GROUP, tenant=, config=branch_table 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=service.vgroupMapping.jxc_tx_group, group=SEATA_GROUP, tenant=, config=default 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.maxWait, group=SEATA_GROUP, tenant=, config=5000 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.url, group=SEATA_GROUP, tenant=, config=jdbc:mysql://mysql:3306/seata?useUnicode=true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.user, group=SEATA_GROUP, tenant=, config=root 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.globalTable, group=SEATA_GROUP, tenant=, config=global_table 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=store.db.dbType, group=SEATA_GROUP, tenant=, config=mysql 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] INFO  com.alibaba.nacos.client.config.NacosConfigService - [fixed-nacos_8848] [publish-single] ok, dataId=service.vgroupMapping.admin_tx_group, group=SEATA_GROUP, tenant=, config=default 
+2026-04-15 18:46:56 admin [XNIO-1 task-4] WARN  com.kakarote.admin.service.impl.AdminUserServiceImpl - seata初始化：true 
+2026-04-15 18:46:56 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==>  Preparing: SELECT COUNT( 1 ) FROM wk_admin_user  
+2026-04-15 18:46:56 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - ==> Parameters:  
+2026-04-15 18:46:56 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectCount - <==      Total: 1 
+2026-04-15 18:47:07 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:47:08 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminUserMapper.findByUsername - ==>  Preparing: select a.*,(SELECT name FROM wk_admin_dept WHERE dept_id = a.dept_id) as deptName,(SELECT realname FROM wk_admin_user WHERE user_id=a.parent_id and is_del = 0) as parentName FROM wk_admin_user as a where a.username = ? and a.is_del = 0  
+2026-04-15 18:47:08 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminUserMapper.findByUsername - ==> Parameters: 18565282679(String) 
+2026-04-15 18:47:08 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminUserMapper.findByUsername - <==      Total: 1 
+2026-04-15 18:47:08 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectObjs - ==>  Preparing: SELECT role_id FROM wk_admin_user_role WHERE (user_id = ?)  
+2026-04-15 18:47:08 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectObjs - ==> Parameters: 14773(Long) 
+2026-04-15 18:47:08 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectObjs - <==      Total: 1 
+2026-04-15 18:47:11 admin [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [PUT http://elasticsearch:9200/wk-login-log-2026-04?master_timeout=30s&include_type_name=false&timeout=30s] returned 2 warnings: [299 Elasticsearch-6.8.6-3d9f765 "the default number of shards will change from [5] to [1] in 7.0.0; if you wish to continue using the default of [5] shards, you must manage this on the create index request or with an index template"],[299 Elasticsearch-6.8.6-3d9f765 "'y' year should be replaced with 'u'. Use 'y' for year-of-era. Prefix your date format with '8' to use the new specifier."] 
+2026-04-15 18:47:11 admin [ADMIN_1] DEBUG com.kakarote.admin.mapper.AdminUserMapper.update - ==>  Preparing: UPDATE wk_admin_user SET last_login_time=?,last_login_ip=? WHERE (user_id = ? AND is_del = ?)  
+2026-04-15 18:47:11 admin [ADMIN_1] DEBUG com.kakarote.admin.mapper.AdminUserMapper.update - ==> Parameters: 2026-04-15 18:47:08.0(Timestamp), 172.18.0.6(String), 14773(Long), 0(Integer) 
+2026-04-15 18:47:11 admin [ADMIN_1] DEBUG com.kakarote.admin.mapper.AdminUserMapper.update - <==    Updates: 1 
+2026-04-15 18:47:11 admin [XNIO-1 task-9] INFO  io.lettuce.core.EpollProvider - Starting with epoll library 
+2026-04-15 18:47:11 admin [XNIO-1 task-9] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library 
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,salt,img,create_time,realname,num,mobile,email,sex,dept_id,post,status,parent_id,last_login_time,last_login_ip,is_del FROM wk_admin_user WHERE user_id=?  
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - ==> Parameters: 14773(Long) 
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - <==      Total: 1 
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,user_id,status,name,value,description FROM wk_admin_user_config WHERE (name = ? AND user_id = ?) limit 1  
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==> Parameters: readNotice(String), 14773(Long) 
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:47:12 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectOne - ==>  Preparing: SELECT role_id,role_name,role_type,remark,status,data_type,is_hidden,label FROM wk_admin_role WHERE (remark = ?) limit 1  
+2026-04-15 18:47:12 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectOne - ==> Parameters: admin(String) 
+2026-04-15 18:47:12 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectOne - <==      Total: 1 
+2026-04-15 18:47:12 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectObjs - ==>  Preparing: SELECT role_id FROM wk_admin_user_role WHERE (user_id = ?)  
+2026-04-15 18:47:12 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectObjs - ==> Parameters: 14773(Long) 
+2026-04-15 18:47:12 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectObjs - <==      Total: 1 
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.selectOne - ==>  Preparing: SELECT name FROM wk_admin_dept WHERE (dept_id = ?)  
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.selectOne - ==> Parameters: 14852(Integer) 
+2026-04-15 18:47:12 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.selectOne - <==      Total: 1 
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.selectList - ==>  Preparing: SELECT menu_id,parent_id,menu_name,realm,realm_url,realm_module,menu_type,sort,status,remarks FROM wk_admin_menu  
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.selectList - ==> Parameters:  
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.selectList - <==      Total: 399 
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.selectList - ==>  Preparing: SELECT menu_id,parent_id,menu_name,realm,realm_url,realm_module,menu_type,sort,status,remarks FROM wk_admin_menu  
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.selectList - ==> Parameters:  
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.selectList - <==      Total: 399 
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name IN (?,?,?,?,?,?,?,?,?,?,?,?,?))  
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - ==> Parameters: taskExamine(String), crm(String), project(String), log(String), book(String), oa(String), bi(String), email(String), calendar(String), knowledge(String), call(String), hrm(String), jxc(String) 
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - <==      Total: 11 
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.queryPoolReadAuth - ==>  Preparing: SELECT count( CASE WHEN find_in_set( ?, admin_user_id ) THEN 1 ELSE NULL END ) AS adminNum , count( CASE WHEN find_in_set( ?,member_user_id ) or find_in_set( ?,member_dept_id ) THEN 1 ELSE NULL END ) AS userNum FROM wk_crm_customer_pool WHERE `status` = '1'  
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.queryPoolReadAuth - ==> Parameters: 14773(Long), 14773(Long), 14852(Integer) 
+2026-04-15 18:47:12 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminMenuMapper.queryPoolReadAuth - <==      Total: 1 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: admin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: admin instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=admin,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@admin -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"172.18.0.5#39507#DEFAULT#DEFAULT_GROUP@@admin","ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{"projectPath":"/opt/package/admin","preserved.register.source":"SPRING_CLOUD"},"port":39507,"serviceName":"DEFAULT_GROUP@@admin","weight":1.0}] 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@admin -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"172.18.0.5#39507#DEFAULT#DEFAULT_GROUP@@admin","ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{"projectPath":"/opt/package/admin","preserved.register.source":"SPRING_CLOUD"},"port":39507,"serviceName":"DEFAULT_GROUP@@admin","weight":1.0}] 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: admin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client admin initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=admin,current list of Servers=[172.18.0.5:39507],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:172.18.0.5:39507;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@30024262 
+2026-04-15 18:47:13 admin [XNIO-1 task-11] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: crm.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647 
+2026-04-15 18:47:13 admin [XNIO-1 task-11] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: crm instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=crm,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null 
+2026-04-15 18:47:13 admin [XNIO-1 task-11] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater 
+2026-04-15 18:47:13 admin [XNIO-1 task-11] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client crm initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=crm,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@38d04495 
+2026-04-15 18:47:13 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:47:13 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:47:13 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:47:13 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,salt,img,create_time,realname,num,mobile,email,sex,dept_id,post,status,parent_id,last_login_time,last_login_ip,is_del FROM wk_admin_user WHERE user_id=?  
+2026-04-15 18:47:13 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - ==> Parameters: 0(Long) 
+2026-04-15 18:47:13 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - <==      Total: 0 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name IN (?)) limit 1  
+2026-04-15 18:47:13 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==> Parameters: email(String) 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: email.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: email instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=email,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client email initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=email,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@2763efbc 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,user_id,status,name,value,description FROM wk_admin_user_config WHERE (name = ? AND user_id = ?) limit 1  
+2026-04-15 18:47:13 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==> Parameters: InitUserConfig(String), 14773(Long) 
+2026-04-15 18:47:13 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:47:13 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==>  Preparing: select a.*, count(b.status != 0 or null) as currentNum from `wk_admin_dept` a left join `wk_admin_user` b on a.dept_id = b.dept_id where 1=1 group by a.dept_id  
+2026-04-15 18:47:13 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==> Parameters:  
+2026-04-15 18:47:13 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - <==      Total: 1 
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - ==>  Preparing: SELECT COUNT(1) FROM wk_admin_user AS a WHERE 1 = 1 AND a.is_del = 0  
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - ==> Parameters:  
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - ==>  Preparing: select a.realname,a.username,a.user_id,a.sex,a.mobile,a.email,e.name as deptName,a.status,a.create_time,a.dept_id,a.img, a.post,a.parent_id, (select b.realname from wk_admin_user as b where b.user_id = a.parent_id) as parentName from wk_admin_user as a left join wk_admin_dept as e on a.dept_id = e.dept_id where 1 = 1 and a.is_del = 0 order by a.user_id = 14773 desc,status desc LIMIT ?,?  
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - ==> Parameters: 0(Long), 10000(Long) 
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - <==      Total: 1 
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserHisTableMapper.selectObjs - ==>  Preparing: SELECT user_id FROM wk_admin_user_his_table WHERE (his_table = ?)  
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserHisTableMapper.selectObjs - ==> Parameters: 1(Integer) 
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserHisTableMapper.selectObjs - <==      Total: 0 
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectList - ==>  Preparing: SELECT role_id FROM wk_admin_user_role WHERE (user_id = ?)  
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectList - ==> Parameters: 14773(Long) 
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectList - <==      Total: 1 
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectBatchIds - ==>  Preparing: SELECT role_id,role_name,role_type,remark,status,data_type,is_hidden,label FROM wk_admin_role WHERE role_id IN ( ? )  
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectBatchIds - ==> Parameters: 180162(Integer) 
+2026-04-15 18:47:13 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectBatchIds - <==      Total: 1 
+2026-04-15 18:47:14 admin [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: admin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647 
+2026-04-15 18:47:14 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name = ?) limit 1  
+2026-04-15 18:47:14 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==> Parameters: companyInfo(String) 
+2026-04-15 18:47:14 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:47:16 admin [XNIO-1 task-17] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:47:16 admin [XNIO-1 task-17] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 830(Integer) 
+2026-04-15 18:47:16 admin [XNIO-1 task-17] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:47:20 admin [XNIO-1 task-18] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name IN (?,?,?,?,?,?,?,?,?,?,?,?,?))  
+2026-04-15 18:47:20 admin [XNIO-1 task-18] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - ==> Parameters: taskExamine(String), crm(String), project(String), log(String), book(String), oa(String), bi(String), email(String), calendar(String), knowledge(String), call(String), hrm(String), jxc(String) 
+2026-04-15 18:47:20 admin [XNIO-1 task-18] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - <==      Total: 11 
+2026-04-15 18:47:20 admin [XNIO-1 task-19] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?)  
+2026-04-15 18:47:20 admin [XNIO-1 task-19] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:47:20 admin [XNIO-1 task-19] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - <==      Total: 0 
+2026-04-15 18:47:21 admin [XNIO-1 task-20] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:47:21 admin [XNIO-1 task-20] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:47:21 admin [XNIO-1 task-20] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:47:21 admin [XNIO-1 task-21] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?)  
+2026-04-15 18:47:21 admin [XNIO-1 task-21] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:47:21 admin [XNIO-1 task-21] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - <==      Total: 0 
+2026-04-15 18:47:36 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:47:59 admin [XNIO-1 task-22] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:47:59 admin [XNIO-1 task-22] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:47:59 admin [XNIO-1 task-22] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:48:06 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:48:07 admin [XNIO-1 task-23] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:48:07 admin [XNIO-1 task-23] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:48:07 admin [XNIO-1 task-23] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:48:10 admin [XNIO-1 task-24] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==>  Preparing: select a.*, count(b.status != 0 or null) as currentNum from `wk_admin_dept` a left join `wk_admin_user` b on a.dept_id = b.dept_id where 1=1 group by a.dept_id  
+2026-04-15 18:48:10 admin [XNIO-1 task-24] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==> Parameters:  
+2026-04-15 18:48:10 admin [XNIO-1 task-24] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - <==      Total: 1 
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,salt,img,create_time,realname,num,mobile,email,sex,dept_id,post,status,parent_id,last_login_time,last_login_ip,is_del FROM wk_admin_user WHERE user_id=?  
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - ==> Parameters: 14773(Long) 
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - <==      Total: 1 
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,user_id,status,name,value,description FROM wk_admin_user_config WHERE (name = ? AND user_id = ?) limit 1  
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==> Parameters: readNotice(String), 14773(Long) 
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:48:11 admin [XNIO-1 task-27] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name = ?) limit 1  
+2026-04-15 18:48:11 admin [XNIO-1 task-27] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==> Parameters: companyInfo(String) 
+2026-04-15 18:48:11 admin [XNIO-1 task-27] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name IN (?)) limit 1  
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==> Parameters: email(String) 
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,user_id,status,name,value,description FROM wk_admin_user_config WHERE (name = ? AND user_id = ?) limit 1  
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==> Parameters: InitUserConfig(String), 14773(Long) 
+2026-04-15 18:48:11 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:48:11 admin [XNIO-1 task-26] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:48:11 admin [XNIO-1 task-26] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:48:11 admin [XNIO-1 task-26] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:48:11 admin [XNIO-1 task-28] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==>  Preparing: select a.*, count(b.status != 0 or null) as currentNum from `wk_admin_dept` a left join `wk_admin_user` b on a.dept_id = b.dept_id where 1=1 group by a.dept_id  
+2026-04-15 18:48:11 admin [XNIO-1 task-28] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==> Parameters:  
+2026-04-15 18:48:11 admin [XNIO-1 task-29] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name = ?) limit 1  
+2026-04-15 18:48:11 admin [XNIO-1 task-29] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==> Parameters: companyInfo(String) 
+2026-04-15 18:48:11 admin [XNIO-1 task-29] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:48:11 admin [XNIO-1 task-28] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - <==      Total: 1 
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - ==>  Preparing: SELECT COUNT(1) FROM wk_admin_user AS a WHERE 1 = 1 AND a.is_del = 0  
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - ==> Parameters:  
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - ==>  Preparing: select a.realname,a.username,a.user_id,a.sex,a.mobile,a.email,e.name as deptName,a.status,a.create_time,a.dept_id,a.img, a.post,a.parent_id, (select b.realname from wk_admin_user as b where b.user_id = a.parent_id) as parentName from wk_admin_user as a left join wk_admin_dept as e on a.dept_id = e.dept_id where 1 = 1 and a.is_del = 0 order by a.user_id = 14773 desc,status desc LIMIT ?,?  
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - ==> Parameters: 0(Long), 10000(Long) 
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserMapper.queryUserList - <==      Total: 1 
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserHisTableMapper.selectObjs - ==>  Preparing: SELECT user_id FROM wk_admin_user_his_table WHERE (his_table = ?)  
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserHisTableMapper.selectObjs - ==> Parameters: 1(Integer) 
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserHisTableMapper.selectObjs - <==      Total: 0 
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectList - ==>  Preparing: SELECT role_id FROM wk_admin_user_role WHERE (user_id = ?)  
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectList - ==> Parameters: 14773(Long) 
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminUserRoleMapper.selectList - <==      Total: 1 
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectBatchIds - ==>  Preparing: SELECT role_id,role_name,role_type,remark,status,data_type,is_hidden,label FROM wk_admin_role WHERE role_id IN ( ? )  
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectBatchIds - ==> Parameters: 180162(Integer) 
+2026-04-15 18:48:12 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.selectBatchIds - <==      Total: 1 
+2026-04-15 18:48:12 admin [XNIO-1 task-31] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:48:12 admin [XNIO-1 task-31] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 830(Integer) 
+2026-04-15 18:48:12 admin [XNIO-1 task-31] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:48:13 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name IN (?,?,?,?,?,?,?,?,?,?,?,?,?))  
+2026-04-15 18:48:13 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - ==> Parameters: taskExamine(String), crm(String), project(String), log(String), book(String), oa(String), bi(String), email(String), calendar(String), knowledge(String), call(String), hrm(String), jxc(String) 
+2026-04-15 18:48:13 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?)  
+2026-04-15 18:48:13 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:48:13 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - <==      Total: 0 
+2026-04-15 18:48:13 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:48:13 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:48:13 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:48:13 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectList - <==      Total: 11 
+2026-04-15 18:48:13 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?)  
+2026-04-15 18:48:13 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:48:13 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectList - <==      Total: 0 
+2026-04-15 18:48:14 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:48:14 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:48:14 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:48:16 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==>  Preparing: select a.*, count(b.status != 0 or null) as currentNum from `wk_admin_dept` a left join `wk_admin_user` b on a.dept_id = b.dept_id where 1=1 group by a.dept_id  
+2026-04-15 18:48:16 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==> Parameters:  
+2026-04-15 18:48:16 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - <==      Total: 1 
+2026-04-15 18:48:27 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:48:27 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:48:27 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:48:35 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:48:36 admin [XNIO-1 task-8] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==>  Preparing: select a.*, count(b.status != 0 or null) as currentNum from `wk_admin_dept` a left join `wk_admin_user` b on a.dept_id = b.dept_id where 1=1 group by a.dept_id  
+2026-04-15 18:48:36 admin [XNIO-1 task-8] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==> Parameters:  
+2026-04-15 18:48:36 admin [XNIO-1 task-8] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - <==      Total: 1 
+2026-04-15 18:48:42 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==>  Preparing: select a.*, count(b.status != 0 or null) as currentNum from `wk_admin_dept` a left join `wk_admin_user` b on a.dept_id = b.dept_id where 1=1 group by a.dept_id  
+2026-04-15 18:48:42 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==> Parameters:  
+2026-04-15 18:48:42 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - <==      Total: 1 
+2026-04-15 18:48:59 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==>  Preparing: select a.*, count(b.status != 0 or null) as currentNum from `wk_admin_dept` a left join `wk_admin_user` b on a.dept_id = b.dept_id where 1=1 group by a.dept_id  
+2026-04-15 18:48:59 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - ==> Parameters:  
+2026-04-15 18:48:59 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminDeptMapper.queryDeptList - <==      Total: 1 
+2026-04-15 18:49:05 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:49:08 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-16] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:49:08 admin [XNIO-1 task-16] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-16] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:49:08 admin [XNIO-1 task-17] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-17] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-17] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-18] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-18] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 800(Integer) 
+2026-04-15 18:49:08 admin [XNIO-1 task-18] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-19] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-19] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-19] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-20] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-20] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:08 admin [XNIO-1 task-20] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-21] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-21] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 800(Integer) 
+2026-04-15 18:49:08 admin [XNIO-1 task-21] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:08 admin [XNIO-1 task-22] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:08 admin [XNIO-1 task-22] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 860(Integer) 
+2026-04-15 18:49:08 admin [XNIO-1 task-22] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:09 admin [XNIO-1 task-23] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:09 admin [XNIO-1 task-23] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 860(Integer) 
+2026-04-15 18:49:09 admin [XNIO-1 task-23] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:26 admin [XNIO-1 task-24] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:26 admin [XNIO-1 task-24] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 880(Integer) 
+2026-04-15 18:49:26 admin [XNIO-1 task-24] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:28 admin [XNIO-1 task-27] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:28 admin [XNIO-1 task-27] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 830(Integer) 
+2026-04-15 18:49:28 admin [XNIO-1 task-27] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:32 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:32 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 860(Integer) 
+2026-04-15 18:49:32 admin [XNIO-1 task-26] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:32 admin [XNIO-1 task-25] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:32 admin [XNIO-1 task-26] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 860(Integer) 
+2026-04-15 18:49:32 admin [XNIO-1 task-26] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:33 admin [XNIO-1 task-29] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:33 admin [XNIO-1 task-29] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:33 admin [XNIO-1 task-28] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:33 admin [XNIO-1 task-28] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:33 admin [XNIO-1 task-28] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:33 admin [XNIO-1 task-29] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:33 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:33 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:33 admin [XNIO-1 task-30] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:33 admin [XNIO-1 task-31] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:33 admin [XNIO-1 task-31] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:33 admin [XNIO-1 task-31] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:33 admin [XNIO-1 task-32] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:33 admin [XNIO-1 task-32] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:33 admin [XNIO-1 task-32] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:33 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:33 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:33 admin [XNIO-1 task-1] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:34 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:34 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:34 admin [XNIO-1 task-2] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:34 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:34 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 800(Integer) 
+2026-04-15 18:49:34 admin [XNIO-1 task-3] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:34 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:34 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 860(Integer) 
+2026-04-15 18:49:34 admin [XNIO-1 task-4] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:34 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==>  Preparing: SELECT model FROM wk_admin_model_sort WHERE (type = ? AND user_id = ?) ORDER BY sort ASC limit 1  
+2026-04-15 18:49:34 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - ==> Parameters: 1(Integer), 14773(Long) 
+2026-04-15 18:49:34 admin [XNIO-1 task-5] DEBUG com.kakarote.admin.mapper.AdminModelSortMapper.selectOne - <==      Total: 0 
+2026-04-15 18:49:34 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:34 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 800(Integer) 
+2026-04-15 18:49:34 admin [XNIO-1 task-6] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:34 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==>  Preparing: select data_type from wk_admin_role as a inner join wk_admin_user_role as b on a.role_id = b.role_id and b.user_id = ? inner join wk_admin_role_menu as c on a.role_id = c.role_id and c.menu_id = ? ORDER BY data_type desc limit 1  
+2026-04-15 18:49:34 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - ==> Parameters: 14773(Long), 860(Integer) 
+2026-04-15 18:49:34 admin [XNIO-1 task-7] DEBUG com.kakarote.admin.mapper.AdminRoleMapper.queryDataType - <==      Total: 0 
+2026-04-15 18:49:34 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:49:37 admin [XNIO-1 task-8] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:49:37 admin [XNIO-1 task-8] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:49:37 admin [XNIO-1 task-8] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:50:04 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:50:06 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:50:06 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:50:06 admin [XNIO-1 task-10] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:50:33 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:51:03 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:51:32 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - ==>  Preparing: SELECT user_id,username,password,salt,img,create_time,realname,num,mobile,email,sex,dept_id,post,status,parent_id,last_login_time,last_login_ip,is_del FROM wk_admin_user WHERE user_id=?  
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - ==> Parameters: 14773(Long) 
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserMapper.selectById - <==      Total: 1 
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,user_id,status,name,value,description FROM wk_admin_user_config WHERE (name = ? AND user_id = ?) limit 1  
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==> Parameters: readNotice(String), 14773(Long) 
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name IN (?)) limit 1  
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==> Parameters: email(String) 
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:51:41 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:51:41 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:51:41 admin [XNIO-1 task-12] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,user_id,status,name,value,description FROM wk_admin_user_config WHERE (name = ? AND user_id = ?) limit 1  
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - ==> Parameters: InitUserConfig(String), 14773(Long) 
+2026-04-15 18:51:41 admin [XNIO-1 task-11] DEBUG com.kakarote.admin.mapper.AdminUserConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:51:42 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==>  Preparing: SELECT setting_id,status,name,value,description FROM wk_admin_config WHERE (name = ?) limit 1  
+2026-04-15 18:51:42 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - ==> Parameters: companyInfo(String) 
+2026-04-15 18:51:42 admin [XNIO-1 task-9] DEBUG com.kakarote.admin.mapper.AdminConfigMapper.selectOne - <==      Total: 1 
+2026-04-15 18:51:44 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:51:44 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:51:44 admin [XNIO-1 task-14] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:51:45 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:51:45 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:51:45 admin [XNIO-1 task-15] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:51:46 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:51:46 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:51:46 admin [XNIO-1 task-13] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:51:47 admin [XNIO-1 task-16] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==>  Preparing: select count(1) as allCount, count(if(label = 4,1,null)) as announceCount, count(if(label = 3,1,null)) as examineCount, count(if(label = 1,1,null)) as taskCount, count(if(label = 2,1,null)) as logCount, count(if(label = 6,1,null)) as crmCount, count(if(label = 5 and create_time < now(),1,null)) as eventCount, count(if(label = 7,1,null)) as knowledgeCount, count(if(label = 8,1,null)) as hrmCount, count(if(label = 9,1,null)) as jxcCount from wk_admin_message as a where is_read = 0 and recipient_user = ? and create_time < now()  
+2026-04-15 18:51:47 admin [XNIO-1 task-16] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - ==> Parameters: 14773(Long) 
+2026-04-15 18:51:47 admin [XNIO-1 task-16] DEBUG com.kakarote.admin.mapper.AdminMessageMapper.queryUnreadCount - <==      Total: 1 
+2026-04-15 18:52:02 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:52:31 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:53:01 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:53:30 admin [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:53:41 admin [lettuce-eventExecutorLoop-2-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was redis/172.18.0.2:6379 
+2026-04-15 18:53:41 admin [lettuce-epollEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [redis:6379]: redis: Name or service not known 
+java.net.UnknownHostException: redis: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at java.net.InetAddress.getByName(InetAddress.java:1077)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:148)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:145)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:145)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:43)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:63)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:57)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:32)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:108)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:200)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:984)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:504)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:387)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2026-04-15 18:53:50 admin [lettuce-eventExecutorLoop-2-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was redis:6379 
+2026-04-15 18:53:50 admin [lettuce-epollEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [redis:6379]: redis 
+java.net.UnknownHostException: redis
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at java.net.InetAddress.getByName(InetAddress.java:1077)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:148)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:145)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:145)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:43)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:63)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:57)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:32)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:108)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:200)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:984)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:504)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)

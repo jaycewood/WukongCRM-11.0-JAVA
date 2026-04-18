@@ -1,0 +1,32 @@
+2026-04-15 17:56:51,160 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.18.0.5:8091:unknown:default_1.0_true_false_default]
+
+2026-04-15 17:56:51,164 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.18.0.5:8091_true,
+
+2026-04-15 18:25:35,812 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.18.0.5:8091:unknown:default_1.0_true_false_default]
+
+2026-04-15 18:25:35,823 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.18.0.5:8091_true,
+
+2026-04-15 18:25:53,534 INFO DEFAULT_GROUP@@gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.18.0.5:8443:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-15 18:25:53,534 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway, ips: 172.18.0.5:8443_true,
+
+2026-04-15 18:26:22,786 INFO DEFAULT_GROUP@@work {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.18.0.5:37727:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-15 18:26:22,786 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@work, ips: 172.18.0.5:37727_true,
+
+2026-04-15 18:27:07,004 INFO DEFAULT_GROUP@@authorization {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.18.0.5:39075:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-15 18:27:07,004 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authorization, ips: 172.18.0.5:39075_true,
+
+2026-04-15 18:27:55,989 INFO DEFAULT_GROUP@@admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.18.0.5:39507:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-15 18:27:55,989 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@admin, ips: 172.18.0.5:39507_true,
+
+2026-04-15 18:28:00,235 INFO DEFAULT_GROUP@@job {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.18.0.5:8999:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-15 18:28:00,236 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@job, ips: 172.18.0.5:8999_true,
+
+2026-04-15 18:28:18,349 INFO DEFAULT_GROUP@@hrm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.18.0.5:40935:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-15 18:28:18,349 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@hrm, ips: 172.18.0.5:40935_true,
+

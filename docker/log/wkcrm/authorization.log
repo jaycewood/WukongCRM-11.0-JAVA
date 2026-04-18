@@ -1,0 +1,338 @@
+2026-04-15 18:26:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/root/nacos/config 
+2026-04-15 18:26:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0 
+2026-04-15 18:26:07 authorization [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[authorization] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:07 authorization [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[authorization.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:07 authorization [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[authorization-core.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:07 authorization [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[authorization-test.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:07 authorization [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[authorization-dev.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:07 authorization [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-authorization-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-authorization-test.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-authorization-core.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-authorization.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-authorization,DEFAULT_GROUP'}] 
+2026-04-15 18:26:07 authorization [main] INFO  com.kakarote.authorization.AuthorizationApplication - The following profiles are active: core,test,dev 
+2026-04-15 18:26:13 authorization [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:26:13 authorization [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:26:15 authorization [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2026-04-15 18:26:15 authorization [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2026-04-15 18:26:15 authorization [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74ms. Found 0 Redis repository interfaces. 
+2026-04-15 18:26:16 authorization [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:26:17 authorization [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.kakarote.authorization]' package. Please check your configuration. 
+2026-04-15 18:26:18 authorization [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=799b1318-2664-396e-b863-a92d03c2b88b 
+2026-04-15 18:26:22 authorization [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alicp.jetcache.anno.config.JetCacheProxyConfiguration' of type [com.alicp.jetcache.anno.config.JetCacheProxyConfiguration$$EnhancerBySpringCGLIB$$41748c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:22 authorization [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alicp.jetcache.anno.config.CommonConfiguration' of type [com.alicp.jetcache.anno.config.CommonConfiguration$$EnhancerBySpringCGLIB$$c07ad1d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:23 authorization [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:23 authorization [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:26:25 authorization [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used 
+2026-04-15 18:26:25 authorization [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext 
+2026-04-15 18:26:25 authorization [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 18115 ms 
+2026-04-15 18:26:28 authorization [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null 
+2026-04-15 18:26:28 authorization [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null 
+2026-04-15 18:26:28 authorization [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null 
+2026-04-15 18:26:28 authorization [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2026-04-15 18:26:29 authorization [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2026-04-15 18:26:42 authorization [main] WARN  org.springframework.boot.autoconfigure.web.format.WebConversionService - Auto-configuration of Joda-Time formatters is deprecated in favor of using java.time (JSR-310). 
+2026-04-15 18:26:44 authorization [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator' 
+2026-04-15 18:26:47 authorization [main] INFO  com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit - init cache area default , type= redis 
+2026-04-15 18:26:47 authorization [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler' 
+2026-04-15 18:26:47 authorization [main] INFO  springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)] 
+2026-04-15 18:26:49 authorization [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@752180c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fea9f19, org.springframework.security.web.header.HeaderWriterFilter@5a88849, com.kakarote.authorization.common.AuthenticationTokenFilter@59aa1d1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bbe852a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14580edc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13346a64, org.springframework.security.web.access.ExceptionTranslationFilter@4351d055, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c3114ea] 
+2026-04-15 18:26:49 authorization [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources. 
+2026-04-15 18:26:49 authorization [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. 
+2026-04-15 18:26:49 authorization [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources. 
+2026-04-15 18:26:49 authorization [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. 
+2026-04-15 18:26:51 authorization [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2026-04-15 18:27:03 authorization [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped 
+2026-04-15 18:27:03 authorization [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2026-04-15 18:27:03 authorization [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2026-04-15 18:27:04 authorization [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingGET_1 
+2026-04-15 18:27:04 authorization [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingGET_2 
+2026-04-15 18:27:04 authorization [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingGET_3 
+2026-04-15 18:27:04 authorization [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingGET_4 
+2026-04-15 18:27:04 authorization [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingGET_5 
+2026-04-15 18:27:04 authorization [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingGET_6 
+2026-04-15 18:27:04 authorization [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: logoutUsingGET_7 
+2026-04-15 18:27:05 authorization [main] DEBUG com.kakarote.authorization.common.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use 
+2026-04-15 18:27:05 authorization [main] INFO  io.undertow - starting server: Undertow - 2.0.29.Final 
+2026-04-15 18:27:05 authorization [main] INFO  org.xnio - XNIO version 3.3.8.Final 
+2026-04-15 18:27:05 authorization [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final 
+2026-04-15 18:27:05 authorization [main] INFO  org.springframework.boot.web.embedded.undertow.UndertowServletWebServer - Undertow started on port(s) 39075 (http) with context path '' 
+2026-04-15 18:27:05 authorization [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"172.18.0.5","metadata":{"projectPath":"/opt/package/authorization","preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39075,"scheduled":false,"serviceName":"DEFAULT_GROUP@@authorization","stopped":false,"weight":1.0} to beat map. 
+2026-04-15 18:27:06 authorization [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@authorization with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{"projectPath":"/opt/package/authorization","preserved.register.source":"SPRING_CLOUD"},"port":39075,"weight":1.0} 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP authorization 172.18.0.5:39075 register finished 
+2026-04-15 18:27:07 authorization [main] INFO  com.kakarote.authorization.AuthorizationApplication - Started AuthorizationApplication in 64.99 seconds (JVM running for 67.424) 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] authorization+DEFAULT_GROUP 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=authorization, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] authorization-core.yaml+DEFAULT_GROUP 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=authorization-core.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] authorization-dev.yaml+DEFAULT_GROUP 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=authorization-dev.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] authorization-test.yaml+DEFAULT_GROUP 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=authorization-test.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] authorization.yaml+DEFAULT_GROUP 
+2026-04-15 18:27:07 authorization [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=authorization.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:27:07 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:27:07 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:27:36 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:28:06 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:28:35 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:29:05 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:29:34 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:30:04 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:30:33 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:31:03 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:31:32 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:32:02 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:32:32 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:33:01 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:33:31 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:34:00 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:34:30 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:34:59 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:35:29 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:35:58 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:36:28 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:36:57 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:37:27 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:37:56 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:38:26 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:38:55 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:39:25 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:39:54 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:40:24 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:40:53 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:41:23 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:41:52 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:42:22 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:42:51 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:43:21 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:43:50 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:44:20 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:44:49 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:45:19 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:45:48 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:46:18 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:46:47 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:47:06 authorization [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2026-04-15 18:47:06 authorization [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2026-04-15 18:47:06 authorization [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 59 ms 
+2026-04-15 18:47:06 authorization [XNIO-1 task-1] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /login 
+2026-04-15 18:47:06 authorization [XNIO-1 task-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library 
+2026-04-15 18:47:06 authorization [XNIO-1 task-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library 
+2026-04-15 18:47:07 authorization [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: admin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647 
+2026-04-15 18:47:07 authorization [XNIO-1 task-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: admin instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=admin,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null 
+2026-04-15 18:47:07 authorization [XNIO-1 task-1] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater 
+2026-04-15 18:47:07 authorization [XNIO-1 task-1] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@admin -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"172.18.0.5#39507#DEFAULT#DEFAULT_GROUP@@admin","ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{"projectPath":"/opt/package/admin","preserved.register.source":"SPRING_CLOUD"},"port":39507,"serviceName":"DEFAULT_GROUP@@admin","weight":1.0}] 
+2026-04-15 18:47:07 authorization [XNIO-1 task-1] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@admin -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"172.18.0.5#39507#DEFAULT#DEFAULT_GROUP@@admin","ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{"projectPath":"/opt/package/admin","preserved.register.source":"SPRING_CLOUD"},"port":39507,"serviceName":"DEFAULT_GROUP@@admin","weight":1.0}] 
+2026-04-15 18:47:07 authorization [XNIO-1 task-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: admin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647 
+2026-04-15 18:47:07 authorization [XNIO-1 task-1] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client admin initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=admin,current list of Servers=[172.18.0.5:39507],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:172.18.0.5:39507;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@1ee27636 
+2026-04-15 18:47:08 authorization [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: admin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647 
+2026-04-15 18:47:08 authorization [XNIO-1 task-1] INFO  com.kakarote.authorization.common.LoginLogUtil - ===> Login IP : 172.18.0.6 
+2026-04-15 18:47:08 authorization [XNIO-1 task-1] INFO  com.kakarote.authorization.common.LoginLogUtil - ===> dbPath  : /opt/package/authorization/config/ip2region/ip2region.db 
+2026-04-15 18:47:08 authorization [XNIO-1 task-1] INFO  com.kakarote.authorization.common.LoginLogUtil - ===> ipCityInfo  : 0|0|0|内网IP|内网IP 
+2026-04-15 18:47:12 authorization [XNIO-1 task-2] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:13 authorization [XNIO-1 task-4] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:13 authorization [XNIO-1 task-3] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:14 authorization [XNIO-1 task-5] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:14 authorization [XNIO-1 task-6] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:14 authorization [XNIO-1 task-7] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:14 authorization [XNIO-1 task-8] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:17 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:47:20 authorization [XNIO-1 task-9] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:20 authorization [XNIO-1 task-10] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:20 authorization [XNIO-1 task-11] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:20 authorization [XNIO-1 task-12] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:21 authorization [XNIO-1 task-13] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:21 authorization [XNIO-1 task-14] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:21 authorization [XNIO-1 task-15] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:47:46 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:47:59 authorization [XNIO-1 task-16] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:07 authorization [XNIO-1 task-18] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:07 authorization [XNIO-1 task-17] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:07 authorization [XNIO-1 task-19] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:10 authorization [XNIO-1 task-20] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:11 authorization [XNIO-1 task-21] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:11 authorization [XNIO-1 task-22] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:11 authorization [XNIO-1 task-23] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:11 authorization [XNIO-1 task-24] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:11 authorization [XNIO-1 task-26] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:11 authorization [XNIO-1 task-25] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:11 authorization [XNIO-1 task-27] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:12 authorization [XNIO-1 task-28] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:13 authorization [XNIO-1 task-29] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:13 authorization [XNIO-1 task-31] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:13 authorization [XNIO-1 task-30] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:13 authorization [XNIO-1 task-32] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:13 authorization [XNIO-1 task-1] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:13 authorization [XNIO-1 task-2] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:14 authorization [XNIO-1 task-3] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:16 authorization [XNIO-1 task-4] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:16 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:48:27 authorization [XNIO-1 task-5] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:31 authorization [XNIO-1 task-6] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:31 authorization [XNIO-1 task-7] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:33 authorization [XNIO-1 task-8] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:36 authorization [XNIO-1 task-9] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:39 authorization [XNIO-1 task-10] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:42 authorization [XNIO-1 task-11] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:45 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:48:56 authorization [XNIO-1 task-12] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:56 authorization [XNIO-1 task-13] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:48:59 authorization [XNIO-1 task-14] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:06 authorization [XNIO-1 task-15] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-16] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-18] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-17] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-19] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-20] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-21] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-22] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-23] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:08 authorization [XNIO-1 task-24] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:15 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:49:22 authorization [XNIO-1 task-26] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:22 authorization [XNIO-1 task-25] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:25 authorization [XNIO-1 task-27] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:28 authorization [XNIO-1 task-28] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:32 authorization [XNIO-1 task-30] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:32 authorization [XNIO-1 task-31] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:33 authorization [XNIO-1 task-29] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:33 authorization [XNIO-1 task-1] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:33 authorization [XNIO-1 task-32] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:33 authorization [XNIO-1 task-2] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:33 authorization [XNIO-1 task-3] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:33 authorization [XNIO-1 task-4] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:34 authorization [XNIO-1 task-5] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:34 authorization [XNIO-1 task-6] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:35 authorization [XNIO-1 task-7] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:37 authorization [XNIO-1 task-8] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:37 authorization [XNIO-1 task-9] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:37 authorization [XNIO-1 task-10] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:37 authorization [XNIO-1 task-11] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:44 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:49:46 authorization [XNIO-1 task-13] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:48 authorization [XNIO-1 task-12] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:50 authorization [XNIO-1 task-14] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:50 authorization [XNIO-1 task-15] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:50 authorization [XNIO-1 task-16] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:51 authorization [XNIO-1 task-17] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:51 authorization [XNIO-1 task-19] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:52 authorization [XNIO-1 task-20] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:55 authorization [XNIO-1 task-18] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:49:59 authorization [XNIO-1 task-21] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:00 authorization [XNIO-1 task-22] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:06 authorization [XNIO-1 task-23] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:09 authorization [XNIO-1 task-24] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:09 authorization [XNIO-1 task-26] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:09 authorization [XNIO-1 task-25] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:14 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:50:18 authorization [XNIO-1 task-27] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:20 authorization [XNIO-1 task-28] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:20 authorization [XNIO-1 task-30] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:23 authorization [XNIO-1 task-31] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:24 authorization [XNIO-1 task-29] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:24 authorization [XNIO-1 task-32] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:26 authorization [XNIO-1 task-1] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:28 authorization [XNIO-1 task-2] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:28 authorization [XNIO-1 task-3] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:30 authorization [XNIO-1 task-4] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:31 authorization [XNIO-1 task-5] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:31 authorization [XNIO-1 task-6] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:36 authorization [XNIO-1 task-7] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:36 authorization [XNIO-1 task-8] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:36 authorization [XNIO-1 task-9] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:50:43 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:51:13 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:51:41 authorization [XNIO-1 task-11] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:51:41 authorization [XNIO-1 task-10] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:51:42 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:51:43 authorization [XNIO-1 task-13] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:51:43 authorization [XNIO-1 task-12] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:51:43 authorization [XNIO-1 task-14] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:51:44 authorization [XNIO-1 task-15] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:51:45 authorization [XNIO-1 task-16] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:51:46 authorization [XNIO-1 task-17] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:51:47 authorization [XNIO-1 task-19] INFO  com.kakarote.authorization.common.AuthenticationTokenFilter - /permission 
+2026-04-15 18:52:12 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:52:41 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:53:11 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:53:40 authorization [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:53:41 authorization [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was redis/172.18.0.2:6379 
+2026-04-15 18:53:41 authorization [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [redis:6379]: redis: Name or service not known 
+java.net.UnknownHostException: redis: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at java.net.InetAddress.getByName(InetAddress.java:1077)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:148)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:145)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:145)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:43)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:63)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:57)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:32)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:108)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:200)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:984)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:504)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2026-04-15 18:53:50 authorization [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was redis:6379 
+2026-04-15 18:53:50 authorization [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [redis:6379]: redis 
+java.net.UnknownHostException: redis
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at java.net.InetAddress.getByName(InetAddress.java:1077)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:148)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:145)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:145)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:43)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:63)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:57)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:32)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:108)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:200)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:984)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:504)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:417)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:474)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)

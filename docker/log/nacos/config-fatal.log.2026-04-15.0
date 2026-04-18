@@ -1,0 +1,12 @@
+2026-04-15 17:55:17,242 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-15 17:55:18,985 WARN useAddressServer:true
+
+2026-04-15 17:55:19,119 WARN isQuickStart:false
+
+2026-04-15 18:21:23,171 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-15 18:21:24,700 WARN useAddressServer:true
+
+2026-04-15 18:21:24,800 WARN isQuickStart:false
+

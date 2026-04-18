@@ -1,0 +1,42 @@
+2026-04-18 01:06:01,287 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-18 01:06:03,678 WARN useAddressServer:true
+
+2026-04-18 01:06:03,891 WARN isQuickStart:false
+
+2026-04-18 01:34:49,329 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-18 01:34:51,483 WARN useAddressServer:true
+
+2026-04-18 01:34:51,654 WARN isQuickStart:false
+
+2026-04-18 01:41:35,578 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-18 01:41:37,821 WARN useAddressServer:true
+
+2026-04-18 01:41:38,036 WARN isQuickStart:false
+
+2026-04-18 05:25:01,957 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-18 05:25:04,309 WARN useAddressServer:true
+
+2026-04-18 05:25:04,517 WARN isQuickStart:false
+
+2026-04-18 05:40:01,287 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-18 05:40:03,236 WARN useAddressServer:true
+
+2026-04-18 05:40:03,378 WARN isQuickStart:false
+
+2026-04-18 05:54:27,571 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-18 05:54:30,047 WARN useAddressServer:true
+
+2026-04-18 05:54:30,284 WARN isQuickStart:false
+
+2026-04-18 06:22:00,511 WARN [master-db] jdbc:mysql://mysql:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2026-04-18 06:22:02,971 WARN useAddressServer:true
+
+2026-04-18 06:22:03,210 WARN isQuickStart:false
+

@@ -1,0 +1,274 @@
+2026-04-18 01:30:35,795 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.17.0.1:8091:unknown:default_1.0_true_false_default]
+
+2026-04-18 01:30:35,817 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.17.0.1:8091_true,
+
+2026-04-18 01:34:58,720 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.17.0.1:8091:unknown:default_1.0_true_false_default]
+
+2026-04-18 01:34:58,727 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.17.0.1:8091_true,
+
+2026-04-18 01:41:45,855 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.17.0.1:8091:unknown:default_1.0_true_false_default]
+
+2026-04-18 01:41:45,860 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.17.0.1:8091_true,
+
+2026-04-18 01:42:46,508 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.17.0.1:8091_true,
+
+2026-04-18 02:13:10,874 INFO DEFAULT_GROUP@@authorization {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:35359:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 02:13:10,875 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authorization, ips: 45.207.206.191:35359_true,
+
+2026-04-18 02:13:40,954 INFO DEFAULT_GROUP@@gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:8443:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 02:13:40,954 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway, ips: 45.207.206.191:8443_true,
+
+2026-04-18 02:13:50,251 INFO DEFAULT_GROUP@@admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:46389:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 02:13:50,252 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@admin, ips: 45.207.206.191:46389_true,
+
+2026-04-18 05:25:09,227 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.17.0.1:8091:unknown:default_1.0_true_false_default]
+
+2026-04-18 05:25:09,240 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.17.0.1:8091_true,
+
+2026-04-18 05:40:15,644 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.20.0.1:8091:unknown:default_1.0_true_false_default]
+
+2026-04-18 05:40:15,656 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.20.0.1:8091_true,
+
+2026-04-18 05:44:04,295 INFO DEFAULT_GROUP@@gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:8443:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 05:44:04,295 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway, ips: 45.207.206.191:8443_true,
+
+2026-04-18 05:45:16,792 INFO DEFAULT_GROUP@@authorization {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:38607:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 05:45:16,792 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authorization, ips: 45.207.206.191:38607_true,
+
+2026-04-18 05:55:28,808 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.18.0.1:8091:unknown:default_1.0_true_false_default]
+
+2026-04-18 05:55:28,822 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.18.0.1:8091_true,
+
+2026-04-18 05:58:03,007 INFO DEFAULT_GROUP@@gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:8443:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 05:58:03,007 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway, ips: 45.207.206.191:8443_true,
+
+2026-04-18 05:58:42,669 INFO DEFAULT_GROUP@@authorization {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:38857:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 05:58:42,669 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authorization, ips: 45.207.206.191:38857_true,
+
+2026-04-18 06:00:26,810 INFO DEFAULT_GROUP@@admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:46359:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:00:26,810 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@admin, ips: 45.207.206.191:46359_true,
+
+2026-04-18 06:01:11,594 INFO DEFAULT_GROUP@@examine {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:34903:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:01:11,594 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 45.207.206.191:34903_true,
+
+2026-04-18 06:01:19,025 INFO DEFAULT_GROUP@@work {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:35019:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:01:19,025 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@work, ips: 45.207.206.191:35019_true,
+
+2026-04-18 06:01:35,658 INFO DEFAULT_GROUP@@job {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:8999:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:01:35,659 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@job, ips: 45.207.206.191:8999_true,
+
+2026-04-18 06:01:41,898 INFO DEFAULT_GROUP@@crm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:35531:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:01:41,898 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@crm, ips: 45.207.206.191:35531_true,
+
+2026-04-18 06:01:53,994 INFO DEFAULT_GROUP@@hrm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:33295:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:01:53,994 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@hrm, ips: 45.207.206.191:33295_true,
+
+2026-04-18 06:22:06,750 INFO DEFAULT_GROUP@@seata-server {SYNC} {IP-NEW} cluster: default, new ips size: 1, content: [172.20.0.1:8091:unknown:default_1.0_true_false_default]
+
+2026-04-18 06:22:06,755 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@seata-server, ips: 172.20.0.1:8091_true,
+
+2026-04-18 06:25:51,855 INFO DEFAULT_GROUP@@gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:8443:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:25:51,855 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway, ips: 45.207.206.191:8443_true,
+
+2026-04-18 06:26:26,475 INFO DEFAULT_GROUP@@authorization {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:38209:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:26:26,475 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@authorization, ips: 45.207.206.191:38209_true,
+
+2026-04-18 06:28:20,506 INFO DEFAULT_GROUP@@admin {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:39707:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:28:20,506 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@admin, ips: 45.207.206.191:39707_true,
+
+2026-04-18 06:29:07,646 INFO DEFAULT_GROUP@@examine {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:45295:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:29:07,646 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 45.207.206.191:45295_true,
+
+2026-04-18 06:29:13,224 INFO DEFAULT_GROUP@@work {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:38987:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:29:13,224 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@work, ips: 45.207.206.191:38987_true,
+
+2026-04-18 06:29:27,371 INFO DEFAULT_GROUP@@job {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:8999:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:29:27,371 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@job, ips: 45.207.206.191:8999_true,
+
+2026-04-18 06:29:36,793 INFO DEFAULT_GROUP@@crm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:43115:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:29:36,793 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@crm, ips: 45.207.206.191:43115_true,
+
+2026-04-18 06:29:47,201 INFO DEFAULT_GROUP@@hrm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:34067:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:29:47,202 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@hrm, ips: 45.207.206.191:34067_true,
+
+2026-04-18 06:48:00,576 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:34885:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:48:00,576 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:34885_true,
+
+2026-04-18 06:55:49,959 INFO DEFAULT_GROUP@@bi {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:34885:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:55:49,959 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 
+
+2026-04-18 06:56:26,852 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:42043:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 06:56:26,852 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:42043_true,
+
+2026-04-18 07:09:20,400 INFO DEFAULT_GROUP@@bi {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:42043:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:09:20,400 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 
+
+2026-04-18 07:10:03,903 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:35107:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:10:03,903 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:35107_true,
+
+2026-04-18 07:17:36,516 INFO DEFAULT_GROUP@@oa {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:43473:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:17:36,516 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@oa, ips: 45.207.206.191:43473_true,
+
+2026-04-18 07:20:10,893 INFO DEFAULT_GROUP@@oa {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:43473:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:20:10,893 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@oa, ips: 
+
+2026-04-18 07:20:52,082 INFO DEFAULT_GROUP@@oa {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:39133:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:20:52,082 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@oa, ips: 45.207.206.191:39133_true,
+
+2026-04-18 07:35:12,473 INFO DEFAULT_GROUP@@gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:8443:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:35:12,473 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway, ips: 
+
+2026-04-18 07:35:50,228 INFO DEFAULT_GROUP@@gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:8443:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:35:50,228 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@gateway, ips: 45.207.206.191:8443_true,
+
+2026-04-18 07:54:26,443 INFO DEFAULT_GROUP@@examine {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:45295:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:54:26,443 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 
+
+2026-04-18 07:55:25,671 INFO DEFAULT_GROUP@@examine {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:40573:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 07:55:25,671 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 45.207.206.191:40573_true,
+
+2026-04-18 08:20:30,701 INFO DEFAULT_GROUP@@examine {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:40573:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 08:20:30,701 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 
+
+2026-04-18 08:21:09,030 INFO DEFAULT_GROUP@@examine {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:35301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 08:21:09,030 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 45.207.206.191:35301_true,
+
+2026-04-18 08:28:54,660 INFO DEFAULT_GROUP@@examine {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:35301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 08:28:54,660 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 
+
+2026-04-18 08:29:32,106 INFO DEFAULT_GROUP@@examine {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:37357:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 08:29:32,107 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 45.207.206.191:37357_true,
+
+2026-04-18 08:39:37,384 INFO DEFAULT_GROUP@@examine {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:37357:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 08:39:37,384 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 
+
+2026-04-18 08:55:45,004 INFO DEFAULT_GROUP@@examine {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:36135:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 08:55:45,004 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 45.207.206.191:36135_true,
+
+2026-04-18 09:10:45,211 INFO DEFAULT_GROUP@@examine {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:36135:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 09:10:45,211 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 
+
+2026-04-18 09:11:44,185 INFO DEFAULT_GROUP@@examine {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:40433:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 09:11:44,185 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 45.207.206.191:40433_true,
+
+2026-04-18 09:24:42,990 INFO DEFAULT_GROUP@@crm {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:43115:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 09:24:42,990 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@crm, ips: 
+
+2026-04-18 09:35:42,244 INFO DEFAULT_GROUP@@crm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:42511:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 09:35:42,244 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@crm, ips: 45.207.206.191:42511_true,
+
+2026-04-18 09:38:53,948 INFO DEFAULT_GROUP@@crm {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:42511:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 09:38:53,948 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@crm, ips: 
+
+2026-04-18 09:41:07,849 INFO DEFAULT_GROUP@@examine {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:40433:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 09:41:07,849 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 
+
+2026-04-18 09:42:01,787 INFO DEFAULT_GROUP@@examine {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:35853:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 09:42:01,787 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@examine, ips: 45.207.206.191:35853_true,
+
+2026-04-18 09:42:03,362 INFO DEFAULT_GROUP@@crm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:42975:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 09:42:03,362 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@crm, ips: 45.207.206.191:42975_true,
+
+2026-04-18 10:24:33,325 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:38211:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 10:24:33,325 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:38211_true,45.207.206.191:35107_true,
+
+2026-04-18 10:27:45,809 INFO DEFAULT_GROUP@@bi {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:38211:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 10:27:45,809 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:35107_true,
+
+2026-04-18 10:28:29,089 INFO DEFAULT_GROUP@@bi {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:35107:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 10:28:29,089 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 
+
+2026-04-18 10:29:13,756 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:46819:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 10:29:13,757 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:46819_true,
+
+2026-04-18 13:51:17,533 INFO DEFAULT_GROUP@@bi {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:46819:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 13:51:17,533 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 
+
+2026-04-18 13:52:54,209 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:35249:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 13:52:54,209 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:35249_true,
+
+2026-04-18 14:01:44,586 INFO DEFAULT_GROUP@@bi {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:35249:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 14:01:44,586 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 
+
+2026-04-18 14:02:23,172 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:45515:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 14:02:23,172 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:45515_true,
+
+2026-04-18 14:19:56,411 INFO DEFAULT_GROUP@@bi {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:45515:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 14:19:56,411 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 
+
+2026-04-18 14:20:29,791 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:45703:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 14:20:29,792 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:45703_true,
+
+2026-04-18 14:27:41,786 INFO DEFAULT_GROUP@@bi {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:45703:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 14:27:41,786 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 
+
+2026-04-18 14:28:15,545 INFO DEFAULT_GROUP@@bi {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:39631:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 14:28:15,545 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bi, ips: 45.207.206.191:39631_true,
+
+2026-04-18 14:40:57,220 INFO DEFAULT_GROUP@@crm {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [45.207.206.191:42975:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 14:40:57,220 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@crm, ips: 
+
+2026-04-18 14:42:07,511 INFO DEFAULT_GROUP@@crm {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [45.207.206.191:42505:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2026-04-18 14:42:07,512 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@crm, ips: 45.207.206.191:42505_true,
+

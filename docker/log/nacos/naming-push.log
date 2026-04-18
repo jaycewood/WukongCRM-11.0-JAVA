@@ -1,0 +1,954 @@
+2026-04-18 01:30:36,807 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-18 01:34:59,728 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-18 01:41:46,861 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-18 01:42:47,509 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-18 02:13:11,875 INFO DEFAULT_GROUP@@authorization is changed, add it to push queue.
+
+2026-04-18 02:13:41,954 INFO DEFAULT_GROUP@@gateway is changed, add it to push queue.
+
+2026-04-18 02:13:41,960 INFO serviceName: DEFAULT_GROUP@@gateway changed, schedule push for: 127.0.1.1:43584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,43584,201258862625438
+
+2026-04-18 02:13:41,960 INFO send udp packet: 127.0.1.1,43584,201258862625438
+
+2026-04-18 02:13:51,252 INFO DEFAULT_GROUP@@admin is changed, add it to push queue.
+
+2026-04-18 02:13:51,970 INFO retry to push data, key: 127.0.1.1,43584,201258862625438
+
+2026-04-18 02:13:51,971 INFO send udp packet: 127.0.1.1,43584,201258862625438
+
+2026-04-18 02:14:01,974 INFO retry to push data, key: 127.0.1.1,43584,201258862625438
+
+2026-04-18 02:14:01,976 WARN max re-push times reached, retry times 2, key: 127.0.1.1,43584,201258862625438
+
+2026-04-18 05:25:10,232 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-18 05:40:16,655 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-18 05:44:05,295 INFO DEFAULT_GROUP@@gateway is changed, add it to push queue.
+
+2026-04-18 05:44:05,297 INFO serviceName: DEFAULT_GROUP@@gateway changed, schedule push for: 127.0.1.1:57055, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,57055,370058694953
+
+2026-04-18 05:44:05,297 INFO send udp packet: 127.0.1.1,57055,370058694953
+
+2026-04-18 05:44:15,300 INFO retry to push data, key: 127.0.1.1,57055,370058694953
+
+2026-04-18 05:44:15,300 INFO send udp packet: 127.0.1.1,57055,370058694953
+
+2026-04-18 05:44:25,395 INFO retry to push data, key: 127.0.1.1,57055,370058694953
+
+2026-04-18 05:44:25,395 WARN max re-push times reached, retry times 2, key: 127.0.1.1,57055,370058694953
+
+2026-04-18 05:45:17,793 INFO DEFAULT_GROUP@@authorization is changed, add it to push queue.
+
+2026-04-18 05:55:29,821 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-18 05:58:04,007 INFO DEFAULT_GROUP@@gateway is changed, add it to push queue.
+
+2026-04-18 05:58:04,009 INFO serviceName: DEFAULT_GROUP@@gateway changed, schedule push for: 127.0.1.1:46852, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,46852,342737330701
+
+2026-04-18 05:58:04,010 INFO send udp packet: 127.0.1.1,46852,342737330701
+
+2026-04-18 05:58:14,013 INFO retry to push data, key: 127.0.1.1,46852,342737330701
+
+2026-04-18 05:58:14,014 INFO send udp packet: 127.0.1.1,46852,342737330701
+
+2026-04-18 05:58:24,015 INFO retry to push data, key: 127.0.1.1,46852,342737330701
+
+2026-04-18 05:58:24,016 WARN max re-push times reached, retry times 2, key: 127.0.1.1,46852,342737330701
+
+2026-04-18 05:58:43,669 INFO DEFAULT_GROUP@@authorization is changed, add it to push queue.
+
+2026-04-18 06:00:27,810 INFO DEFAULT_GROUP@@admin is changed, add it to push queue.
+
+2026-04-18 06:01:12,594 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 06:01:20,025 INFO DEFAULT_GROUP@@work is changed, add it to push queue.
+
+2026-04-18 06:01:36,659 INFO DEFAULT_GROUP@@job is changed, add it to push queue.
+
+2026-04-18 06:01:42,898 INFO DEFAULT_GROUP@@crm is changed, add it to push queue.
+
+2026-04-18 06:01:54,994 INFO DEFAULT_GROUP@@hrm is changed, add it to push queue.
+
+2026-04-18 06:22:07,756 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-18 06:25:52,855 INFO DEFAULT_GROUP@@gateway is changed, add it to push queue.
+
+2026-04-18 06:25:52,858 INFO serviceName: DEFAULT_GROUP@@gateway changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,358696314214
+
+2026-04-18 06:25:52,858 INFO send udp packet: 127.0.1.1,42490,358696314214
+
+2026-04-18 06:26:02,866 INFO retry to push data, key: 127.0.1.1,42490,358696314214
+
+2026-04-18 06:26:02,866 INFO send udp packet: 127.0.1.1,42490,358696314214
+
+2026-04-18 06:26:12,868 INFO retry to push data, key: 127.0.1.1,42490,358696314214
+
+2026-04-18 06:26:12,868 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,358696314214
+
+2026-04-18 06:26:27,477 INFO DEFAULT_GROUP@@authorization is changed, add it to push queue.
+
+2026-04-18 06:28:21,506 INFO DEFAULT_GROUP@@admin is changed, add it to push queue.
+
+2026-04-18 06:29:08,646 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 06:29:14,224 INFO DEFAULT_GROUP@@work is changed, add it to push queue.
+
+2026-04-18 06:29:28,371 INFO DEFAULT_GROUP@@job is changed, add it to push queue.
+
+2026-04-18 06:29:37,793 INFO DEFAULT_GROUP@@crm is changed, add it to push queue.
+
+2026-04-18 06:29:48,202 INFO DEFAULT_GROUP@@hrm is changed, add it to push queue.
+
+2026-04-18 06:48:01,576 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 06:48:01,578 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,1687417470863
+
+2026-04-18 06:48:01,578 INFO send udp packet: 127.0.1.1,42490,1687417470863
+
+2026-04-18 06:48:11,578 INFO retry to push data, key: 127.0.1.1,42490,1687417470863
+
+2026-04-18 06:48:11,578 INFO send udp packet: 127.0.1.1,42490,1687417470863
+
+2026-04-18 06:48:21,579 INFO retry to push data, key: 127.0.1.1,42490,1687417470863
+
+2026-04-18 06:48:21,579 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,1687417470863
+
+2026-04-18 06:55:50,959 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 06:55:50,962 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,2156802176357
+
+2026-04-18 06:55:50,962 INFO send udp packet: 127.0.1.1,42490,2156802176357
+
+2026-04-18 06:56:00,964 INFO retry to push data, key: 127.0.1.1,42490,2156802176357
+
+2026-04-18 06:56:00,964 INFO send udp packet: 127.0.1.1,42490,2156802176357
+
+2026-04-18 06:56:10,965 INFO retry to push data, key: 127.0.1.1,42490,2156802176357
+
+2026-04-18 06:56:10,966 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,2156802176357
+
+2026-04-18 06:56:27,852 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 06:56:27,853 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,2193693059180
+
+2026-04-18 06:56:27,853 INFO send udp packet: 127.0.1.1,42490,2193693059180
+
+2026-04-18 06:56:37,854 INFO retry to push data, key: 127.0.1.1,42490,2193693059180
+
+2026-04-18 06:56:37,854 INFO send udp packet: 127.0.1.1,42490,2193693059180
+
+2026-04-18 06:56:47,855 INFO retry to push data, key: 127.0.1.1,42490,2193693059180
+
+2026-04-18 06:56:47,855 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,2193693059180
+
+2026-04-18 07:09:21,400 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 07:09:21,401 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,2967240944245
+
+2026-04-18 07:09:21,401 INFO send udp packet: 127.0.1.1,42490,2967240944245
+
+2026-04-18 07:09:31,401 INFO retry to push data, key: 127.0.1.1,42490,2967240944245
+
+2026-04-18 07:09:31,401 INFO send udp packet: 127.0.1.1,42490,2967240944245
+
+2026-04-18 07:09:41,402 INFO retry to push data, key: 127.0.1.1,42490,2967240944245
+
+2026-04-18 07:09:41,402 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,2967240944245
+
+2026-04-18 07:10:04,903 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 07:10:04,903 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,3010743683207
+
+2026-04-18 07:10:04,903 INFO send udp packet: 127.0.1.1,42490,3010743683207
+
+2026-04-18 07:10:14,904 INFO retry to push data, key: 127.0.1.1,42490,3010743683207
+
+2026-04-18 07:10:14,904 INFO send udp packet: 127.0.1.1,42490,3010743683207
+
+2026-04-18 07:10:24,904 INFO retry to push data, key: 127.0.1.1,42490,3010743683207
+
+2026-04-18 07:10:24,904 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,3010743683207
+
+2026-04-18 07:17:37,517 INFO DEFAULT_GROUP@@oa is changed, add it to push queue.
+
+2026-04-18 07:17:37,518 INFO serviceName: DEFAULT_GROUP@@oa changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,3463357573566
+
+2026-04-18 07:17:37,518 INFO send udp packet: 127.0.1.1,42490,3463357573566
+
+2026-04-18 07:17:47,518 INFO retry to push data, key: 127.0.1.1,42490,3463357573566
+
+2026-04-18 07:17:47,519 INFO send udp packet: 127.0.1.1,42490,3463357573566
+
+2026-04-18 07:17:57,520 INFO retry to push data, key: 127.0.1.1,42490,3463357573566
+
+2026-04-18 07:17:57,520 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,3463357573566
+
+2026-04-18 07:20:11,893 INFO DEFAULT_GROUP@@oa is changed, add it to push queue.
+
+2026-04-18 07:20:11,894 INFO serviceName: DEFAULT_GROUP@@oa changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,3617734091709
+
+2026-04-18 07:20:11,894 INFO send udp packet: 127.0.1.1,42490,3617734091709
+
+2026-04-18 07:20:21,894 INFO retry to push data, key: 127.0.1.1,42490,3617734091709
+
+2026-04-18 07:20:21,895 INFO send udp packet: 127.0.1.1,42490,3617734091709
+
+2026-04-18 07:20:31,895 INFO retry to push data, key: 127.0.1.1,42490,3617734091709
+
+2026-04-18 07:20:31,896 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,3617734091709
+
+2026-04-18 07:20:53,082 INFO DEFAULT_GROUP@@oa is changed, add it to push queue.
+
+2026-04-18 07:20:53,083 INFO serviceName: DEFAULT_GROUP@@oa changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,3658922890587
+
+2026-04-18 07:20:53,083 INFO send udp packet: 127.0.1.1,42490,3658922890587
+
+2026-04-18 07:21:03,083 INFO retry to push data, key: 127.0.1.1,42490,3658922890587
+
+2026-04-18 07:21:03,083 INFO send udp packet: 127.0.1.1,42490,3658922890587
+
+2026-04-18 07:21:13,084 INFO retry to push data, key: 127.0.1.1,42490,3658922890587
+
+2026-04-18 07:21:13,084 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,3658922890587
+
+2026-04-18 07:35:13,473 INFO DEFAULT_GROUP@@gateway is changed, add it to push queue.
+
+2026-04-18 07:35:13,474 INFO serviceName: DEFAULT_GROUP@@gateway changed, schedule push for: 127.0.1.1:42490, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,42490,4519314064006
+
+2026-04-18 07:35:13,474 INFO send udp packet: 127.0.1.1,42490,4519314064006
+
+2026-04-18 07:35:23,475 INFO retry to push data, key: 127.0.1.1,42490,4519314064006
+
+2026-04-18 07:35:23,475 INFO send udp packet: 127.0.1.1,42490,4519314064006
+
+2026-04-18 07:35:33,476 INFO retry to push data, key: 127.0.1.1,42490,4519314064006
+
+2026-04-18 07:35:33,477 WARN max re-push times reached, retry times 2, key: 127.0.1.1,42490,4519314064006
+
+2026-04-18 07:35:51,229 INFO DEFAULT_GROUP@@gateway is changed, add it to push queue.
+
+2026-04-18 07:35:51,230 INFO serviceName: DEFAULT_GROUP@@gateway changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,4557069518478
+
+2026-04-18 07:35:51,230 INFO send udp packet: 127.0.1.1,39775,4557069518478
+
+2026-04-18 07:36:01,230 INFO retry to push data, key: 127.0.1.1,39775,4557069518478
+
+2026-04-18 07:36:01,231 INFO send udp packet: 127.0.1.1,39775,4557069518478
+
+2026-04-18 07:36:11,232 INFO retry to push data, key: 127.0.1.1,39775,4557069518478
+
+2026-04-18 07:36:11,232 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,4557069518478
+
+2026-04-18 07:54:27,444 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 07:54:27,445 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,5673285092120
+
+2026-04-18 07:54:27,445 INFO send udp packet: 127.0.1.1,39775,5673285092120
+
+2026-04-18 07:54:27,446 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,5673285092120
+
+2026-04-18 07:54:27,446 INFO send udp packet: 127.0.1.1,50584,5673285092120
+
+2026-04-18 07:54:37,446 INFO retry to push data, key: 127.0.1.1,39775,5673285092120
+
+2026-04-18 07:54:37,447 INFO send udp packet: 127.0.1.1,39775,5673285092120
+
+2026-04-18 07:54:37,447 INFO retry to push data, key: 127.0.1.1,50584,5673285092120
+
+2026-04-18 07:54:37,448 INFO send udp packet: 127.0.1.1,50584,5673285092120
+
+2026-04-18 07:54:47,448 INFO retry to push data, key: 127.0.1.1,39775,5673285092120
+
+2026-04-18 07:54:47,448 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,5673285092120
+
+2026-04-18 07:54:47,448 INFO retry to push data, key: 127.0.1.1,50584,5673285092120
+
+2026-04-18 07:54:47,448 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,5673285092120
+
+2026-04-18 07:55:26,671 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 07:55:26,672 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,5732512110209
+
+2026-04-18 07:55:26,672 INFO send udp packet: 127.0.1.1,39775,5732512110209
+
+2026-04-18 07:55:26,672 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,5732512110209
+
+2026-04-18 07:55:26,672 INFO send udp packet: 127.0.1.1,50584,5732512110209
+
+2026-04-18 07:55:36,672 INFO retry to push data, key: 127.0.1.1,39775,5732512110209
+
+2026-04-18 07:55:36,673 INFO send udp packet: 127.0.1.1,39775,5732512110209
+
+2026-04-18 07:55:36,673 INFO retry to push data, key: 127.0.1.1,50584,5732512110209
+
+2026-04-18 07:55:36,674 INFO send udp packet: 127.0.1.1,50584,5732512110209
+
+2026-04-18 07:55:46,674 INFO retry to push data, key: 127.0.1.1,39775,5732512110209
+
+2026-04-18 07:55:46,674 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,5732512110209
+
+2026-04-18 07:55:46,674 INFO retry to push data, key: 127.0.1.1,50584,5732512110209
+
+2026-04-18 07:55:46,674 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,5732512110209
+
+2026-04-18 08:20:31,701 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 08:20:31,702 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,7237542380919
+
+2026-04-18 08:20:31,702 INFO send udp packet: 127.0.1.1,39775,7237542380919
+
+2026-04-18 08:20:31,703 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,7237542380919
+
+2026-04-18 08:20:31,704 INFO send udp packet: 127.0.1.1,50584,7237542380919
+
+2026-04-18 08:20:41,704 INFO retry to push data, key: 127.0.1.1,39775,7237542380919
+
+2026-04-18 08:20:41,704 INFO send udp packet: 127.0.1.1,39775,7237542380919
+
+2026-04-18 08:20:41,705 INFO retry to push data, key: 127.0.1.1,50584,7237542380919
+
+2026-04-18 08:20:41,705 INFO send udp packet: 127.0.1.1,50584,7237542380919
+
+2026-04-18 08:20:51,705 INFO retry to push data, key: 127.0.1.1,39775,7237542380919
+
+2026-04-18 08:20:51,706 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,7237542380919
+
+2026-04-18 08:20:51,706 INFO retry to push data, key: 127.0.1.1,50584,7237542380919
+
+2026-04-18 08:20:51,706 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,7237542380919
+
+2026-04-18 08:21:10,030 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 08:21:10,031 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,7275871314302
+
+2026-04-18 08:21:10,031 INFO send udp packet: 127.0.1.1,39775,7275871314302
+
+2026-04-18 08:21:10,032 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,7275871314302
+
+2026-04-18 08:21:10,032 INFO send udp packet: 127.0.1.1,50584,7275871314302
+
+2026-04-18 08:21:20,032 INFO retry to push data, key: 127.0.1.1,39775,7275871314302
+
+2026-04-18 08:21:20,032 INFO send udp packet: 127.0.1.1,39775,7275871314302
+
+2026-04-18 08:21:20,034 INFO retry to push data, key: 127.0.1.1,50584,7275871314302
+
+2026-04-18 08:21:20,034 INFO send udp packet: 127.0.1.1,50584,7275871314302
+
+2026-04-18 08:21:30,034 INFO retry to push data, key: 127.0.1.1,39775,7275871314302
+
+2026-04-18 08:21:30,034 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,7275871314302
+
+2026-04-18 08:21:30,035 INFO retry to push data, key: 127.0.1.1,50584,7275871314302
+
+2026-04-18 08:21:30,035 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,7275871314302
+
+2026-04-18 08:28:55,660 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 08:28:55,662 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,7741501831398
+
+2026-04-18 08:28:55,662 INFO send udp packet: 127.0.1.1,39775,7741501831398
+
+2026-04-18 08:28:55,662 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,7741501831398
+
+2026-04-18 08:28:55,662 INFO send udp packet: 127.0.1.1,50584,7741501831398
+
+2026-04-18 08:29:05,663 INFO retry to push data, key: 127.0.1.1,39775,7741501831398
+
+2026-04-18 08:29:05,663 INFO send udp packet: 127.0.1.1,39775,7741501831398
+
+2026-04-18 08:29:05,666 INFO retry to push data, key: 127.0.1.1,50584,7741501831398
+
+2026-04-18 08:29:05,666 INFO send udp packet: 127.0.1.1,50584,7741501831398
+
+2026-04-18 08:29:15,666 INFO retry to push data, key: 127.0.1.1,39775,7741501831398
+
+2026-04-18 08:29:15,666 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,7741501831398
+
+2026-04-18 08:29:15,666 INFO retry to push data, key: 127.0.1.1,50584,7741501831398
+
+2026-04-18 08:29:15,666 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,7741501831398
+
+2026-04-18 08:29:33,107 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 08:29:33,108 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,7778947655849
+
+2026-04-18 08:29:33,108 INFO send udp packet: 127.0.1.1,39775,7778947655849
+
+2026-04-18 08:29:33,108 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,7778947655849
+
+2026-04-18 08:29:33,108 INFO send udp packet: 127.0.1.1,50584,7778947655849
+
+2026-04-18 08:29:43,108 INFO retry to push data, key: 127.0.1.1,39775,7778947655849
+
+2026-04-18 08:29:43,109 INFO send udp packet: 127.0.1.1,39775,7778947655849
+
+2026-04-18 08:29:43,110 INFO retry to push data, key: 127.0.1.1,50584,7778947655849
+
+2026-04-18 08:29:43,110 INFO send udp packet: 127.0.1.1,50584,7778947655849
+
+2026-04-18 08:29:53,110 INFO retry to push data, key: 127.0.1.1,39775,7778947655849
+
+2026-04-18 08:29:53,110 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,7778947655849
+
+2026-04-18 08:29:53,110 INFO retry to push data, key: 127.0.1.1,50584,7778947655849
+
+2026-04-18 08:29:53,110 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,7778947655849
+
+2026-04-18 08:39:38,384 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 08:39:38,385 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,8384225110672
+
+2026-04-18 08:39:38,385 INFO send udp packet: 127.0.1.1,39775,8384225110672
+
+2026-04-18 08:39:38,385 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,8384225110672
+
+2026-04-18 08:39:38,385 INFO send udp packet: 127.0.1.1,50584,8384225110672
+
+2026-04-18 08:39:48,385 INFO retry to push data, key: 127.0.1.1,39775,8384225110672
+
+2026-04-18 08:39:48,386 INFO send udp packet: 127.0.1.1,39775,8384225110672
+
+2026-04-18 08:39:48,386 INFO retry to push data, key: 127.0.1.1,50584,8384225110672
+
+2026-04-18 08:39:48,386 INFO send udp packet: 127.0.1.1,50584,8384225110672
+
+2026-04-18 08:39:58,386 INFO retry to push data, key: 127.0.1.1,39775,8384225110672
+
+2026-04-18 08:39:58,387 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,8384225110672
+
+2026-04-18 08:39:58,387 INFO retry to push data, key: 127.0.1.1,50584,8384225110672
+
+2026-04-18 08:39:58,387 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,8384225110672
+
+2026-04-18 08:55:46,005 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 08:55:46,006 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,9351845655641
+
+2026-04-18 08:55:46,006 INFO send udp packet: 127.0.1.1,39775,9351845655641
+
+2026-04-18 08:55:46,006 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,9351845655641
+
+2026-04-18 08:55:46,006 INFO send udp packet: 127.0.1.1,50584,9351845655641
+
+2026-04-18 08:55:56,006 INFO retry to push data, key: 127.0.1.1,39775,9351845655641
+
+2026-04-18 08:55:56,006 INFO send udp packet: 127.0.1.1,39775,9351845655641
+
+2026-04-18 08:55:56,008 INFO retry to push data, key: 127.0.1.1,50584,9351845655641
+
+2026-04-18 08:55:56,008 INFO send udp packet: 127.0.1.1,50584,9351845655641
+
+2026-04-18 08:56:06,008 INFO retry to push data, key: 127.0.1.1,39775,9351845655641
+
+2026-04-18 08:56:06,008 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,9351845655641
+
+2026-04-18 08:56:06,009 INFO retry to push data, key: 127.0.1.1,50584,9351845655641
+
+2026-04-18 08:56:06,009 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,9351845655641
+
+2026-04-18 09:10:46,211 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 09:10:46,213 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,10252052327249
+
+2026-04-18 09:10:46,213 INFO send udp packet: 127.0.1.1,39775,10252052327249
+
+2026-04-18 09:10:46,213 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,10252052327249
+
+2026-04-18 09:10:46,213 INFO send udp packet: 127.0.1.1,50584,10252052327249
+
+2026-04-18 09:10:56,213 INFO retry to push data, key: 127.0.1.1,39775,10252052327249
+
+2026-04-18 09:10:56,214 INFO send udp packet: 127.0.1.1,39775,10252052327249
+
+2026-04-18 09:10:56,215 INFO retry to push data, key: 127.0.1.1,50584,10252052327249
+
+2026-04-18 09:10:56,215 INFO send udp packet: 127.0.1.1,50584,10252052327249
+
+2026-04-18 09:11:06,215 INFO retry to push data, key: 127.0.1.1,39775,10252052327249
+
+2026-04-18 09:11:06,215 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,10252052327249
+
+2026-04-18 09:11:06,216 INFO retry to push data, key: 127.0.1.1,50584,10252052327249
+
+2026-04-18 09:11:06,216 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,10252052327249
+
+2026-04-18 09:11:45,185 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 09:11:45,186 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,10311026227762
+
+2026-04-18 09:11:45,186 INFO send udp packet: 127.0.1.1,39775,10311026227762
+
+2026-04-18 09:11:45,186 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:50584, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50584,10311026227762
+
+2026-04-18 09:11:45,187 INFO send udp packet: 127.0.1.1,50584,10311026227762
+
+2026-04-18 09:11:55,186 INFO retry to push data, key: 127.0.1.1,39775,10311026227762
+
+2026-04-18 09:11:55,187 INFO send udp packet: 127.0.1.1,39775,10311026227762
+
+2026-04-18 09:11:55,187 INFO retry to push data, key: 127.0.1.1,50584,10311026227762
+
+2026-04-18 09:11:55,187 INFO send udp packet: 127.0.1.1,50584,10311026227762
+
+2026-04-18 09:12:05,187 INFO retry to push data, key: 127.0.1.1,39775,10311026227762
+
+2026-04-18 09:12:05,188 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,10311026227762
+
+2026-04-18 09:12:05,188 INFO retry to push data, key: 127.0.1.1,50584,10311026227762
+
+2026-04-18 09:12:05,188 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50584,10311026227762
+
+2026-04-18 09:24:43,991 INFO DEFAULT_GROUP@@crm is changed, add it to push queue.
+
+2026-04-18 09:24:43,992 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,11089832371152
+
+2026-04-18 09:24:43,992 INFO send udp packet: 127.0.1.1,39775,11089832371152
+
+2026-04-18 09:24:43,993 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:50091, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50091,11089832371152
+
+2026-04-18 09:24:43,994 INFO send udp packet: 127.0.1.1,50091,11089832371152
+
+2026-04-18 09:24:43,994 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:53835, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,53835,11089832371152
+
+2026-04-18 09:24:43,994 INFO send udp packet: 127.0.1.1,53835,11089832371152
+
+2026-04-18 09:24:53,993 INFO retry to push data, key: 127.0.1.1,39775,11089832371152
+
+2026-04-18 09:24:53,994 INFO send udp packet: 127.0.1.1,39775,11089832371152
+
+2026-04-18 09:24:53,995 INFO retry to push data, key: 127.0.1.1,50091,11089832371152
+
+2026-04-18 09:24:53,995 INFO send udp packet: 127.0.1.1,50091,11089832371152
+
+2026-04-18 09:24:53,995 INFO retry to push data, key: 127.0.1.1,53835,11089832371152
+
+2026-04-18 09:24:53,995 INFO send udp packet: 127.0.1.1,53835,11089832371152
+
+2026-04-18 09:25:03,995 INFO retry to push data, key: 127.0.1.1,39775,11089832371152
+
+2026-04-18 09:25:03,995 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,11089832371152
+
+2026-04-18 09:25:03,995 INFO retry to push data, key: 127.0.1.1,50091,11089832371152
+
+2026-04-18 09:25:03,995 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50091,11089832371152
+
+2026-04-18 09:25:03,996 INFO retry to push data, key: 127.0.1.1,53835,11089832371152
+
+2026-04-18 09:25:03,996 WARN max re-push times reached, retry times 2, key: 127.0.1.1,53835,11089832371152
+
+2026-04-18 09:35:43,244 INFO DEFAULT_GROUP@@crm is changed, add it to push queue.
+
+2026-04-18 09:35:43,245 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,11749084991679
+
+2026-04-18 09:35:43,245 INFO send udp packet: 127.0.1.1,39775,11749084991679
+
+2026-04-18 09:35:43,246 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:50091, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50091,11749084991679
+
+2026-04-18 09:35:43,246 INFO send udp packet: 127.0.1.1,50091,11749084991679
+
+2026-04-18 09:35:43,246 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:53835, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,53835,11749084991679
+
+2026-04-18 09:35:43,246 INFO send udp packet: 127.0.1.1,53835,11749084991679
+
+2026-04-18 09:35:53,246 INFO retry to push data, key: 127.0.1.1,39775,11749084991679
+
+2026-04-18 09:35:53,246 INFO send udp packet: 127.0.1.1,39775,11749084991679
+
+2026-04-18 09:35:53,247 INFO retry to push data, key: 127.0.1.1,50091,11749084991679
+
+2026-04-18 09:35:53,247 INFO send udp packet: 127.0.1.1,50091,11749084991679
+
+2026-04-18 09:35:53,248 INFO retry to push data, key: 127.0.1.1,53835,11749084991679
+
+2026-04-18 09:35:53,248 INFO send udp packet: 127.0.1.1,53835,11749084991679
+
+2026-04-18 09:36:03,247 INFO retry to push data, key: 127.0.1.1,39775,11749084991679
+
+2026-04-18 09:36:03,247 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,11749084991679
+
+2026-04-18 09:36:03,248 INFO retry to push data, key: 127.0.1.1,50091,11749084991679
+
+2026-04-18 09:36:03,248 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50091,11749084991679
+
+2026-04-18 09:36:03,248 INFO retry to push data, key: 127.0.1.1,53835,11749084991679
+
+2026-04-18 09:36:03,248 WARN max re-push times reached, retry times 2, key: 127.0.1.1,53835,11749084991679
+
+2026-04-18 09:38:54,948 INFO DEFAULT_GROUP@@crm is changed, add it to push queue.
+
+2026-04-18 09:38:54,950 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,11940789187764
+
+2026-04-18 09:38:54,950 INFO send udp packet: 127.0.1.1,39775,11940789187764
+
+2026-04-18 09:38:54,950 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:50091, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50091,11940789187764
+
+2026-04-18 09:38:54,950 INFO send udp packet: 127.0.1.1,50091,11940789187764
+
+2026-04-18 09:38:54,951 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:53835, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,53835,11940789187764
+
+2026-04-18 09:38:54,951 INFO send udp packet: 127.0.1.1,53835,11940789187764
+
+2026-04-18 09:39:04,950 INFO retry to push data, key: 127.0.1.1,39775,11940789187764
+
+2026-04-18 09:39:04,951 INFO send udp packet: 127.0.1.1,39775,11940789187764
+
+2026-04-18 09:39:04,952 INFO retry to push data, key: 127.0.1.1,50091,11940789187764
+
+2026-04-18 09:39:04,952 INFO send udp packet: 127.0.1.1,50091,11940789187764
+
+2026-04-18 09:39:04,952 INFO retry to push data, key: 127.0.1.1,53835,11940789187764
+
+2026-04-18 09:39:04,952 INFO send udp packet: 127.0.1.1,53835,11940789187764
+
+2026-04-18 09:39:14,952 INFO retry to push data, key: 127.0.1.1,39775,11940789187764
+
+2026-04-18 09:39:14,952 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,11940789187764
+
+2026-04-18 09:39:14,952 INFO retry to push data, key: 127.0.1.1,50091,11940789187764
+
+2026-04-18 09:39:14,953 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50091,11940789187764
+
+2026-04-18 09:39:14,953 INFO retry to push data, key: 127.0.1.1,53835,11940789187764
+
+2026-04-18 09:39:14,953 WARN max re-push times reached, retry times 2, key: 127.0.1.1,53835,11940789187764
+
+2026-04-18 09:41:08,849 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 09:41:08,850 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,12074689972854
+
+2026-04-18 09:41:08,850 INFO send udp packet: 127.0.1.1,39775,12074689972854
+
+2026-04-18 09:41:18,851 INFO retry to push data, key: 127.0.1.1,39775,12074689972854
+
+2026-04-18 09:41:18,851 INFO send udp packet: 127.0.1.1,39775,12074689972854
+
+2026-04-18 09:41:28,855 INFO retry to push data, key: 127.0.1.1,39775,12074689972854
+
+2026-04-18 09:41:28,855 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,12074689972854
+
+2026-04-18 09:42:02,787 INFO DEFAULT_GROUP@@examine is changed, add it to push queue.
+
+2026-04-18 09:42:02,788 INFO serviceName: DEFAULT_GROUP@@examine changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,12128628075663
+
+2026-04-18 09:42:02,788 INFO send udp packet: 127.0.1.1,39775,12128628075663
+
+2026-04-18 09:42:04,363 INFO DEFAULT_GROUP@@crm is changed, add it to push queue.
+
+2026-04-18 09:42:04,363 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,12130203228135
+
+2026-04-18 09:42:04,363 INFO send udp packet: 127.0.1.1,39775,12130203228135
+
+2026-04-18 09:42:04,363 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:50091, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50091,12130203228135
+
+2026-04-18 09:42:04,363 INFO send udp packet: 127.0.1.1,50091,12130203228135
+
+2026-04-18 09:42:04,364 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:53835, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,53835,12130203228135
+
+2026-04-18 09:42:04,364 INFO send udp packet: 127.0.1.1,53835,12130203228135
+
+2026-04-18 09:42:12,788 INFO retry to push data, key: 127.0.1.1,39775,12128628075663
+
+2026-04-18 09:42:12,788 INFO send udp packet: 127.0.1.1,39775,12128628075663
+
+2026-04-18 09:42:14,363 INFO retry to push data, key: 127.0.1.1,39775,12130203228135
+
+2026-04-18 09:42:14,364 INFO send udp packet: 127.0.1.1,39775,12130203228135
+
+2026-04-18 09:42:14,364 INFO retry to push data, key: 127.0.1.1,50091,12130203228135
+
+2026-04-18 09:42:14,364 INFO send udp packet: 127.0.1.1,50091,12130203228135
+
+2026-04-18 09:42:14,364 INFO retry to push data, key: 127.0.1.1,53835,12130203228135
+
+2026-04-18 09:42:14,364 INFO send udp packet: 127.0.1.1,53835,12130203228135
+
+2026-04-18 09:42:22,789 INFO retry to push data, key: 127.0.1.1,39775,12128628075663
+
+2026-04-18 09:42:22,790 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,12128628075663
+
+2026-04-18 09:42:24,364 INFO retry to push data, key: 127.0.1.1,39775,12130203228135
+
+2026-04-18 09:42:24,364 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,12130203228135
+
+2026-04-18 09:42:24,364 INFO retry to push data, key: 127.0.1.1,50091,12130203228135
+
+2026-04-18 09:42:24,364 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50091,12130203228135
+
+2026-04-18 09:42:24,365 INFO retry to push data, key: 127.0.1.1,53835,12130203228135
+
+2026-04-18 09:42:24,365 WARN max re-push times reached, retry times 2, key: 127.0.1.1,53835,12130203228135
+
+2026-04-18 10:24:34,325 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 10:24:34,331 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,14680167245654
+
+2026-04-18 10:24:34,331 INFO send udp packet: 127.0.1.1,39775,14680167245654
+
+2026-04-18 10:24:44,332 INFO retry to push data, key: 127.0.1.1,39775,14680167245654
+
+2026-04-18 10:24:44,333 INFO send udp packet: 127.0.1.1,39775,14680167245654
+
+2026-04-18 10:24:54,334 INFO retry to push data, key: 127.0.1.1,39775,14680167245654
+
+2026-04-18 10:24:54,335 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,14680167245654
+
+2026-04-18 10:27:46,809 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 10:27:46,810 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,14872649902999
+
+2026-04-18 10:27:46,810 INFO send udp packet: 127.0.1.1,39775,14872649902999
+
+2026-04-18 10:27:56,811 INFO retry to push data, key: 127.0.1.1,39775,14872649902999
+
+2026-04-18 10:27:56,811 INFO send udp packet: 127.0.1.1,39775,14872649902999
+
+2026-04-18 10:28:06,813 INFO retry to push data, key: 127.0.1.1,39775,14872649902999
+
+2026-04-18 10:28:06,813 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,14872649902999
+
+2026-04-18 10:28:30,090 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 10:28:30,090 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,14915930601332
+
+2026-04-18 10:28:30,091 INFO send udp packet: 127.0.1.1,39775,14915930601332
+
+2026-04-18 10:28:40,091 INFO retry to push data, key: 127.0.1.1,39775,14915930601332
+
+2026-04-18 10:28:40,091 INFO send udp packet: 127.0.1.1,39775,14915930601332
+
+2026-04-18 10:28:50,093 INFO retry to push data, key: 127.0.1.1,39775,14915930601332
+
+2026-04-18 10:28:50,094 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,14915930601332
+
+2026-04-18 10:29:14,757 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 10:29:14,757 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,14960597517687
+
+2026-04-18 10:29:14,758 INFO send udp packet: 127.0.1.1,39775,14960597517687
+
+2026-04-18 10:29:24,758 INFO retry to push data, key: 127.0.1.1,39775,14960597517687
+
+2026-04-18 10:29:24,758 INFO send udp packet: 127.0.1.1,39775,14960597517687
+
+2026-04-18 10:29:34,759 INFO retry to push data, key: 127.0.1.1,39775,14960597517687
+
+2026-04-18 10:29:34,760 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,14960597517687
+
+2026-04-18 13:51:18,533 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 13:51:18,534 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,27084374442225
+
+2026-04-18 13:51:18,535 INFO send udp packet: 127.0.1.1,39775,27084374442225
+
+2026-04-18 13:51:28,535 INFO retry to push data, key: 127.0.1.1,39775,27084374442225
+
+2026-04-18 13:51:28,536 INFO send udp packet: 127.0.1.1,39775,27084374442225
+
+2026-04-18 13:51:38,537 INFO retry to push data, key: 127.0.1.1,39775,27084374442225
+
+2026-04-18 13:51:38,537 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,27084374442225
+
+2026-04-18 13:52:55,210 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 13:52:55,211 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,27181050540669
+
+2026-04-18 13:52:55,211 INFO send udp packet: 127.0.1.1,39775,27181050540669
+
+2026-04-18 13:53:05,212 INFO retry to push data, key: 127.0.1.1,39775,27181050540669
+
+2026-04-18 13:53:05,212 INFO send udp packet: 127.0.1.1,39775,27181050540669
+
+2026-04-18 13:53:15,214 INFO retry to push data, key: 127.0.1.1,39775,27181050540669
+
+2026-04-18 13:53:15,215 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,27181050540669
+
+2026-04-18 14:01:45,586 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 14:01:45,587 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,27711427637192
+
+2026-04-18 14:01:45,588 INFO send udp packet: 127.0.1.1,39775,27711427637192
+
+2026-04-18 14:01:55,588 INFO retry to push data, key: 127.0.1.1,39775,27711427637192
+
+2026-04-18 14:01:55,588 INFO send udp packet: 127.0.1.1,39775,27711427637192
+
+2026-04-18 14:02:05,589 INFO retry to push data, key: 127.0.1.1,39775,27711427637192
+
+2026-04-18 14:02:05,589 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,27711427637192
+
+2026-04-18 14:02:24,172 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 14:02:24,173 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,27750013016977
+
+2026-04-18 14:02:24,173 INFO send udp packet: 127.0.1.1,39775,27750013016977
+
+2026-04-18 14:02:34,173 INFO retry to push data, key: 127.0.1.1,39775,27750013016977
+
+2026-04-18 14:02:34,173 INFO send udp packet: 127.0.1.1,39775,27750013016977
+
+2026-04-18 14:02:44,174 INFO retry to push data, key: 127.0.1.1,39775,27750013016977
+
+2026-04-18 14:02:44,174 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,27750013016977
+
+2026-04-18 14:19:57,411 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 14:19:57,414 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,28803253296301
+
+2026-04-18 14:19:57,415 INFO send udp packet: 127.0.1.1,39775,28803253296301
+
+2026-04-18 14:20:07,415 INFO retry to push data, key: 127.0.1.1,39775,28803253296301
+
+2026-04-18 14:20:07,416 INFO send udp packet: 127.0.1.1,39775,28803253296301
+
+2026-04-18 14:20:17,417 INFO retry to push data, key: 127.0.1.1,39775,28803253296301
+
+2026-04-18 14:20:17,417 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,28803253296301
+
+2026-04-18 14:20:30,792 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 14:20:30,793 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,28836632706256
+
+2026-04-18 14:20:30,793 INFO send udp packet: 127.0.1.1,39775,28836632706256
+
+2026-04-18 14:20:40,793 INFO retry to push data, key: 127.0.1.1,39775,28836632706256
+
+2026-04-18 14:20:40,793 INFO send udp packet: 127.0.1.1,39775,28836632706256
+
+2026-04-18 14:20:50,795 INFO retry to push data, key: 127.0.1.1,39775,28836632706256
+
+2026-04-18 14:20:50,795 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,28836632706256
+
+2026-04-18 14:27:42,786 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 14:27:42,787 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,29268626747074
+
+2026-04-18 14:27:42,787 INFO send udp packet: 127.0.1.1,39775,29268626747074
+
+2026-04-18 14:27:52,787 INFO retry to push data, key: 127.0.1.1,39775,29268626747074
+
+2026-04-18 14:27:52,787 INFO send udp packet: 127.0.1.1,39775,29268626747074
+
+2026-04-18 14:28:02,788 INFO retry to push data, key: 127.0.1.1,39775,29268626747074
+
+2026-04-18 14:28:02,788 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,29268626747074
+
+2026-04-18 14:28:16,545 INFO DEFAULT_GROUP@@bi is changed, add it to push queue.
+
+2026-04-18 14:28:16,546 INFO serviceName: DEFAULT_GROUP@@bi changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,29302386095042
+
+2026-04-18 14:28:16,546 INFO send udp packet: 127.0.1.1,39775,29302386095042
+
+2026-04-18 14:28:26,547 INFO retry to push data, key: 127.0.1.1,39775,29302386095042
+
+2026-04-18 14:28:26,547 INFO send udp packet: 127.0.1.1,39775,29302386095042
+
+2026-04-18 14:28:36,548 INFO retry to push data, key: 127.0.1.1,39775,29302386095042
+
+2026-04-18 14:28:36,549 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,29302386095042
+
+2026-04-18 14:40:58,221 INFO DEFAULT_GROUP@@crm is changed, add it to push queue.
+
+2026-04-18 14:40:58,223 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:59116, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,59116,30064062615012
+
+2026-04-18 14:40:58,223 INFO send udp packet: 127.0.1.1,59116,30064062615012
+
+2026-04-18 14:40:58,224 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,30064062615012
+
+2026-04-18 14:40:58,224 INFO send udp packet: 127.0.1.1,39775,30064062615012
+
+2026-04-18 14:40:58,224 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:50091, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50091,30064062615012
+
+2026-04-18 14:40:58,224 INFO send udp packet: 127.0.1.1,50091,30064062615012
+
+2026-04-18 14:40:58,224 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:53835, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,53835,30064062615012
+
+2026-04-18 14:40:58,224 INFO send udp packet: 127.0.1.1,53835,30064062615012
+
+2026-04-18 14:41:08,224 INFO retry to push data, key: 127.0.1.1,59116,30064062615012
+
+2026-04-18 14:41:08,224 INFO send udp packet: 127.0.1.1,59116,30064062615012
+
+2026-04-18 14:41:08,225 INFO retry to push data, key: 127.0.1.1,39775,30064062615012
+
+2026-04-18 14:41:08,226 INFO send udp packet: 127.0.1.1,39775,30064062615012
+
+2026-04-18 14:41:08,226 INFO retry to push data, key: 127.0.1.1,50091,30064062615012
+
+2026-04-18 14:41:08,226 INFO send udp packet: 127.0.1.1,50091,30064062615012
+
+2026-04-18 14:41:08,227 INFO retry to push data, key: 127.0.1.1,53835,30064062615012
+
+2026-04-18 14:41:08,227 INFO send udp packet: 127.0.1.1,53835,30064062615012
+
+2026-04-18 14:41:18,226 INFO retry to push data, key: 127.0.1.1,59116,30064062615012
+
+2026-04-18 14:41:18,226 WARN max re-push times reached, retry times 2, key: 127.0.1.1,59116,30064062615012
+
+2026-04-18 14:41:18,226 INFO retry to push data, key: 127.0.1.1,39775,30064062615012
+
+2026-04-18 14:41:18,226 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,30064062615012
+
+2026-04-18 14:41:18,227 INFO retry to push data, key: 127.0.1.1,50091,30064062615012
+
+2026-04-18 14:41:18,227 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50091,30064062615012
+
+2026-04-18 14:41:18,229 INFO retry to push data, key: 127.0.1.1,53835,30064062615012
+
+2026-04-18 14:41:18,229 WARN max re-push times reached, retry times 2, key: 127.0.1.1,53835,30064062615012
+
+2026-04-18 14:42:08,512 INFO DEFAULT_GROUP@@crm is changed, add it to push queue.
+
+2026-04-18 14:42:08,513 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:59116, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,59116,30134352876017
+
+2026-04-18 14:42:08,514 INFO send udp packet: 127.0.1.1,59116,30134352876017
+
+2026-04-18 14:42:08,515 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:39775, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,39775,30134352876017
+
+2026-04-18 14:42:08,515 INFO send udp packet: 127.0.1.1,39775,30134352876017
+
+2026-04-18 14:42:08,515 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:50091, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,50091,30134352876017
+
+2026-04-18 14:42:08,515 INFO send udp packet: 127.0.1.1,50091,30134352876017
+
+2026-04-18 14:42:08,516 INFO serviceName: DEFAULT_GROUP@@crm changed, schedule push for: 127.0.1.1:53835, agent: Nacos-Java-Client:v1.2.1, key: 127.0.1.1,53835,30134352876017
+
+2026-04-18 14:42:08,516 INFO send udp packet: 127.0.1.1,53835,30134352876017
+
+2026-04-18 14:42:18,515 INFO retry to push data, key: 127.0.1.1,59116,30134352876017
+
+2026-04-18 14:42:18,515 INFO send udp packet: 127.0.1.1,59116,30134352876017
+
+2026-04-18 14:42:18,516 INFO retry to push data, key: 127.0.1.1,39775,30134352876017
+
+2026-04-18 14:42:18,516 INFO send udp packet: 127.0.1.1,39775,30134352876017
+
+2026-04-18 14:42:18,517 INFO retry to push data, key: 127.0.1.1,50091,30134352876017
+
+2026-04-18 14:42:18,517 INFO send udp packet: 127.0.1.1,50091,30134352876017
+
+2026-04-18 14:42:18,517 INFO retry to push data, key: 127.0.1.1,53835,30134352876017
+
+2026-04-18 14:42:18,517 INFO send udp packet: 127.0.1.1,53835,30134352876017
+
+2026-04-18 14:42:28,516 INFO retry to push data, key: 127.0.1.1,59116,30134352876017
+
+2026-04-18 14:42:28,517 WARN max re-push times reached, retry times 2, key: 127.0.1.1,59116,30134352876017
+
+2026-04-18 14:42:28,517 INFO retry to push data, key: 127.0.1.1,39775,30134352876017
+
+2026-04-18 14:42:28,517 WARN max re-push times reached, retry times 2, key: 127.0.1.1,39775,30134352876017
+
+2026-04-18 14:42:28,518 INFO retry to push data, key: 127.0.1.1,50091,30134352876017
+
+2026-04-18 14:42:28,518 WARN max re-push times reached, retry times 2, key: 127.0.1.1,50091,30134352876017
+
+2026-04-18 14:42:28,518 INFO retry to push data, key: 127.0.1.1,53835,30134352876017
+
+2026-04-18 14:42:28,518 WARN max re-push times reached, retry times 2, key: 127.0.1.1,53835,30134352876017
+

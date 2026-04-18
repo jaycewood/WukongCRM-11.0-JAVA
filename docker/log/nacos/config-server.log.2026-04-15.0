@@ -1,0 +1,80 @@
+2026-04-15 17:55:16,731 INFO notifyConnectTimeout:200
+
+2026-04-15 17:55:16,734 INFO notifySocketTimeout:8000
+
+2026-04-15 17:55:16,734 INFO isHealthCheck:true
+
+2026-04-15 17:55:16,734 INFO maxHealthCheckFailCount:12
+
+2026-04-15 17:55:16,734 INFO maxContent:10485760
+
+2026-04-15 17:55:16,735 INFO spring.datasource.platform:mysql
+
+2026-04-15 17:55:18,984 INFO ServerListService address-server port:8080
+
+2026-04-15 17:55:18,985 INFO ADDRESS_SERVER_URL:http://jmenv.tbsite.net:8080/nacos/serverlist
+
+2026-04-15 17:55:18,986 WARN [serverlist] updated to [172.18.0.8:8848]
+
+2026-04-15 17:55:19,114 WARN DumpService start
+
+2026-04-15 17:55:19,120 INFO start clear all config-info.
+
+2026-04-15 17:55:19,129 WARN clear all config-info failed.
+
+2026-04-15 17:55:19,130 WARN clear all config-info-tenant failed.
+
+2026-04-15 17:55:19,197 INFO [all-dump] 19 / 19
+
+2026-04-15 17:55:19,197 INFO start clear all config-info-beta.
+
+2026-04-15 17:55:19,197 WARN clear all config-info-beta failed.
+
+2026-04-15 17:55:19,197 WARN clear all config-info-beta-tenant failed.
+
+2026-04-15 17:55:19,204 INFO start clear all config-info-tag.
+
+2026-04-15 17:55:19,204 WARN clear all config-info-tag failed.
+
+2026-04-15 17:55:19,204 WARN clear all config-info-tag-tenant failed.
+
+2026-04-15 18:21:22,709 INFO notifyConnectTimeout:200
+
+2026-04-15 18:21:22,712 INFO notifySocketTimeout:8000
+
+2026-04-15 18:21:22,712 INFO isHealthCheck:true
+
+2026-04-15 18:21:22,712 INFO maxHealthCheckFailCount:12
+
+2026-04-15 18:21:22,712 INFO maxContent:10485760
+
+2026-04-15 18:21:22,713 INFO spring.datasource.platform:mysql
+
+2026-04-15 18:21:24,699 INFO ServerListService address-server port:8080
+
+2026-04-15 18:21:24,700 INFO ADDRESS_SERVER_URL:http://jmenv.tbsite.net:8080/nacos/serverlist
+
+2026-04-15 18:21:24,701 WARN [serverlist] updated to [172.18.0.7:8848]
+
+2026-04-15 18:21:24,796 WARN DumpService start
+
+2026-04-15 18:21:24,801 INFO start clear all config-info.
+
+2026-04-15 18:21:24,811 INFO clear all config-info success.
+
+2026-04-15 18:21:24,811 WARN clear all config-info-tenant failed.
+
+2026-04-15 18:21:24,875 INFO [all-dump] 19 / 19
+
+2026-04-15 18:21:24,875 INFO start clear all config-info-beta.
+
+2026-04-15 18:21:24,875 WARN clear all config-info-beta failed.
+
+2026-04-15 18:21:24,875 WARN clear all config-info-beta-tenant failed.
+
+2026-04-15 18:21:24,879 INFO start clear all config-info-tag.
+
+2026-04-15 18:21:24,879 WARN clear all config-info-tag failed.
+
+2026-04-15 18:21:24,879 WARN clear all config-info-tag-tenant failed.
+

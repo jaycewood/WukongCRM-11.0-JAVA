@@ -1,0 +1,1702 @@
+2026-04-15 17:55:12,046 INFO Starting Nacos v1.2.1 on db40714bfa0e with PID 27 (/home/nacos/target/nacos-server.jar started by root in /home/nacos)
+
+2026-04-15 17:55:12,051 INFO The following profiles are active: standalone
+
+2026-04-15 17:55:15,095 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$f80e4677] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 17:55:15,222 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 17:55:15,229 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5b799640' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 17:55:15,234 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$1ce2e929] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 17:55:15,242 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 17:55:16,079 INFO Tomcat initialized with port(s): 8848 (http)
+
+2026-04-15 17:55:16,133 INFO Starting service [Tomcat]
+
+2026-04-15 17:55:16,133 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2026-04-15 17:55:16,150 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+
+2026-04-15 17:55:16,284 INFO Initializing Spring embedded WebApplicationContext
+
+2026-04-15 17:55:16,285 INFO Root WebApplicationContext: initialization completed in 4140 ms
+
+2026-04-15 17:55:16,740 INFO Use Mysql as the driver
+
+2026-04-15 17:55:18,300 INFO Reflections took 82 ms to scan 1 urls, producing 6 keys and 24 values 
+
+2026-04-15 17:55:18,383 INFO Reflections took 4 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2026-04-15 17:55:18,393 INFO Reflections took 5 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2026-04-15 17:55:19,808 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2026-04-15 17:55:20,079 INFO Adding welcome page: class path resource [static/index.html]
+
+2026-04-15 17:55:20,592 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2026-04-15 17:55:20,651 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29df4d43, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a8d39c4, org.springframework.security.web.header.HeaderWriterFilter@1cbf6e72, org.springframework.security.web.csrf.CsrfFilter@62e6b5c8, org.springframework.security.web.authentication.logout.LogoutFilter@607fbe09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72758afa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fc6de5b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5dd91bca, org.springframework.security.web.session.SessionManagementFilter@1af146, org.springframework.security.web.access.ExceptionTranslationFilter@7b8233cd]
+
+2026-04-15 17:55:20,792 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2026-04-15 17:55:20,868 INFO Initializing ExecutorService 'taskScheduler'
+
+2026-04-15 17:55:21,215 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2026-04-15 17:55:21,235 INFO Started Nacos in 10.552 seconds (JVM running for 11.529)
+
+2026-04-15 17:55:21,235 INFO Nacos logs files: /home/nacos/logs/
+
+2026-04-15 17:55:21,236 INFO Nacos conf files: /home/nacos/conf/
+
+2026-04-15 17:55:21,236 INFO Nacos data files: /home/nacos/data/
+
+2026-04-15 17:55:21,236 INFO Nacos started successfully in stand alone mode.
+
+2026-04-15 17:55:21,368 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2026-04-15 17:55:21,368 INFO Initializing Servlet 'dispatcherServlet'
+
+2026-04-15 17:55:21,381 INFO Completed initialization in 13 ms
+
+2026-04-15 18:11:49,094 WARN clearConfigHistory start
+
+2026-04-15 18:21:18,431 INFO Starting Nacos v1.2.1 on db40714bfa0e with PID 27 (/home/nacos/target/nacos-server.jar started by root in /home/nacos)
+
+2026-04-15 18:21:18,442 INFO The following profiles are active: standalone
+
+2026-04-15 18:21:21,303 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$3c93896c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 18:21:21,430 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 18:21:21,435 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@17bffc17' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 18:21:21,440 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$61682c1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 18:21:21,446 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2026-04-15 18:21:22,171 INFO Tomcat initialized with port(s): 8848 (http)
+
+2026-04-15 18:21:22,214 INFO Starting service [Tomcat]
+
+2026-04-15 18:21:22,214 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2026-04-15 18:21:22,235 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+
+2026-04-15 18:21:22,355 INFO Initializing Spring embedded WebApplicationContext
+
+2026-04-15 18:21:22,355 INFO Root WebApplicationContext: initialization completed in 3821 ms
+
+2026-04-15 18:21:22,717 INFO Use Mysql as the driver
+
+2026-04-15 18:21:24,084 INFO Reflections took 48 ms to scan 1 urls, producing 6 keys and 24 values 
+
+2026-04-15 18:21:24,138 INFO Reflections took 5 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2026-04-15 18:21:24,146 INFO Reflections took 3 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2026-04-15 18:21:25,440 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2026-04-15 18:21:25,765 INFO Adding welcome page: class path resource [static/index.html]
+
+2026-04-15 18:21:26,302 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2026-04-15 18:21:26,356 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@674658f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d18aa28, org.springframework.security.web.header.HeaderWriterFilter@75f65e45, org.springframework.security.web.csrf.CsrfFilter@5dd91bca, org.springframework.security.web.authentication.logout.LogoutFilter@6cfcd46d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7756c3cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16746061, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c8eee0f, org.springframework.security.web.session.SessionManagementFilter@4a891c97, org.springframework.security.web.access.ExceptionTranslationFilter@3382f8ae]
+
+2026-04-15 18:21:26,492 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2026-04-15 18:21:26,533 INFO Initializing ExecutorService 'taskScheduler'
+
+2026-04-15 18:21:26,933 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2026-04-15 18:21:26,952 INFO Started Nacos in 9.853 seconds (JVM running for 10.808)
+
+2026-04-15 18:21:26,953 INFO Nacos logs files: /home/nacos/logs/
+
+2026-04-15 18:21:26,953 INFO Nacos conf files: /home/nacos/conf/
+
+2026-04-15 18:21:26,953 INFO Nacos data files: /home/nacos/data/
+
+2026-04-15 18:21:26,953 INFO Nacos started successfully in stand alone mode.
+
+2026-04-15 18:21:27,095 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2026-04-15 18:21:27,096 INFO Initializing Servlet 'dispatcherServlet'
+
+2026-04-15 18:21:27,111 INFO Completed initialization in 15 ms
+
+2026-04-15 18:25:53,660 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:25:53,662 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:25:53,859 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:25:53,859 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:26:22,913 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:26:22,914 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:26:23,086 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:26:23,086 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:26:23,382 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:26:23,382 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:26:52,591 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:26:52,591 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:26:52,887 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:26:52,887 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:27:07,182 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:27:07,182 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:27:07,247 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:27:07,247 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:27:07,447 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:27:07,447 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:27:22,100 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:27:22,100 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:27:22,394 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:27:22,394 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:27:36,952 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:27:36,952 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:27:51,605 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:27:51,605 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:27:51,898 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:27:51,898 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:27:56,167 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:27:56,167 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:27:56,187 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:27:56,187 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:27:56,387 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:27:56,387 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:28:00,300 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:00,300 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:00,495 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:00,495 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:06,466 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:06,467 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:07,110 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:28:07,111 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:28:07,309 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:28:07,310 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:28:18,376 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:18,376 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:18,574 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:18,574 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:21,110 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:28:21,110 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:28:21,405 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:28:21,405 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:28:25,892 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:28:25,892 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:28:30,000 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:30,000 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:35,971 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:35,971 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:36,814 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:28:36,815 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:28:48,079 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:48,080 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:50,615 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:28:50,615 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:28:50,909 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:28:50,909 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:28:55,397 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:28:55,397 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:28:59,506 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:28:59,506 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:05,476 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:05,476 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:06,320 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:29:06,320 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:29:17,584 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:17,584 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:20,120 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:29:20,120 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:29:20,414 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:29:20,414 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:29:24,902 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:29:24,902 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:29:29,011 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:29,011 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:34,980 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:34,980 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:35,824 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:29:35,824 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:29:47,088 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:47,088 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:49,624 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:29:49,624 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:29:49,918 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:29:49,918 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:29:54,406 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:29:54,406 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:29:58,516 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:29:58,516 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:04,484 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:04,484 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:05,328 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:30:05,328 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:30:16,593 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:16,594 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:19,128 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:30:19,128 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:30:19,422 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:30:19,422 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:30:23,911 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:30:23,911 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:30:28,020 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:28,020 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:33,987 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:33,987 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:34,833 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:30:34,834 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:30:46,098 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:46,098 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:48,634 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:30:48,634 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:30:48,926 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:30:48,926 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:30:53,416 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:30:53,416 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:30:57,525 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:30:57,525 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:03,496 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:03,496 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:04,338 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:31:04,338 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:31:15,603 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:15,603 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:18,138 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:31:18,138 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:31:18,432 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:31:18,432 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:31:22,920 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:31:22,920 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:31:24,743 INFO [capacityManagement] start correct usage
+
+2026-04-15 18:31:24,752 INFO [capacityManagement] end correct usage, cost: 0s
+
+2026-04-15 18:31:24,886 WARN clearConfigHistory start
+
+2026-04-15 18:31:24,892 WARN clearConfigHistory, getBeforeStamp:2026-03-16 18:31:24.0, totalCount:32, pageSize:1000, removeTime:1
+
+2026-04-15 18:31:27,032 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:27,032 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:33,000 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:33,000 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:33,843 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:31:33,843 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:31:45,107 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:45,107 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:47,643 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:31:47,643 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:31:47,937 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:31:47,937 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:31:52,425 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:31:52,425 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:31:56,536 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:31:56,536 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:02,506 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:02,506 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:03,347 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:32:03,347 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:32:14,612 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:14,612 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:17,147 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:32:17,147 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:32:17,441 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:32:17,442 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:32:21,930 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:32:21,930 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:32:26,041 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:26,041 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:32,011 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:32,011 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:32,850 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:32:32,850 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:32:44,117 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:44,117 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:46,653 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:32:46,653 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:32:46,945 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:32:46,945 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:32:51,434 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:32:51,434 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:32:55,544 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:32:55,545 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:01,519 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:01,519 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:02,354 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:33:02,354 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:33:13,621 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:13,621 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:16,157 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:33:16,157 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:33:16,448 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:33:16,448 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:33:20,940 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:33:20,940 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:33:25,048 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:25,048 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:31,024 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:31,024 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:31,858 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:33:31,858 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:33:43,125 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:43,125 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:45,662 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:33:45,662 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:33:45,951 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:33:45,951 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:33:50,446 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:33:50,446 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:33:54,552 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:33:54,552 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:00,528 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:00,529 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:01,362 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:34:01,362 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:34:12,631 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:12,631 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:15,165 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:34:15,166 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:34:15,454 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:34:15,455 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:34:19,949 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:34:19,949 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:34:24,056 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:24,057 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:30,032 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:30,033 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:30,866 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:34:30,866 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:34:42,136 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:42,136 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:44,669 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:34:44,669 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:34:44,958 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:34:44,958 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:34:49,452 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:34:49,452 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:34:53,559 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:53,559 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:59,536 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:34:59,536 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:00,370 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:35:00,370 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:35:11,640 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:11,640 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:14,174 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:35:14,175 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:35:14,461 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:35:14,461 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:35:18,956 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:35:18,956 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:35:23,066 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:23,066 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:29,040 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:29,040 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:29,873 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:35:29,873 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:35:41,145 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:41,145 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:43,678 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:35:43,678 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:35:43,965 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:35:43,965 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:35:48,460 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:35:48,460 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:35:52,570 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:52,570 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:58,544 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:58,544 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:35:59,376 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:35:59,377 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:36:10,649 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:10,649 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:13,181 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:36:13,182 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:36:13,468 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:36:13,468 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:36:17,963 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:36:17,963 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:36:22,074 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:22,074 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:28,049 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:28,049 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:28,880 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:36:28,880 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:36:40,153 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:40,153 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:42,686 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:36:42,686 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:36:42,972 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:36:42,972 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:36:47,466 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:36:47,467 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:36:51,577 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:51,578 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:57,552 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:57,552 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:36:58,384 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:36:58,384 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:37:09,656 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:09,656 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:12,190 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:37:12,190 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:37:12,475 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:37:12,475 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:37:16,970 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:37:16,970 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:37:21,081 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:21,081 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:27,060 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:27,060 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:27,887 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:37:27,887 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:37:39,160 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:39,160 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:41,696 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:37:41,696 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:37:41,979 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:37:41,979 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:37:46,474 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:37:46,474 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:37:50,584 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:50,584 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:56,564 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:56,564 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:37:57,391 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:37:57,391 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:38:08,664 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:08,664 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:11,200 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:38:11,200 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:38:11,483 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:38:11,483 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:38:15,978 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:38:15,978 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:38:20,087 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:20,088 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:26,068 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:26,068 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:26,895 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:38:26,895 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:38:38,168 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:38,168 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:40,704 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:38:40,704 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:38:40,986 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:38:40,986 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:38:45,482 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:38:45,482 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:38:49,592 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:49,592 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:55,572 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:55,572 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:38:56,398 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:38:56,398 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:39:07,672 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:07,672 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:10,208 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:39:10,209 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:39:10,490 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:39:10,490 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:39:14,986 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:39:14,986 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:39:19,096 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:19,096 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:25,076 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:25,076 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:25,902 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:39:25,902 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:39:37,175 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:37,176 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:39,713 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:39:39,713 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:39:39,994 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:39:39,994 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:39:44,489 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:39:44,489 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:39:48,600 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:48,600 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:54,580 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:54,580 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:39:55,406 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:39:55,406 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:40:06,679 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:06,680 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:09,217 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:40:09,217 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:40:09,498 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:40:09,498 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:40:13,992 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:40:13,992 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:40:18,104 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:18,104 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:24,084 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:24,084 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:24,910 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:40:24,910 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:40:36,183 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:36,183 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:38,721 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:40:38,721 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:40:39,001 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:40:39,001 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:40:43,497 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:40:43,497 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:40:47,607 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:47,607 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:53,587 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:53,587 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:40:54,413 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:40:54,414 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:41:05,685 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:05,685 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:08,225 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:41:08,225 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:41:08,506 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:41:08,506 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:41:13,001 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:41:13,001 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:41:17,112 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:17,112 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:23,091 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:23,091 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:23,917 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:41:23,917 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:41:24,752 INFO [capacityManagement] start correct usage
+
+2026-04-15 18:41:24,755 INFO [capacityManagement] end correct usage, cost: 0s
+
+2026-04-15 18:41:24,899 WARN clearConfigHistory start
+
+2026-04-15 18:41:35,188 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:35,188 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:37,729 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:41:37,729 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:41:38,010 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:41:38,011 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:41:42,506 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:41:42,507 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:41:46,616 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:46,616 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:52,595 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:52,595 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:41:53,421 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:41:53,421 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:42:04,691 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:04,691 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:07,234 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:42:07,234 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:42:07,514 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:42:07,514 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:42:12,010 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:42:12,010 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:42:16,121 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:16,121 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:22,098 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:22,099 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:22,925 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:42:22,925 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:42:34,195 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:34,195 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:36,737 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:42:36,737 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:42:37,018 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:42:37,018 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:42:41,514 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:42:41,514 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:42:45,626 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:45,626 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:51,603 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:51,603 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:42:52,428 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:42:52,428 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:43:03,699 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:03,699 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:06,241 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:43:06,241 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:43:06,522 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:43:06,522 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:43:11,019 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:43:11,019 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:43:15,130 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:15,130 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:21,108 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:21,108 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:21,932 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:43:21,932 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:43:33,203 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:33,203 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:35,745 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:43:35,745 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:43:36,026 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:43:36,026 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:43:40,524 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:43:40,524 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:43:44,634 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:44,634 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:50,612 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:50,612 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:43:51,437 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:43:51,437 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:44:02,707 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:02,707 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:05,248 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:44:05,249 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:44:05,530 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:44:05,530 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:44:10,029 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:44:10,029 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:44:14,138 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:14,138 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:20,116 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:20,116 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:20,941 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:44:20,941 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:44:32,211 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:32,211 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:34,751 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:44:34,751 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:44:35,033 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:44:35,033 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:44:39,533 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:44:39,533 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:44:43,642 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:43,642 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:49,620 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:49,620 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:44:50,445 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:44:50,445 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:45:01,714 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:01,715 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:04,255 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:45:04,255 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:45:04,537 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:45:04,538 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:45:09,039 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:45:09,040 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:45:13,146 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:13,146 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:19,124 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:19,125 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:19,948 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:45:19,948 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:45:31,218 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:31,218 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:33,758 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:45:33,758 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:45:34,042 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:45:34,042 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:45:38,543 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:45:38,543 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:45:42,649 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:42,649 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:48,629 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:48,629 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:45:49,451 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:45:49,451 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:46:00,722 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:00,722 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:03,261 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:46:03,261 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:46:03,546 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:46:03,546 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:46:08,046 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:46:08,046 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:46:12,152 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:12,152 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:18,133 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:18,133 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:18,954 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:46:18,954 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:46:30,225 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:30,225 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:32,765 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:46:32,765 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:46:33,049 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:46:33,049 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:46:37,550 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:46:37,550 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:46:41,657 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:41,657 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:47,636 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:47,637 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:48,457 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:46:48,457 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:46:59,729 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:46:59,729 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:02,268 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:47:02,268 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:47:02,552 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:47:02,552 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:47:07,058 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:47:07,058 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:47:11,160 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:11,160 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:17,140 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:17,140 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:17,960 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:47:17,960 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:47:29,234 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:29,234 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:31,772 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:47:31,772 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:47:32,055 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:47:32,055 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:47:36,561 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:47:36,561 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:47:40,664 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:40,664 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:46,644 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:46,644 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:47,463 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:47:47,463 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:47:58,737 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:47:58,737 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:01,275 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:48:01,275 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:48:01,558 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:48:01,558 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:48:06,064 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:48:06,064 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:48:10,167 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:10,167 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:16,148 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:16,148 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:16,966 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:48:16,966 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:48:28,241 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:28,241 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:30,778 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:48:30,778 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:48:31,061 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:48:31,061 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:48:35,567 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:48:35,567 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:48:39,670 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:39,670 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:45,651 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:45,651 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:46,469 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:48:46,469 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:48:57,744 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:48:57,744 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:00,282 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:49:00,282 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:49:00,565 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:49:00,565 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:49:05,070 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:49:05,070 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:49:09,173 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:09,173 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:15,154 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:15,154 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:15,972 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:49:15,972 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:49:27,248 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:27,248 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:29,785 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:49:29,786 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:49:30,067 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:49:30,067 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:49:34,573 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:49:34,573 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:49:38,677 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:38,677 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:44,657 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:44,657 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:45,474 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:49:45,475 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:49:56,750 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:56,750 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:49:59,288 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:49:59,288 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:49:59,570 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:49:59,570 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:50:04,076 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:50:04,076 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:50:08,180 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:08,180 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:14,160 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:14,160 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:14,977 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:50:14,977 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:50:26,253 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:26,253 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:28,791 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:50:28,792 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:50:29,073 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:50:29,073 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:50:33,578 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:50:33,579 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:50:37,687 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:37,687 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:43,663 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:43,664 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:44,480 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:50:44,480 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:50:55,755 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:55,755 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:50:58,296 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:50:58,296 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:50:58,577 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:50:58,577 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:51:03,082 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:51:03,082 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:51:07,191 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:07,191 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:13,167 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:13,167 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:13,982 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:51:13,982 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:51:24,755 INFO [capacityManagement] start correct usage
+
+2026-04-15 18:51:24,758 INFO [capacityManagement] end correct usage, cost: 0s
+
+2026-04-15 18:51:24,903 WARN clearConfigHistory start
+
+2026-04-15 18:51:25,258 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:25,258 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:27,800 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:51:27,800 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:51:28,080 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:51:28,080 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:51:32,584 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:51:32,584 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:51:36,695 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:36,695 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:42,670 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:42,670 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:43,485 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:51:43,485 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:51:54,761 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:54,761 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:51:57,304 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:51:57,304 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:51:57,584 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:51:57,584 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:52:02,087 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:52:02,087 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:52:06,199 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:06,199 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:12,173 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:12,173 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:12,988 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:52:12,988 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:52:24,263 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:24,264 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:26,807 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:52:26,808 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:52:27,086 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:52:27,086 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:52:31,591 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:52:31,591 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:52:35,702 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:35,702 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:41,678 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:41,678 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:42,490 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:52:42,490 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:52:53,766 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:53,766 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:52:56,311 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:52:56,311 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:52:56,588 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:52:56,588 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:53:01,094 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:53:01,094 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:53:05,206 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:05,206 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:11,181 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:11,181 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:11,993 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:53:11,993 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:53:23,269 INFO listen config id:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:23,269 INFO listen config id 2:hrm-test.yamlDEFAULT_GROUPhrm-core.yamlDEFAULT_GROUPhrmDEFAULT_GROUPhrm.yamlDEFAULT_GROUPhrm-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:25,814 INFO listen config id:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:53:25,815 INFO listen config id 2:work-core.yamlDEFAULT_GROUPwork-dev.yamlDEFAULT_GROUPwork.yamlDEFAULT_GROUPwork-test.yamlDEFAULT_GROUPworkDEFAULT_GROUP
+
+2026-04-15 18:53:26,092 INFO listen config id:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:53:26,092 INFO listen config id 2:gateway.yamlDEFAULT_GROUPgateway-dev.yamlDEFAULT_GROUPgatewayDEFAULT_GROUP
+
+2026-04-15 18:53:30,598 INFO listen config id:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:53:30,598 INFO listen config id 2:admin-core.yamlDEFAULT_GROUPadmin.yamlDEFAULT_GROUPadmin-test.yamlDEFAULT_GROUPadmin-dev.yamlDEFAULT_GROUPadminDEFAULT_GROUP
+
+2026-04-15 18:53:34,709 INFO listen config id:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:34,709 INFO listen config id 2:jobDEFAULT_GROUPjob-test.yamlDEFAULT_GROUPjob.yamlDEFAULT_GROUPjob-core.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:40,686 INFO listen config id:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:40,686 INFO listen config id 2:authorization-core.yamlDEFAULT_GROUPauthorizationDEFAULT_GROUPauthorization.yamlDEFAULT_GROUPauthorization-test.yamlDEFAULT_GROUPauthorization-dev.yamlDEFAULT_GROUP
+
+2026-04-15 18:53:41,496 INFO listen config id:service.disableGlobalTransactionSEATA_GROUP
+
+2026-04-15 18:53:41,496 INFO listen config id 2:service.disableGlobalTransactionSEATA_GROUP
+

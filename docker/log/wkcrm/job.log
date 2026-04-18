@@ -1,0 +1,118 @@
+2026-04-15 18:26:51 job [main] INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/root/nacos/config 
+2026-04-15 18:26:52 job [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0 
+2026-04-15 18:26:52 job [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[job] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:52 job [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[job.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:52 job [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[job-core.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:52 job [main] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[job-test.yaml] & group[DEFAULT_GROUP] 
+2026-04-15 18:26:52 job [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-job-test.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-job-core.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-job.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-job,DEFAULT_GROUP'}] 
+2026-04-15 18:26:52 job [main] INFO  com.kakarote.job.JobApplication - The following profiles are active: core,test 
+2026-04-15 18:27:02 job [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:27:02 job [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:27:05 job [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2026-04-15 18:27:05 job [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2026-04-15 18:27:05 job [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97ms. Found 0 Redis repository interfaces. 
+2026-04-15 18:27:06 job [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format. 
+2026-04-15 18:27:08 job [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.kakarote.job]' package. Please check your configuration. 
+2026-04-15 18:27:09 job [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a17e958e-b1bd-3842-8fee-6ace49a6e127 
+2026-04-15 18:27:15 job [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:27:16 job [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2026-04-15 18:27:20 job [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used 
+2026-04-15 18:27:20 job [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext 
+2026-04-15 18:27:20 job [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 27642 ms 
+2026-04-15 18:27:23 job [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null 
+2026-04-15 18:27:23 job [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null 
+2026-04-15 18:27:23 job [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null 
+2026-04-15 18:27:24 job [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2026-04-15 18:27:25 job [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2026-04-15 18:27:44 job [main] WARN  org.springframework.boot.autoconfigure.web.format.WebConversionService - Auto-configuration of Joda-Time formatters is deprecated in favor of using java.time (JSR-310). 
+2026-04-15 18:27:46 job [main] INFO  com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**]. 
+2026-04-15 18:27:47 job [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator' 
+2026-04-15 18:27:48 job [main] INFO  com.alicp.jetcache.autoconfigure.AbstractCacheAutoInit - init cache area default , type= redis 
+2026-04-15 18:27:49 job [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler' 
+2026-04-15 18:27:49 job [main] INFO  springfox.documentation.spring.web.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)] 
+2026-04-15 18:27:49 job [main] INFO  com.kakarote.job.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init. 
+2026-04-15 18:27:49 job [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:BiCustomerStatsJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@8ad6d29[class com.kakarote.job.bi.BiCustomerStatsJob#biCustomerStatsJobHandler] 
+2026-04-15 18:27:49 job [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:CrmCustomerJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2ad6aeb8[class com.kakarote.job.crm.CrmCustomerJob#crmCustomerJobHandler] 
+2026-04-15 18:27:49 job [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:PrintFileJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4e35a219[class com.kakarote.job.crm.PrintFileJob#printFileJobHandler] 
+2026-04-15 18:27:49 job [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:EmployeeChangeJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@7772ec28[class com.kakarote.job.hrm.EmployeeChangeJob#employeeChangeJobHandler] 
+2026-04-15 18:27:49 job [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:EventNoticeJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@14d513ca[class com.kakarote.job.oa.EventNoticeJob#EventNoticeJobHandler] 
+2026-04-15 18:27:49 job [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:TaskJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@be9cc86[class com.kakarote.job.work.TaskJob#TaskJobHandler] 
+2026-04-15 18:27:50 job [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources. 
+2026-04-15 18:27:50 job [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. 
+2026-04-15 18:27:50 job [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources. 
+2026-04-15 18:27:50 job [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. 
+2026-04-15 18:27:51 job [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2026-04-15 18:27:59 job [main] INFO  com.xxl.rpc.remoting.provider.XxlRpcProviderFactory - >>>>>>>>>>> xxl-rpc, provider factory add service success. serviceKey = com.xxl.job.core.biz.ExecutorBiz, serviceBean = class com.xxl.job.core.biz.impl.ExecutorBizImpl 
+2026-04-15 18:27:59 job [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped 
+2026-04-15 18:27:59 job [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2026-04-15 18:27:59 job [Thread-15] INFO  com.xxl.rpc.remoting.net.Server - >>>>>>>>>>> xxl-rpc remoting server start success, nettype = com.xxl.rpc.remoting.net.impl.netty_http.server.NettyHttpServer, port = 9998 
+2026-04-15 18:27:59 job [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references 
+2026-04-15 18:27:59 job [main] INFO  io.undertow - starting server: Undertow - 2.0.29.Final 
+2026-04-15 18:27:59 job [main] INFO  org.xnio - XNIO version 3.3.8.Final 
+2026-04-15 18:27:59 job [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final 
+2026-04-15 18:27:59 job [main] INFO  org.springframework.boot.web.embedded.undertow.UndertowServletWebServer - Undertow started on port(s) 8999 (http) with context path '' 
+2026-04-15 18:27:59 job [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"172.18.0.5","metadata":{"projectPath":"/opt/package/job","preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8999,"scheduled":false,"serviceName":"DEFAULT_GROUP@@job","stopped":false,"weight":1.0} to beat map. 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@job with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"172.18.0.5","ipDeleteTimeout":30000,"metadata":{"projectPath":"/opt/package/job","preserved.register.source":"SPRING_CLOUD"},"port":8999,"weight":1.0} 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP job 172.18.0.5:8999 register finished 
+2026-04-15 18:28:00 job [main] INFO  com.kakarote.job.JobApplication - Started JobApplication in 77.609 seconds (JVM running for 80.261) 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] job-core.yaml+DEFAULT_GROUP 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=job-core.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] job+DEFAULT_GROUP 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=job, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] job.yaml+DEFAULT_GROUP 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=job.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-nacos_8848] [subscribe] job-test.yaml+DEFAULT_GROUP 
+2026-04-15 18:28:00 job [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-nacos_8848] [add-listener] ok, tenant=, dataId=job-test.yaml, group=DEFAULT_GROUP, cnt=1 
+2026-04-15 18:28:00 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:28:29 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:28:59 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:29:29 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:29:58 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:30:28 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:30:57 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:31:27 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:31:56 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:32:26 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:32:55 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:33:25 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:33:54 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:34:24 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:34:53 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:35:23 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:35:52 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:36:22 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:36:51 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:37:21 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:37:50 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:38:20 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:38:49 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:39:19 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:39:48 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:40:18 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:40:47 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:41:17 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:41:46 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:42:16 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:42:45 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:43:15 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:43:44 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:44:14 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:44:43 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:45:13 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:45:42 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:46:12 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:46:41 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:47:11 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:47:40 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:48:10 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:48:39 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:49:09 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:49:38 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:50:08 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:50:37 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:51:07 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:51:36 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:52:06 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:52:35 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:53:05 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 
+2026-04-15 18:53:34 job [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[] 

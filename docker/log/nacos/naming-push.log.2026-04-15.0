@@ -1,0 +1,28 @@
+2026-04-15 17:56:52,165 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-15 18:25:36,816 INFO DEFAULT_GROUP@@seata-server is changed, add it to push queue.
+
+2026-04-15 18:25:54,535 INFO DEFAULT_GROUP@@gateway is changed, add it to push queue.
+
+2026-04-15 18:25:54,536 INFO serviceName: DEFAULT_GROUP@@gateway changed, schedule push for: 172.18.0.5:41566, agent: Nacos-Java-Client:v1.2.1, key: 172.18.0.5,41566,391442045127
+
+2026-04-15 18:25:54,536 INFO send udp packet: 172.18.0.5,41566,391442045127
+
+2026-04-15 18:25:54,548 INFO received ack: {"type": "push-ack", "lastRefTime":"391442045127", "data":""} from: 172.18.0.5:41566, cost: 12 ms, unacked: 0, total push: 1
+
+2026-04-15 18:26:23,786 INFO DEFAULT_GROUP@@work is changed, add it to push queue.
+
+2026-04-15 18:26:23,787 INFO serviceName: DEFAULT_GROUP@@work changed, schedule push for: 172.18.0.5:41566, agent: Nacos-Java-Client:v1.2.1, key: 172.18.0.5,41566,420693725331
+
+2026-04-15 18:26:23,787 INFO send udp packet: 172.18.0.5,41566,420693725331
+
+2026-04-15 18:26:23,789 INFO received ack: {"type": "push-ack", "lastRefTime":"420693725331", "data":""} from: 172.18.0.5:41566, cost: 2 ms, unacked: 0, total push: 2
+
+2026-04-15 18:27:08,005 INFO DEFAULT_GROUP@@authorization is changed, add it to push queue.
+
+2026-04-15 18:27:56,989 INFO DEFAULT_GROUP@@admin is changed, add it to push queue.
+
+2026-04-15 18:28:01,236 INFO DEFAULT_GROUP@@job is changed, add it to push queue.
+
+2026-04-15 18:28:19,349 INFO DEFAULT_GROUP@@hrm is changed, add it to push queue.
+
