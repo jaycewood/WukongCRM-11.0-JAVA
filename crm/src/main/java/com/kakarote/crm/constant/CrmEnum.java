@@ -56,6 +56,10 @@ public enum CrmEnum {
      * 发票
      */
     INVOICE(18, "发票"),
+    /**
+     * 订单
+     */
+    ORDER(19, "订单"),
 
     /**
      * NULL

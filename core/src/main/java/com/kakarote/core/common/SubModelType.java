@@ -26,6 +26,7 @@ public enum SubModelType {
     CRM_RETURN_VISIT(28,"回访"),
     CRM_PRODUCT(29,"产品"),
     CRM_MARKETING(30,"市场活动"),
+    CRM_ORDER(31,"订单"),
     //oa
     OA_CALENDAR(41,"日历"),
     OA_LOG(42,"日志"),

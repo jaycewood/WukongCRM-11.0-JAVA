@@ -147,6 +147,8 @@ public class CrmFieldServiceImpl extends BaseServiceImpl<CrmFieldMapper, CrmFiel
                     fieldNameArr = new String[]{"customer_id", "contract_id"};
                 }else if (crmField.getLabel().equals(CrmEnum.INVOICE.getType())) {
                     fieldNameArr = new String[]{"invoice_id", "invoice_apply_number"};
+                } else if (crmField.getLabel().equals(CrmEnum.ORDER.getType())) {
+                    fieldNameArr = new String[]{"order_number", "title"};
                 }
                 List<String> keyList = Arrays.asList(fieldNameArr);
                 if (keyList.contains(crmField.getFieldName())) {
@@ -232,6 +234,9 @@ public class CrmFieldServiceImpl extends BaseServiceImpl<CrmFieldMapper, CrmFiel
                     break;
                 case INVOICE:
                     ApplicationContextHolder.getBean(ICrmInvoiceDataService.class).lambdaUpdate().eq(CrmInvoiceData::getFieldId, field.getFieldId()).remove();
+                    break;
+                case ORDER:
+                    ApplicationContextHolder.getBean(ICrmOrderDataService.class).lambdaUpdate().eq(CrmOrderData::getFieldId, field.getFieldId()).remove();
                     break;
                 default:
                     break;
@@ -569,13 +574,13 @@ public class CrmFieldServiceImpl extends BaseServiceImpl<CrmFieldMapper, CrmFiel
             return crmModelFiled;
         }).collect(Collectors.toList());
         CrmEnum crmEnum = CrmEnum.parse(crmModel.getLabel());
-        if (crmEnum == CrmEnum.RECEIVABLES || crmEnum == CrmEnum.CONTRACT || crmEnum == CrmEnum.RETURN_VISIT || crmEnum == CrmEnum.INVOICE) {
+        if (crmEnum == CrmEnum.RECEIVABLES || crmEnum == CrmEnum.CONTRACT || crmEnum == CrmEnum.RETURN_VISIT || crmEnum == CrmEnum.INVOICE || crmEnum == CrmEnum.ORDER) {
             AdminConfig numberSetting = adminService.queryFirstConfigByNameAndValue("numberSetting", crmEnum.getType().toString()).getData();
             Integer status = numberSetting.getStatus();
             if (status == 1) {
                 for (CrmModelFiledVO field : fieldList) {
                     String fieldName = field.getFieldName();
-                    boolean b = Arrays.asList("num","number","visitNumber","invoiceApplyNumber").contains(fieldName);
+                    boolean b = Arrays.asList("num","number","visitNumber","invoiceApplyNumber", "orderNumber").contains(fieldName);
                     if (b && field.getFieldType() == 1) {
                         field.setAutoGeneNumber(1);
                     } else {

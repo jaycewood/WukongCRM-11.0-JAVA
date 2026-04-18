@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kakarote.crm.mapper.CrmOrderProductMapper">
+    <select id="queryByOrderId" resultType="com.kakarote.crm.entity.PO.CrmOrderProduct">
+        SELECT op.*,
+               COALESCE(p.name, op.product_name) AS name,
+               c.name AS category_name
+        FROM wk_crm_order_product AS op
+                 LEFT JOIN wk_crm_product AS p ON op.product_id = p.product_id
+                 LEFT JOIN wk_crm_product_category AS c ON p.category_id = c.category_id
+        WHERE op.order_id = #{orderId}
+        ORDER BY op.sort ASC, op.r_id ASC
+    </select>
+</mapper>

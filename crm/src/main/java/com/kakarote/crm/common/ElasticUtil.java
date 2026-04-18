@@ -167,19 +167,19 @@ public class ElasticUtil {
         List<EsUpdatePropertiesBO> userPropertiesList = new ArrayList<>();
         userPropertiesList.add(new EsUpdatePropertiesBO("ownerUserId", "ownerUserName", Lists.newArrayList(CrmEnum.LEADS.getIndex()
                 , CrmEnum.CUSTOMER.getIndex(), CrmEnum.CONTACTS.getIndex(), CrmEnum.CONTRACT.getIndex(), CrmEnum.BUSINESS.getIndex()
-                , CrmEnum.RECEIVABLES.getIndex(), CrmEnum.RETURN_VISIT.getIndex(), CrmEnum.PRODUCT.getIndex(), CrmEnum.INVOICE.getIndex())));
+                , CrmEnum.RECEIVABLES.getIndex(), CrmEnum.RETURN_VISIT.getIndex(), CrmEnum.PRODUCT.getIndex(), CrmEnum.INVOICE.getIndex(), CrmEnum.ORDER.getIndex())));
         userPropertiesList.add(new EsUpdatePropertiesBO("ownerDeptId", "ownerDeptName", Lists.newArrayList(CrmEnum.LEADS.getIndex()
                 , CrmEnum.CUSTOMER.getIndex(), CrmEnum.CONTACTS.getIndex(), CrmEnum.CONTRACT.getIndex(), CrmEnum.BUSINESS.getIndex()
-                , CrmEnum.RECEIVABLES.getIndex(), CrmEnum.RETURN_VISIT.getIndex(), CrmEnum.PRODUCT.getIndex(), CrmEnum.INVOICE.getIndex())));
+                , CrmEnum.RECEIVABLES.getIndex(), CrmEnum.RETURN_VISIT.getIndex(), CrmEnum.PRODUCT.getIndex(), CrmEnum.INVOICE.getIndex(), CrmEnum.ORDER.getIndex())));
         userPropertiesList.add(new EsUpdatePropertiesBO("createUserId", "createUserName", Lists.newArrayList(CrmEnum.LEADS.getIndex()
                 , CrmEnum.CUSTOMER.getIndex(), CrmEnum.CONTACTS.getIndex(), CrmEnum.CONTRACT.getIndex(), CrmEnum.BUSINESS.getIndex()
-                , CrmEnum.RECEIVABLES.getIndex(), CrmEnum.RETURN_VISIT.getIndex(), CrmEnum.PRODUCT.getIndex(), CrmEnum.INVOICE.getIndex())));
+                , CrmEnum.RECEIVABLES.getIndex(), CrmEnum.RETURN_VISIT.getIndex(), CrmEnum.PRODUCT.getIndex(), CrmEnum.INVOICE.getIndex(), CrmEnum.ORDER.getIndex())));
         userPropertiesList.add(new EsUpdatePropertiesBO("companyUserId", "companyUserName", Lists.newArrayList(CrmEnum.CONTRACT.getIndex())));
         updateMap.put("user", userPropertiesList);
         List<EsUpdatePropertiesBO> deptPropertiesList = new ArrayList<>(2);
         deptPropertiesList.add(new EsUpdatePropertiesBO("ownerDeptId", "ownerDeptName", Lists.newArrayList(CrmEnum.LEADS.getIndex()
                 , CrmEnum.CUSTOMER.getIndex(), CrmEnum.CONTACTS.getIndex(), CrmEnum.CONTRACT.getIndex(), CrmEnum.BUSINESS.getIndex()
-                , CrmEnum.RECEIVABLES.getIndex(), CrmEnum.PRODUCT.getIndex(), CrmEnum.INVOICE.getIndex())));
+                , CrmEnum.RECEIVABLES.getIndex(), CrmEnum.PRODUCT.getIndex(), CrmEnum.INVOICE.getIndex(), CrmEnum.ORDER.getIndex())));
         updateMap.put("dept", deptPropertiesList);
         List<EsUpdatePropertiesBO> customerPropertiesList = new ArrayList<>();
 

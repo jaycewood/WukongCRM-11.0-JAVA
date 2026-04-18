@@ -370,6 +370,18 @@ public class InitEsIndexRunner implements ApplicationRunner {
                 filedList.add(new CrmModelFiledVO("logisticsNumber", FieldEnum.TEXT, 1));
                 break;
             }
+            case ORDER: {
+                filedList.add(new CrmModelFiledVO("leadsNames", FieldEnum.TEXT, 1));
+                filedList.add(new CrmModelFiledVO("customerNames", FieldEnum.TEXT, 1));
+                filedList.add(new CrmModelFiledVO("contactsNames", FieldEnum.TEXT, 1));
+                filedList.add(new CrmModelFiledVO("businessNames", FieldEnum.TEXT, 1));
+                filedList.add(new CrmModelFiledVO("contractNames", FieldEnum.TEXT, 1));
+                filedList.add(new CrmModelFiledVO("receivablesNames", FieldEnum.TEXT, 1));
+                filedList.add(new CrmModelFiledVO("invoiceNames", FieldEnum.TEXT, 1));
+                filedList.add(new CrmModelFiledVO("returnVisitNames", FieldEnum.TEXT, 1));
+                filedList.add(new CrmModelFiledVO("productNames", FieldEnum.TEXT, 1));
+                break;
+            }
             default:
                 break;
         }
@@ -431,6 +443,9 @@ public class InitEsIndexRunner implements ApplicationRunner {
                         ApplicationContextHolder.getBean(CrmReceivablesPlanServiceImpl.class).setOtherField(map);
                     case INVOICE:
                         ApplicationContextHolder.getBean(CrmInvoiceServiceImpl.class).setOtherField(map);
+                        break;
+                    case ORDER:
+                        ApplicationContextHolder.getBean(CrmOrderServiceImpl.class).setOtherField(map);
                         break;
                     default:
                         break;
