@@ -29,6 +29,9 @@ public class CrmInfoNumVO {
     @ApiModelProperty("团队成员数量")
     private Integer memberCount;
 
+    @ApiModelProperty("订单数量")
+    private Integer orderCount;
+
     @ApiModelProperty("回款数量")
     private Integer receivablesCount;
 

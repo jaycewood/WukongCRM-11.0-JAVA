@@ -63,6 +63,9 @@ public interface CrmCustomerMapper extends BaseMapper<CrmCustomer> {
     public BasePage<Map<String, Object>> queryContract(BasePage<Map<String, Object>> crmContactsBaseMapper, @Param("customerId") Integer customerId,
                                                        @Param("search") String search, @Param("checkStatus") Integer checkStatus,@Param("condition") String condition);
 
+    BasePage<JSONObject> queryOrder(BasePage<JSONObject> page, @Param("customerId") Integer customerId,
+                                    @Param("search") String search, @Param("conditions") String conditions);
+
     /**
      * 查询详情页数量
      *

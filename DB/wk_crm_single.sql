@@ -170,7 +170,7 @@ CREATE TABLE `wk_admin_menu`  (
   INDEX `menu_id`(`menu_id`) USING BTREE,
   INDEX `parent_id`(`parent_id`) USING BTREE,
   INDEX `realm`(`realm`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 943 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '后台菜单表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 949 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '后台菜单表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of wk_admin_menu
@@ -187,6 +187,7 @@ INSERT INTO `wk_admin_menu` VALUES (12, 1, '商机管理', 'business', NULL, NUL
 INSERT INTO `wk_admin_menu` VALUES (13, 1, '合同管理', 'contract', NULL, NULL, 1, 5, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (14, 1, '回款管理', 'receivables', NULL, NULL, 1, 6, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (15, 1, '产品管理', 'product', NULL, NULL, 1, 7, 1, NULL);
+INSERT INTO `wk_admin_menu` VALUES (943, 1, '订单管理', 'order', NULL, NULL, 1, 11, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (17, 9, '新建', 'save', '/crmLeads/add', NULL, 3, 1, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (18, 9, '编辑', 'update', '/crmLeads/update', NULL, 3, 1, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (19, 9, '查看列表', 'index', '/crmLeads/queryPageList', NULL, 3, 1, 1, NULL);
@@ -367,6 +368,11 @@ INSERT INTO `wk_admin_menu` VALUES (425, 420, '删除', 'delete', '/crmInvoice/d
 INSERT INTO `wk_admin_menu` VALUES (426, 420, '转移', 'transfer', '/crmInvoice/changeOwnerUser', NULL, 3, 1, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (427, 420, '标记开票', 'updateInvoiceStatus', '/crmInvoice/updateInvoiceStatus', NULL, 3, 1, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (428, 420, '重置开票信息', 'resetInvoiceStatus', '/crmInvoice/resetInvoiceStatus', NULL, 3, 1, 1, NULL);
+INSERT INTO `wk_admin_menu` VALUES (944, 943, '新建', 'save', '/crmOrder/add', NULL, 3, 1, 1, NULL);
+INSERT INTO `wk_admin_menu` VALUES (945, 943, '编辑', 'update', '/crmOrder/update', NULL, 3, 1, 1, NULL);
+INSERT INTO `wk_admin_menu` VALUES (946, 943, '查看列表', 'index', '/crmOrder/queryPageList', NULL, 3, 1, 1, NULL);
+INSERT INTO `wk_admin_menu` VALUES (947, 943, '查看详情', 'read', '/crmOrder/queryById/*', NULL, 3, 1, 1, NULL);
+INSERT INTO `wk_admin_menu` VALUES (948, 943, '删除', 'delete', '/crmOrder/deleteByIds', NULL, 3, 1, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (440, 1, '跟进记录管理', 'followRecord', NULL, NULL, 1, 10, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (441, 440, '查看', 'read', '/crmInstrument/queryRecordList', NULL, 3, 1, 1, NULL);
 INSERT INTO `wk_admin_menu` VALUES (442, 440, '新建', 'save', '/crmActivity/addCrmActivityRecord', NULL, 3, 2, 1, NULL);

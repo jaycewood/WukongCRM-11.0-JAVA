@@ -192,6 +192,14 @@ public interface ICrmCustomerService extends BaseService<CrmCustomer> {
     public BasePage<Map<String, Object>> queryContract(CrmContactsPageBO pageEntity);
 
     /**
+     * 根据客户ID查询订单
+     *
+     * @param pageEntity entity
+     * @return data
+     */
+    BasePage<JSONObject> queryOrder(CrmContactsPageBO pageEntity);
+
+    /**
      * 锁定或者解锁
      *
      * @param status 状态

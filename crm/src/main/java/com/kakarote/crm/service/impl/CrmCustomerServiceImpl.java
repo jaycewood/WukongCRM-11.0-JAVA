@@ -1186,6 +1186,7 @@ public class CrmCustomerServiceImpl extends BaseServiceImpl<CrmCustomerMapper, C
         String contactsCon = AuthUtil.getCrmAuthSql(CrmEnum.CONTACTS, 1,CrmAuthEnum.READ);
         String returnVisitCon = AuthUtil.getCrmAuthSql(CrmEnum.RETURN_VISIT, 1,CrmAuthEnum.READ);
         String invoiceCon = AuthUtil.getCrmAuthSql(CrmEnum.INVOICE, 1,CrmAuthEnum.READ);
+        String orderCon = AuthUtil.getCrmAuthSql(CrmEnum.ORDER, "a", 1, CrmAuthEnum.READ);
         Map<String, Object> map = new HashMap<>();
         map.put("businessCon", businessCon);
         map.put("contractCon", contractCon);
@@ -1193,6 +1194,7 @@ public class CrmCustomerServiceImpl extends BaseServiceImpl<CrmCustomerMapper, C
         map.put("contactsCon", contactsCon);
         map.put("returnVisitCon", returnVisitCon);
         map.put("invoiceCon", invoiceCon);
+        map.put("orderCon", orderCon);
         map.put("customerId", customerId);
         CrmInfoNumVO infoNumVO = getBaseMapper().queryNum(map);
         infoNumVO.setFileCount(fileService.queryNum(batchIdList).getData());
@@ -1378,6 +1380,17 @@ public class CrmCustomerServiceImpl extends BaseServiceImpl<CrmCustomerMapper, C
     public BasePage<JSONObject> queryReceivablesPlan(CrmRelationPageBO crmRelationPageBO) {
         String conditions = AuthUtil.getCrmAuthSql(CrmEnum.CONTRACT, "c", 1,CrmAuthEnum.READ);
         return getBaseMapper().queryReceivablesPlan(crmRelationPageBO.parse(), crmRelationPageBO.getCustomerId(), conditions);
+    }
+
+    @Override
+    public BasePage<JSONObject> queryOrder(CrmContactsPageBO pageEntity) {
+        String conditions = AuthUtil.getCrmAuthSql(CrmEnum.ORDER, "a", 1, CrmAuthEnum.READ);
+        BasePage<JSONObject> jsonObjects = getBaseMapper().queryOrder(pageEntity.parse(), pageEntity.getCustomerId(), pageEntity.getSearch(), conditions);
+        for (JSONObject jsonObject : jsonObjects.getList()) {
+            String ownerUserName = UserCacheUtil.getUserName(jsonObject.getLong("ownerUserId"));
+            jsonObject.put("ownerUserName", ownerUserName);
+        }
+        return jsonObjects;
     }
 
     @Override

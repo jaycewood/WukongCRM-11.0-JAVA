@@ -179,6 +179,17 @@ public class CrmCustomerController {
         return R.ok(basePage);
     }
 
+    @PostMapping("/queryOrder")
+    @ApiOperation("查询客户下订单")
+    public Result<BasePage<JSONObject>> queryOrder(@RequestBody CrmContactsPageBO pageEntity) {
+        boolean auth = AuthUtil.isPoolAuth(pageEntity.getCustomerId(), CrmAuthEnum.READ);
+        if (auth) {
+            throw new CrmException(SystemCodeEnum.SYSTEM_NO_AUTH);
+        }
+        BasePage<JSONObject> basePage = crmCustomerService.queryOrder(pageEntity);
+        return R.ok(basePage);
+    }
+
     @PostMapping("/queryReceivablesPlan")
     @ApiOperation("根据客户id查询回款计划")
     public Result<BasePage<JSONObject>> queryReceivablesPlan(@RequestBody CrmRelationPageBO crmRelationPageBO) {
@@ -549,4 +560,3 @@ public class CrmCustomerController {
 		return R.ok(customerName);
 	}
 }
-

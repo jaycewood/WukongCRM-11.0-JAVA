@@ -60,6 +60,18 @@
         ${condition}
     </select>
 
+    <select id="queryOrder" resultType="com.alibaba.fastjson.JSONObject">
+        select distinct a.order_id,a.order_number,a.title,a.order_status,a.quote_amount,a.purchase_cost,a.logistics_cost,
+        a.profit_amount,a.profit_rate,a.owner_user_id,a.create_time,a.update_time
+        from wk_crm_order_relation as r
+        inner join wk_crm_order as a on r.order_id = a.order_id
+        where r.relation_type = 2 and r.relation_id = #{customerId} ${conditions}
+        <if test="search!=null and search!=''">
+            and (a.order_number like CONCAT('%',#{search},'%') or a.title like CONCAT('%',#{search},'%'))
+        </if>
+        order by a.update_time desc, a.create_time desc
+    </select>
+
     <select id="queryNum" resultType="com.kakarote.crm.entity.VO.CrmInfoNumVO">
         select
         (select count(*) from wk_crm_contacts where customer_id = #{customerId} ${contactsCon}) as contactCount,
@@ -67,6 +79,7 @@
         (select count(*) from wk_crm_contract where customer_id = #{customerId} and check_status != 7 ${contractCon}) as contractCount,
         (select count(*) from wk_crm_return_visit where customer_id = #{customerId} ${returnVisitCon}) as returnVisitCount,
         (select count(*) from wk_crm_invoice where customer_id = #{customerId} ${invoiceCon}) as invoiceCount,
+        (select count(distinct r.order_id) from wk_crm_order_relation as r inner join wk_crm_order as a on r.order_id = a.order_id where r.relation_type = 2 and r.relation_id = #{customerId} ${orderCon}) as orderCount,
         (select count(*) from wk_call_record where model = 'customer' and model_id = #{customerId}) as callRecordCount,
         count(*) as receivablesCount
         from
