@@ -110,6 +110,12 @@ public class PermissionServiceImpl implements PermissionService {
      */
     @Override
     public boolean ignoreAuthentication(String url) {
+        if ("/".equals(url)
+                || "/index.html".equals(url)
+                || "/favicon.ico".equals(url)
+                || url.startsWith("/static/")) {
+            return true;
+        }
         boolean isAuth = Optional.ofNullable(configuration.getIgnoreUrl()).orElse(ListUtil.empty()).stream().anyMatch(ignoreUrl -> ignoreUrl.startsWith(url));
         if (!isAuth) {
             if (url.endsWith(SwaggerProvider.API_URI) || NOT_AUTH_URLS.contains(url)) {
