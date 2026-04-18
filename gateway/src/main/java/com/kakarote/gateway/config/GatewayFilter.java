@@ -8,21 +8,28 @@ import com.kakarote.core.common.SystemCodeEnum;
 import com.kakarote.core.exception.CrmException;
 import com.kakarote.gateway.service.PermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.cloud.gateway.route.Route;
 import org.springframework.cloud.gateway.support.ServerWebExchangeUtils;
 import org.springframework.core.Ordered;
 import org.springframework.core.io.buffer.DataBuffer;
+import org.springframework.http.MediaType;
+import org.springframework.http.MediaTypeFactory;
 import org.springframework.http.HttpCookie;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.util.MultiValueMap;
+import org.springframework.util.StreamUtils;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.io.IOException;
 import java.util.Map;
 import java.util.Objects;
 
@@ -37,6 +44,8 @@ public class GatewayFilter implements GlobalFilter, Ordered {
 
     @Autowired
     private PermissionService permissionService;
+    @Autowired
+    private ResourceLoader resourceLoader;
 
 
     @Override
@@ -44,6 +53,9 @@ public class GatewayFilter implements GlobalFilter, Ordered {
         ServerHttpRequest request = exchange.getRequest();
         String method = request.getMethodValue();
         String url = request.getPath().value();
+        if (isFrontendAsset(url)) {
+            return writeFrontendAsset(exchange, url);
+        }
         MultiValueMap<String, HttpCookie> cookies = request.getCookies();
         request.getCookies().keySet().forEach(str -> {
             if (Objects.equals("ServerIp", str)) {
@@ -88,6 +100,50 @@ public class GatewayFilter implements GlobalFilter, Ordered {
         return chain.filter(exchange);
     }
 
+    private boolean isFrontendAsset(String url) {
+        return "/index.html".equals(url)
+                || "/favicon.ico".equals(url)
+                || url.startsWith("/static/");
+    }
+
+    private Mono<Void> writeFrontendAsset(ServerWebExchange exchange, String url) {
+        Resource resource = resolveFrontendAsset(url);
+        if (resource == null) {
+            return chainNotFound(exchange);
+        }
+        try {
+            byte[] bytes = StreamUtils.copyToByteArray(resource.getInputStream());
+            MediaType mediaType = MediaTypeFactory.getMediaType(resource).orElse(MediaType.APPLICATION_OCTET_STREAM);
+            exchange.getResponse().setStatusCode(HttpStatus.OK);
+            exchange.getResponse().getHeaders().setContentType(mediaType);
+            exchange.getResponse().getHeaders().setContentLength(bytes.length);
+            if (HttpMethod.HEAD.equals(exchange.getRequest().getMethod())) {
+                return exchange.getResponse().setComplete();
+            }
+            DataBuffer buffer = exchange.getResponse().bufferFactory().wrap(bytes);
+            return exchange.getResponse().writeWith(Mono.just(buffer));
+        } catch (IOException e) {
+            throw new CrmException(HttpStatus.INTERNAL_SERVER_ERROR.value(), e.getMessage());
+        }
+    }
+
+    private Resource resolveFrontendAsset(String url) {
+        String relativePath = url.startsWith("/") ? url.substring(1) : url;
+        Resource fileResource = resourceLoader.getResource("file:public/" + relativePath);
+        if (fileResource.exists() && fileResource.isReadable()) {
+            return fileResource;
+        }
+        Resource classpathResource = resourceLoader.getResource("classpath:/public/" + relativePath);
+        if (classpathResource.exists() && classpathResource.isReadable()) {
+            return classpathResource;
+        }
+        return null;
+    }
+
+    private Mono<Void> chainNotFound(ServerWebExchange exchange) {
+        exchange.getResponse().setStatusCode(HttpStatus.NOT_FOUND);
+        return exchange.getResponse().setComplete();
+    }
 
 
     /**
