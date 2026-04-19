@@ -8,6 +8,44 @@
     profitRate: true
   };
 
+  function getCookie(name) {
+    var encodedName = encodeURIComponent(name) + "=";
+    var cookieText = document.cookie || "";
+    var cookieList = cookieText.split("; ");
+    for (var i = 0; i < cookieList.length; i += 1) {
+      if (cookieList[i].indexOf(encodedName) === 0) {
+        return decodeURIComponent(cookieList[i].slice(encodedName.length));
+      }
+    }
+    return "";
+  }
+
+  function getStorageValue(storage, key) {
+    try {
+      return storage && typeof storage.getItem === "function" ? storage.getItem(key) || "" : "";
+    } catch (e) {
+      return "";
+    }
+  }
+
+  function getAdminToken() {
+    return getCookie("Admin-Token") ||
+      getStorageValue(window.localStorage, "Admin-Token") ||
+      getStorageValue(window.sessionStorage, "Admin-Token");
+  }
+
+  function buildHeaders() {
+    var headers = {
+      "Content-Type": "application/json;charset=UTF-8",
+      "Accept": "application/json, text/plain, */*"
+    };
+    var token = getAdminToken();
+    if (token) {
+      headers["Admin-Token"] = token;
+    }
+    return headers;
+  }
+
   function toRows(data) {
     if (!Array.isArray(data)) {
       return [];
@@ -47,10 +85,8 @@
 
           fetch(url, {
             method: "POST",
-            credentials: "same-origin",
-            headers: {
-              "Content-Type": "application/json;charset=UTF-8"
-            },
+            credentials: "include",
+            headers: buildHeaders(),
             body: JSON.stringify(payload)
           }).then(function(response) {
             return response.json();
@@ -118,10 +154,14 @@
             vm.fieldRules = fieldRules;
             vm.loading = false;
           }).catch(function(error) {
-            console.error("order create init error", error);
+            console.error("order create init error", {
+              error: error,
+              hasToken: !!getAdminToken(),
+              action: vm.action
+            });
             vm.loading = false;
             if (vm.$message && typeof vm.$message.error === "function") {
-              vm.$message.error("订单表单初始化失败，请刷新后重试");
+              vm.$message.error(error && error.msg ? error.msg : "订单表单初始化失败，请刷新后重试");
             }
           });
         };
