@@ -24,6 +24,7 @@ import com.kakarote.core.utils.UserCacheUtil;
 import com.kakarote.core.utils.UserUtil;
 import com.kakarote.crm.common.CrmModel;
 import com.kakarote.crm.common.ElasticUtil;
+import com.kakarote.crm.common.OrderFieldMetadata;
 import com.kakarote.crm.constant.CrmCodeEnum;
 import com.kakarote.crm.constant.CrmEnum;
 import com.kakarote.crm.entity.BO.*;
@@ -372,6 +373,9 @@ public class CrmFieldServiceImpl extends BaseServiceImpl<CrmFieldMapper, CrmFiel
         }
         queryWrapper.orderByAsc("sorting");
         List<CrmField> fieldList = list(queryWrapper);
+        if (Objects.equals(label, CrmEnum.ORDER.getType())) {
+            fieldList.forEach(OrderFieldMetadata::applyCanonicalMetadata);
+        }
         fieldList.forEach(field -> {
             recordToFormType2(field, FieldEnum.parse(field.getType()));
         });
@@ -546,6 +550,9 @@ public class CrmFieldServiceImpl extends BaseServiceImpl<CrmFieldMapper, CrmFiel
             //不是admin用户，并且字段授权为不可查询
             return !UserUtil.isAdmin() && levelMap.containsKey(fieldName) && Objects.equals(1,levelMap.get(fieldName).getAuthLevel());
         });
+        if (Objects.equals(crmModel.getLabel(), CrmEnum.ORDER.getType())) {
+            crmFieldList.forEach(OrderFieldMetadata::applyCanonicalMetadata);
+        }
         List<CrmModelFiledVO> fieldList = crmFieldList.stream().map(field -> {
             CrmModelFiledVO crmModelFiled = BeanUtil.copyProperties(field, CrmModelFiledVO.class);
             FieldEnum typeEnum = FieldEnum.parse(crmModelFiled.getType());
@@ -625,6 +632,9 @@ public class CrmFieldServiceImpl extends BaseServiceImpl<CrmFieldMapper, CrmFiel
         QueryWrapper<CrmField> wrapper = new QueryWrapper<>();
         wrapper.eq("label", type).orderByAsc("sorting");
         List<CrmField> crmFieldList = list(wrapper);
+        if (Objects.equals(type, CrmEnum.ORDER.getType())) {
+            crmFieldList.forEach(OrderFieldMetadata::applyCanonicalMetadata);
+        }
         return crmFieldList.stream().map(field -> BeanUtil.copyProperties(field, CrmModelFiledVO.class)).collect(Collectors.toList());
     }
 
