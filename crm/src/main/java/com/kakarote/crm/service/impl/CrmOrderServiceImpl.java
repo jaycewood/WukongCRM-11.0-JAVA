@@ -1,6 +1,7 @@
 package com.kakarote.crm.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.collection.ListUtil;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Dict;
 import cn.hutool.core.util.IdUtil;
@@ -217,6 +218,7 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
                 }
             });
         }
+        fieldList.add(buildProductField(crmModel));
         return fieldList;
     }
 
@@ -236,6 +238,9 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
                 });
             }
         }
+        CrmModelFiledVO productField = buildProductField(crmModel);
+        productField.setStylePercent(100);
+        fieldList.add(ListUtil.toList(productField));
         return fieldList;
     }
 
@@ -373,6 +378,21 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
         return entities.stream()
                 .map(entity -> new JSONObject().fluentPut("id", entity.getId()).fluentPut("name", entity.getName()))
                 .collect(Collectors.toList());
+    }
+
+    private CrmModelFiledVO buildProductField(CrmModel crmModel) {
+        JSONObject value = new JSONObject();
+        value.fluentPut("product", crmModel.get("product"))
+                .fluentPut("totalPrice", crmModel.get("quoteAmount"))
+                .fluentPut("discountRate", crmModel.get("discountRate"));
+        return new CrmModelFiledVO()
+                .setFieldName("product")
+                .setName("产品")
+                .setValue(value)
+                .setFormType("product")
+                .setSetting(new ArrayList<>())
+                .setIsNull(0)
+                .setFieldType(1);
     }
 
     private CrmModel emptyOrderModel() {
