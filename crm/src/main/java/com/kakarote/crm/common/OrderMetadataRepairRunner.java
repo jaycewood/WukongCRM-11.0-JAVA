@@ -278,7 +278,7 @@ public class OrderMetadataRepairRunner implements ApplicationRunner {
         }
 
         private CrmField toField() {
-            return new CrmField()
+            CrmField field = new CrmField()
                     .setFieldName(fieldName)
                     .setName(name)
                     .setType(type)
@@ -293,8 +293,9 @@ public class OrderMetadataRepairRunner implements ApplicationRunner {
                     .setIsHidden(0)
                     .setFieldType(fieldType)
                     .setStylePercent(stylePercent)
-                    .setPrecisions(precisions)
-                    .setFormPosition(formPosition);
+                    .setPrecisions(precisions);
+            field.setFormPosition(formPosition);
+            return field;
         }
     }
 }
