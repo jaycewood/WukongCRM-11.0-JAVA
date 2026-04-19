@@ -377,6 +377,15 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
 
     private CrmModel emptyOrderModel() {
         CrmModel crmModel = new CrmModel(CrmEnum.ORDER.getType());
+        crmModel.put("leadsIds", new ArrayList<>());
+        crmModel.put("customerIds", new ArrayList<>());
+        crmModel.put("contactsIds", new ArrayList<>());
+        crmModel.put("businessIds", new ArrayList<>());
+        crmModel.put("contractIds", new ArrayList<>());
+        crmModel.put("receivablesIds", new ArrayList<>());
+        crmModel.put("invoiceIds", new ArrayList<>());
+        crmModel.put("returnVisitIds", new ArrayList<>());
+        crmModel.put("productIds", new ArrayList<>());
         crmModel.put("product", new ArrayList<>());
         crmModel.put("quotationList", new ArrayList<>());
         crmModel.put("profitList", new ArrayList<>());
