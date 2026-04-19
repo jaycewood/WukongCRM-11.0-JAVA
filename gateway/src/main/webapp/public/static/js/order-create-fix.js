@@ -1,9 +1,5 @@
 (function() {
   var installed = false;
-  var originalPushState = history.pushState;
-  var originalReplaceState = history.replaceState;
-  var originalAddEventListener = window.addEventListener;
-  var swallowNextPopstateListener = true;
   var LOCKED_FIELDS = {
     quoteAmount: true,
     purchaseCost: true,
@@ -11,23 +7,6 @@
     profitAmount: true,
     profitRate: true
   };
-
-  // A previous gateway hotfix injected a login-state reset hook into index.html.
-  // That hook clears auth state on route changes and causes repeated relogin.
-  // We neutralize only that injected listener and restore the original history API.
-  window.addEventListener = function(type, listener, options) {
-    if (swallowNextPopstateListener && type === "popstate") {
-      swallowNextPopstateListener = false;
-      return;
-    }
-    return originalAddEventListener.call(this, type, listener, options);
-  };
-
-  setTimeout(function() {
-    window.addEventListener = originalAddEventListener;
-    history.pushState = originalPushState;
-    history.replaceState = originalReplaceState;
-  }, 0);
 
   function getCookie(name) {
     var encodedName = encodeURIComponent(name) + "=";
