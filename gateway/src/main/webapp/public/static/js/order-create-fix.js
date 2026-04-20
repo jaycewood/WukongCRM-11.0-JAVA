@@ -79,21 +79,56 @@
     return JSON.parse(JSON.stringify(value));
   }
 
+  function isOrderCreateComponent(vm) {
+    if (!vm || vm.__orderCreatePatched__ || !vm.$options) {
+      return false;
+    }
+
+    var options = vm.$options || {};
+    var methods = options.methods || {};
+
+    if (options.name === "OrderCreate") {
+      return true;
+    }
+
+    if (typeof methods.getRelationFields === "function" &&
+      typeof methods.getProductField === "function" &&
+      typeof methods.getProductValue === "function" &&
+      typeof methods.appendRelationParams === "function" &&
+      typeof methods.getRelationIds === "function") {
+      return true;
+    }
+
+    if (options.props && options.props.action &&
+      typeof methods.getField === "function" &&
+      typeof methods.saveClick === "function" &&
+      typeof methods.submiteParams === "function" &&
+      typeof methods.otherChange === "function") {
+      return true;
+    }
+
+    return false;
+  }
+
   function installPatch() {
     if (installed || !window.app || !window.app.constructor || typeof window.app.constructor.mixin !== "function") {
       return false;
     }
 
     installed = true;
-    window.__orderCreatePatchVersion = "2026-04-20";
+    window.__orderCreatePatchVersion = "2026-04-20-v2";
 
     window.app.constructor.mixin({
       beforeCreate: function() {
-        if (!this.$options || this.$options.name !== "OrderCreate" || this.__orderCreatePatched__) {
+        if (!isOrderCreateComponent(this)) {
           return;
         }
 
         this.__orderCreatePatched__ = true;
+        window.__orderCreatePatchHit = {
+          name: this.$options && this.$options.name || "",
+          time: new Date().toISOString()
+        };
 
         this.getField = function() {
           var vm = this;
