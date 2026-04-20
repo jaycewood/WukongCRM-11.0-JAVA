@@ -148,7 +148,7 @@
     }
 
     installed = true;
-    window.__orderCreatePatchVersion = "2026-04-20-v3";
+    window.__orderCreatePatchVersion = "2026-04-20-v4";
 
     window.app.constructor.mixin({
       created: function() {
@@ -165,9 +165,27 @@
 
         this.getField = function() {
           var vm = this;
-          var isUpdate = vm.action && vm.action.type === "update";
-          var url = isUpdate ? "/crmOrder/field/" + vm.action.id : "/crmOrder/field";
-          var payload = isUpdate ? { id: vm.action.id } : {};
+          if (!vm.action || typeof vm.action !== "object") {
+            vm.action = {};
+          }
+          if (!vm.action.data || typeof vm.action.data !== "object") {
+            vm.action.data = {};
+          }
+          if (!vm.action.type) {
+            vm.action.type = "save";
+          }
+
+          var action = vm.action;
+          var actionData = action.data;
+          var isUpdate = action.type === "update";
+          var url = isUpdate ? "/crmOrder/field/" + action.id : "/crmOrder/field";
+          var payload = isUpdate ? { id: action.id } : {};
+
+          window.__orderCreateNormalizedAction = {
+            type: action.type,
+            hasData: !!actionData,
+            keys: Object.keys(actionData)
+          };
 
           vm.loading = true;
 
@@ -200,7 +218,7 @@
                 }
 
                 var item = vm.getFormItemDefaultProperty(field);
-                var canEdit = vm.getItemIsCanEdit(field, vm.action.type);
+                var canEdit = vm.getItemIsCanEdit(field, action.type);
 
                 item.show = assistIds.indexOf(field.formAssistId) === -1;
                 if (HIDDEN_SYSTEM_FIELDS[item.field] || HIDDEN_SYSTEM_FIELDS[field.fieldName]) {
@@ -225,7 +243,7 @@
                 item.disabled = !canEdit || !!AUTO_CALC_FIELDS[item.field];
 
                 if (item.show) {
-                  fieldForm[item.field] = vm.getItemValue(field, vm.action.data, vm.action.type);
+                  fieldForm[item.field] = vm.getItemValue(field, actionData, action.type);
                 }
 
                 parsedRow.push(item);
