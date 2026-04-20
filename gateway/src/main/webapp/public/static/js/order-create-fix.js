@@ -42,7 +42,11 @@
         return "";
       }
       try {
-        return JSON.parse(rawValue);
+        var parsedValue = JSON.parse(rawValue);
+        if (parsedValue && typeof parsedValue === "object" && parsedValue.data !== undefined) {
+          return parsedValue.data;
+        }
+        return parsedValue;
       } catch (e) {
         return rawValue;
       }
@@ -52,9 +56,26 @@
   }
 
   function getAdminToken() {
-    return getCookie("Admin-Token") ||
-      getStorageValue(window.localStorage, "Admin-Token") ||
-      getStorageValue(window.sessionStorage, "Admin-Token");
+    var token = getCookie("Admin-Token");
+    if (token) {
+      window.__orderCreateTokenSource = "cookie";
+      return token;
+    }
+
+    token = getStorageValue(window.localStorage, "Admin-Token");
+    if (token) {
+      window.__orderCreateTokenSource = "localStorage";
+      return token;
+    }
+
+    token = getStorageValue(window.sessionStorage, "Admin-Token");
+    if (token) {
+      window.__orderCreateTokenSource = "sessionStorage";
+      return token;
+    }
+
+    window.__orderCreateTokenSource = "empty";
+    return "";
   }
 
   function buildHeaders() {
@@ -127,7 +148,7 @@
     }
 
     installed = true;
-    window.__orderCreatePatchVersion = "2026-04-20-v2";
+    window.__orderCreatePatchVersion = "2026-04-20-v3";
 
     window.app.constructor.mixin({
       created: function() {
@@ -158,6 +179,7 @@
           }).then(function(response) {
             return response.json();
           }).then(function(result) {
+            window.__orderCreateLastFieldResult = result;
             if (!result || result.code !== 0) {
               throw result || new Error("empty response");
             }
@@ -234,6 +256,7 @@
             vm.fieldRules = fieldRules;
             vm.loading = false;
           }).catch(function(error) {
+            window.__orderCreateLastFieldError = error;
             console.error("order create init error", error);
             vm.loading = false;
             if (vm.$message && typeof vm.$message.error === "function") {
