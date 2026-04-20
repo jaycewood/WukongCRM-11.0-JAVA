@@ -119,12 +119,13 @@
     window.__orderCreatePatchVersion = "2026-04-20-v2";
 
     window.app.constructor.mixin({
-      beforeCreate: function() {
+      created: function() {
         if (!isOrderCreateComponent(this)) {
           return;
         }
 
         this.__orderCreatePatched__ = true;
+        window.__orderCreateVm = this;
         window.__orderCreatePatchHit = {
           name: this.$options && this.$options.name || "",
           time: new Date().toISOString()
