@@ -134,8 +134,11 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
                 : oldOrder != null && StrUtil.isNotEmpty(oldOrder.getBatchId()) ? oldOrder.getBatchId() : IdUtil.simpleUUID();
         List<CrmOrderProduct> orderProducts = prepareOrderProducts(crmModel.getProductList());
         BigDecimal manualQuoteAmount = getEntityBigDecimal(crmModel.getEntity(), "totalPrice");
+        BigDecimal manualPurchaseCost = getEntityBigDecimal(crmModel.getEntity(), "purchaseCost");
+        BigDecimal manualLogisticsCost = getEntityBigDecimal(crmModel.getEntity(), "logisticsCost");
         mergeProductRelation(crmModel.getEntity(), orderProducts);
-        applyAmountSummary(crmOrder, oldOrder, orderProducts, crmModel.isForceExchangeConversion(), manualQuoteAmount);
+        applyAmountSummary(crmOrder, oldOrder, orderProducts, crmModel.isForceExchangeConversion(),
+                manualQuoteAmount, manualPurchaseCost, manualLogisticsCost);
         crmOrder.setBatchId(batchId);
         actionRecordUtil.updateRecord(crmModel.getField(), Dict.create().set("batchId", batchId).set("dataTableName", "wk_crm_order_data"));
         crmOrderDataService.saveData(crmModel.getField(), batchId);
@@ -524,7 +527,8 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
     }
 
     private void applyAmountSummary(CrmOrder crmOrder, CrmOrder oldOrder, List<CrmOrderProduct> orderProducts,
-                                    boolean forceExchangeConversion, BigDecimal manualQuoteAmount) {
+                                    boolean forceExchangeConversion, BigDecimal manualQuoteAmount,
+                                    BigDecimal manualPurchaseCost, BigDecimal manualLogisticsCost) {
         BigDecimal exchangeRate = scaleExchangeRate(crmOrder.getExchangeRate());
         BigDecimal quoteAmount = BigDecimal.ZERO;
         BigDecimal purchaseCost = BigDecimal.ZERO;
@@ -545,10 +549,12 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
                 logisticsCost = logisticsCost.add(scale(product.getLogisticsCost()));
             }
             BigDecimal effectiveQuoteAmount = manualQuoteAmount == null ? quoteAmount : scale(manualQuoteAmount);
+            BigDecimal effectivePurchaseCost = manualPurchaseCost == null ? scale(purchaseCost.multiply(exchangeRate)) : scale(manualPurchaseCost);
+            BigDecimal effectiveLogisticsCost = manualLogisticsCost == null ? scale(logisticsCost.multiply(exchangeRate)) : scale(manualLogisticsCost);
             // 订单明细和附加成本统一按订单汇率折算后，再计算订单利润。
             finalQuoteAmount = scale(effectiveQuoteAmount.multiply(exchangeRate));
-            finalPurchaseCost = scale(purchaseCost.multiply(exchangeRate));
-            finalLogisticsCost = scale(logisticsCost.multiply(exchangeRate));
+            finalPurchaseCost = effectivePurchaseCost;
+            finalLogisticsCost = effectiveLogisticsCost;
             finalHandlingFeeCost = scale(handlingFeeCost.multiply(exchangeRate));
             finalConsumableCost = scale(consumableCost.multiply(exchangeRate));
             finalOtherCost = scale(otherCost.multiply(exchangeRate));
