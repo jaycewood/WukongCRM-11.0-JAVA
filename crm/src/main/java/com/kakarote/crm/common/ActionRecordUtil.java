@@ -168,6 +168,7 @@ public class ActionRecordUtil {
         propertiesMap.put(CrmEnum.CONTACTS.getType(), Dict.create().set("name", "姓名").set("customerId", "客户姓名").set("mobile", "手机").set("nextTime", "下次联系时间").set("remark", "备注").set("telephone", "电话").set("email", "电子邮箱").set("post", "职务").set("address", "地址"));
         propertiesMap.put(CrmEnum.BUSINESS.getType(), Dict.create().set("businessName", "商机名称").set("customerId", "客户姓名").set("money", "商机金额").set("dealDate", "预计成交日期").set("remark", "备注").set("typeId", "商机状态组").set("statusId", "商机阶段").set("totalPrice", "总金额").set("discountRate", "整单折扣（%）"));
         propertiesMap.put(CrmEnum.CONTRACT.getType(), Dict.create().set("num", "合同编号").set("name", "合同名称").set("customerId", "客户名称").set("contactsId", "客户签约人").set("businessId", "商机名称").set("orderDate", "下单时间").set("money", "合同金额").set("startTime", "合同开始时间").set("endTime", "合同结束时间").set("companyUserId", "公司签约人").set("remark", "备注").set("totalPrice", "总金额").set("discountRate", "整单折扣（%）"));
+        propertiesMap.put(CrmEnum.ORDER.getType(), Dict.create().set("orderNumber", "订单编号").set("title", "订单标题").set("orderStatus", "订单状态").set("exchangeRate", "汇率换算").set("quoteAmount", "报价金额").set("purchaseCost", "采购成本").set("logisticsCost", "物流成本").set("handlingFeeCost", "平手续成本").set("consumableCost", "耗材成本").set("otherCost", "其他成本").set("profitAmount", "利润金额").set("profitRate", "利润率").set("remark", "备注").set("ownerUserId", "负责人"));
         propertiesMap.put(CrmEnum.RECEIVABLES.getType(), Dict.create().set("number", "回款编号").set("customerId", "客户姓名").set("contractId", "合同编号").set("returnTime", "回款日期").set("money", "回款金额").set("receivablesPlanId", "期数").set("remark", "备注"));
         propertiesMap.put(CrmEnum.RECEIVABLES_PLAN.getType(), Dict.create().set("money", "计划回款金额").set("return_date", "计划回款日期").set("return_type", "计划回款方式").set("remind", "提前几天提醒").set("remark", "备注"));
         propertiesMap.put(CrmEnum.PRODUCT.getType(), Dict.create().set("name", "产品名称").set("categoryId", "产品类型").set("num", "产品编码").set("price", "价格").set("description", "产品描述"));
@@ -255,9 +256,13 @@ public class ActionRecordUtil {
     }
 
     private void searchChange(List<String> textList, Map<String, Object> oldObj, Map<String, Object> newObj, Integer crmTypes) {
+        Dict propertyDict = propertiesMap.get(crmTypes);
+        if (propertyDict == null || oldObj == null || newObj == null) {
+            return;
+        }
         for (String oldKey : oldObj.keySet()) {
             for (String newKey : newObj.keySet()) {
-                if (propertiesMap.get(crmTypes).containsKey(oldKey)) {
+                if (propertyDict.containsKey(oldKey)) {
                     Object oldValue = oldObj.get(oldKey);
                     Object newValue = newObj.get(newKey);
                     if (oldValue instanceof Date) {
@@ -380,7 +385,7 @@ public class ActionRecordUtil {
                         if (ObjectUtil.isEmpty(newValue)) {
                             newValue = "空";
                         }
-                        textList.add("将" + propertiesMap.get(crmTypes).get(oldKey) + " 由" + oldValue + "修改为" + newValue + "。");
+                        textList.add("将" + propertyDict.get(oldKey) + " 由" + oldValue + "修改为" + newValue + "。");
                     }
                 }
             }
