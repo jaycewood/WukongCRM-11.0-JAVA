@@ -1,5 +1,6 @@
 (function() {
   var installed = false;
+  var debugInstalled = false;
   var LOCKED_FIELDS = {
     quoteAmount: true,
     purchaseCost: true,
@@ -7,6 +8,46 @@
     profitAmount: true,
     profitRate: true
   };
+  var DEBUG_COMPONENTS = {
+    OrderCreate: true,
+    WkFormItems: true,
+    WkFormItem: true,
+    WkField: true,
+    XhProduct: true,
+    CrmRelativeCell: true
+  };
+
+  function getDebugStore() {
+    if (!window.__orderCreateDebug) {
+      window.__orderCreateDebug = [];
+    }
+    return window.__orderCreateDebug;
+  }
+
+  function normalizeError(error) {
+    if (!error) {
+      return null;
+    }
+    return {
+      message: error.message || String(error),
+      stack: error.stack || null
+    };
+  }
+
+  function recordDebug(type, payload) {
+    var store = getDebugStore();
+    var entry = {
+      time: new Date().toISOString(),
+      type: type,
+      payload: payload || {}
+    };
+    store.push(entry);
+    if (store.length > 100) {
+      store.shift();
+    }
+    window.__orderCreateDebugLatest = entry;
+    return entry;
+  }
 
   function getCookie(name) {
     var encodedName = encodeURIComponent(name) + "=";
@@ -60,12 +101,42 @@
     });
   }
 
+  function installVueDebug(Vue) {
+    if (debugInstalled || !Vue || !Vue.config) {
+      return;
+    }
+
+    debugInstalled = true;
+
+    var originalErrorHandler = Vue.config.errorHandler;
+    Vue.config.errorHandler = function(error, vm, info) {
+      var name = vm && vm.$options && vm.$options.name;
+      if (DEBUG_COMPONENTS[name]) {
+        recordDebug("vue-error", {
+          component: name,
+          info: info || "",
+          error: normalizeError(error)
+        });
+        console.error("order create vue error", {
+          component: name,
+          info: info,
+          error: error
+        });
+      }
+      if (typeof originalErrorHandler === "function") {
+        return originalErrorHandler.call(this, error, vm, info);
+      }
+      throw error;
+    };
+  }
+
   function installPatch() {
     if (installed || !window.app || !window.app.constructor || typeof window.app.constructor.mixin !== "function") {
       return false;
     }
 
     installed = true;
+    installVueDebug(window.app.constructor);
 
     window.app.constructor.mixin({
       beforeCreate: function() {
@@ -74,6 +145,10 @@
         }
 
         this.__orderCreatePatched__ = true;
+        recordDebug("before-create", {
+          actionType: this.action && this.action.type,
+          hasActionData: !!(this.action && this.action.data)
+        });
 
         this.getField = function() {
           var vm = this;
@@ -82,6 +157,11 @@
           var payload = isUpdate ? { id: vm.action.id } : {};
 
           vm.loading = true;
+          recordDebug("fetch-start", {
+            url: url,
+            isUpdate: isUpdate,
+            actionType: vm.action && vm.action.type
+          });
 
           fetch(url, {
             method: "POST",
@@ -101,6 +181,7 @@
             var fieldList = [];
             var fieldForm = {};
             var fieldRules = {};
+            var visibleFieldNames = [];
 
             rows.forEach(function(row) {
               var parsedRow = [];
@@ -121,11 +202,16 @@
                   item.disabled = !canEdit || !!LOCKED_FIELDS[item.field];
                   if (item.show) {
                     fieldForm[item.field] = vm.getItemValue(field, vm.action.data, vm.action.type);
+                    visibleFieldNames.push(item.field);
                   }
 
                   parsedRow.push(item);
                   baseFields.push(field);
                 } catch (error) {
+                  recordDebug("field-parse-error", {
+                    fieldName: field && field.fieldName,
+                    error: normalizeError(error)
+                  });
                   console.error("order create field parse error", field, error);
                 }
               });
@@ -153,7 +239,32 @@
             vm.fieldForm = fieldForm;
             vm.fieldRules = fieldRules;
             vm.loading = false;
+            recordDebug("fetch-success", {
+              rowCount: rows.length,
+              renderedRowCount: fieldList.length,
+              baseFieldCount: baseFields.length,
+              visibleFieldNames: visibleFieldNames
+            });
+            vm.$nextTick(function() {
+              var formItemCount = document.querySelectorAll(".wk-form-item").length;
+              recordDebug("next-tick", {
+                fieldListLength: vm.fieldList ? vm.fieldList.length : 0,
+                formItemCount: formItemCount,
+                hasFieldForm: !!vm.fieldForm
+              });
+              if (vm.fieldList && vm.fieldList.length > 0 && formItemCount === 0) {
+                console.warn("order create fields loaded but no form items rendered", {
+                  fieldList: vm.fieldList,
+                  debug: window.__orderCreateDebug
+                });
+              }
+            });
           }).catch(function(error) {
+            recordDebug("fetch-error", {
+              error: normalizeError(error),
+              hasToken: !!getAdminToken(),
+              actionType: vm.action && vm.action.type
+            });
             console.error("order create init error", {
               error: error,
               hasToken: !!getAdminToken(),

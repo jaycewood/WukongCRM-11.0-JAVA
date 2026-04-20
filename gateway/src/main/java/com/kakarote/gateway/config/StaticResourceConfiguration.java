@@ -20,7 +20,7 @@ public class StaticResourceConfiguration implements WebFluxConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/index.html", "/favicon.ico")
+        registry.addResourceHandler("/favicon.ico")
                 .addResourceLocations(RESOURCE_LOCATIONS);
         registry.addResourceHandler("/static/**")
                 .addResourceLocations("file:public/static/", "classpath:/public/static/");

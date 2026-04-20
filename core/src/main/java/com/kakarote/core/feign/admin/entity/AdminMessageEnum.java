@@ -31,6 +31,7 @@ public enum AdminMessageEnum {
     CRM_LEADS_IMPORT_CANCEL(19,6,"导入线索取消通知"),
     CRM_PRODUCT_IMPORT(20,6,"导入产品通知"),
     CRM_PRODUCT_IMPORT_CANCEL(21,6,"导入产品取消通知"),
+    CRM_ORDER_IMPORT(126,6,"导入订单通知"),
     CRM_BUSINESS_USER(22,6,"商机团队成员通知"),
     CRM_CUSTOMER_USER(23,6,"客户团队成员通知"),
     CRM_CONTRACT_USER(24,6,"合同团队成员通知"),

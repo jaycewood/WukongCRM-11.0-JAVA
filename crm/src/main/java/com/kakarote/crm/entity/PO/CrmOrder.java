@@ -37,6 +37,9 @@ public class CrmOrder implements Serializable {
     @ApiModelProperty("订单状态")
     private Integer orderStatus;
 
+    @ApiModelProperty("汇率换算")
+    private BigDecimal exchangeRate;
+
     @ApiModelProperty("报价金额")
     private BigDecimal quoteAmount;
 
@@ -45,6 +48,15 @@ public class CrmOrder implements Serializable {
 
     @ApiModelProperty("物流成本")
     private BigDecimal logisticsCost;
+
+    @ApiModelProperty("平手续成本")
+    private BigDecimal handlingFeeCost;
+
+    @ApiModelProperty("耗材成本")
+    private BigDecimal consumableCost;
+
+    @ApiModelProperty("其他成本")
+    private BigDecimal otherCost;
 
     @ApiModelProperty("利润金额")
     private BigDecimal profitAmount;

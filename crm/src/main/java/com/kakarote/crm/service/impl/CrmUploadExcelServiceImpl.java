@@ -32,6 +32,7 @@ import com.kakarote.crm.constant.CrmAuthEnum;
 import com.kakarote.crm.constant.CrmEnum;
 import com.kakarote.crm.entity.BO.CrmContactsSaveBO;
 import com.kakarote.crm.entity.BO.CrmModelSaveBO;
+import com.kakarote.crm.entity.BO.CrmOrderSaveBO;
 import com.kakarote.crm.entity.BO.UploadExcelBO;
 import com.kakarote.crm.entity.PO.*;
 import com.kakarote.crm.entity.VO.CrmModelFiledVO;
@@ -108,6 +109,10 @@ public class CrmUploadExcelServiceImpl implements CrmUploadExcelService {
             case PRODUCT:
                 uploadService = new ProductUploadService();
                 adminMessage.setType(AdminMessageEnum.CRM_PRODUCT_IMPORT.getType());
+                break;
+            case ORDER:
+                uploadService = new OrderUploadService();
+                adminMessage.setType(AdminMessageEnum.CRM_ORDER_IMPORT.getType());
                 break;
             default:
                 throw new CrmException(SystemCodeEnum.SYSTEM_NO_VALID);
@@ -284,8 +289,16 @@ public class CrmUploadExcelServiceImpl implements CrmUploadExcelService {
                     fieldList = ApplicationContextHolder.getBean(ICrmProductService.class).queryField(null);
                     break;
                 }
+                case ORDER: {
+                    fieldList = ApplicationContextHolder.getBean(ICrmOrderService.class).queryField(null);
+                    break;
+                }
             }
             fieldList.removeIf(record -> ExcelParseUtil.removeFieldByType(record.getType()));
+            if (getUploadExcelBO().getCrmEnum() == CrmEnum.ORDER) {
+                fieldList.removeIf(record -> Arrays.asList("product", "ownerUserId", "owner_user_id", "profitAmount", "profit_amount", "profitRate", "profit_rate")
+                        .contains(record.getFieldName()));
+            }
             HashMap<String, String> nameMap = new HashMap<>();
             HashMap<String, Integer> isNullMap = new HashMap<>();
             fieldList.forEach(filed -> {
@@ -880,6 +893,147 @@ public class CrmUploadExcelServiceImpl implements CrmUploadExcelService {
                     errorList.add(0, rowList);
                 }
             });
+        }
+    }
+
+    public class OrderUploadService extends UploadService {
+
+        @Override
+        public void importExcel() {
+            ExcelUtil.readBySax(getUploadExcelBO().getFilePath(), 0, (int sheetIndex, int rowIndex, List<Object> rowList) -> {
+                num++;
+                redis.setex(AdminCacheKey.UPLOAD_EXCEL_MESSAGE_PREFIX + getUploadExcelBO().getMessageId().toString(), UPLOAD_EXCEL_EXIST_TIME, Math.max(num, 0));
+                if (rowList.size() < kv.entrySet().size()) {
+                    for (int i = rowList.size() - 1; i < kv.entrySet().size(); i++) {
+                        rowList.add(null);
+                    }
+                }
+                if (num > 10001) {
+                    rowList.add(0, "最多同时导入10000条数据");
+                    errorList.add(rowList);
+                    return;
+                }
+                if (rowIndex > 1) {
+                    if (templateErr) {
+                        rowList.add(0, "请使用最新的模板");
+                        errorList.add(rowList);
+                    } else {
+                        try {
+                            for (Integer integer : isNullList) {
+                                if (ObjectUtil.isEmpty(rowList.get(integer))) {
+                                    rowList.add(0, "必填字段未填写");
+                                    errorList.add(rowList);
+                                    return;
+                                }
+                            }
+                            Long ownerUserId = getOwnerUserIdByRowList(rowList);
+                            if (ownerUserId == null) {
+                                rowList.add(0, "负责人不存在");
+                                errorList.add(rowList);
+                                return;
+                            }
+                            for (CrmModelFiledVO record : uniqueList) {
+                                Object value = rowList.get(kv.getInteger(record.getFieldName()));
+                                record.setValue(value);
+                            }
+                            List<CrmOrder> orderList = uniqueMapList(uniqueList).stream()
+                                    .map(map -> BeanUtil.mapToBean(map, CrmOrder.class, true))
+                                    .collect(Collectors.toList());
+                            boolean isUpdate = false;
+                            if (orderList.size() > 0) {
+                                if (Objects.equals(2, getUploadExcelBO().getRepeatHandling())) {
+                                    return;
+                                }
+                                if (orderList.size() > 1) {
+                                    rowList.add(0, "数据与多条唯一性字段重复");
+                                    errorList.add(rowList);
+                                    return;
+                                }
+                                isUpdate = true;
+                            }
+                            CrmOrderSaveBO object = new CrmOrderSaveBO();
+                            JSONObject entityObject = new JSONObject();
+                            fixedFieldList.forEach(field -> {
+                                String fieldName = field.getFieldName();
+                                Object value = rowList.get(kv.getInteger(fieldName));
+                                if ("orderStatus".equals(fieldName) || "order_status".equals(fieldName)) {
+                                    entityObject.fluentPut(fieldName, parseOrderStatus(value));
+                                } else {
+                                    entityObject.fluentPut(fieldName, value);
+                                }
+                            });
+                            entityObject.fluentPut("ownerUserId", ownerUserId);
+                            if (ObjectUtil.isEmpty(entityObject.get("exchangeRate")) && ObjectUtil.isEmpty(entityObject.get("exchange_rate"))) {
+                                entityObject.fluentPut("exchangeRate", 1);
+                            }
+                            if (orderList.size() == 1) {
+                                CrmOrder order = orderList.get(0);
+                                boolean auth = AuthUtil.isCrmAuth(CrmEnum.ORDER, order.getOrderId(), CrmAuthEnum.EDIT);
+                                if (auth) {
+                                    rowList.add(0, "数据无覆盖权限");
+                                    errorList.add(rowList);
+                                    return;
+                                }
+                                entityObject.put("orderId", order.getOrderId());
+                                entityObject.put("batchId", order.getBatchId());
+                                object.setForceExchangeConversion(true);
+                            }
+                            object.setField(addFieldArray(rowList));
+                            object.setEntity(entityObject);
+                            CrmVerify verify = new CrmVerify(getUploadExcelBO().getCrmEnum());
+                            Result result = verify.verify(object);
+                            if (!result.hasSuccess()) {
+                                rowList.add(0, result.getMsg());
+                                errorList.add(rowList);
+                                return;
+                            }
+                            try {
+                                ApplicationContextHolder.getBean(ICrmOrderService.class).addOrUpdate(object);
+                            } catch (CrmException ex) {
+                                rowList.add(0, ex.getMsg());
+                                errorList.add(rowList);
+                                return;
+                            }
+                            if (isUpdate) {
+                                updateNum++;
+                            }
+                        } catch (Exception ex) {
+                            log.error("导入数据异常:", ex);
+                            rowList.add(0, "导入异常");
+                            errorList.add(rowList);
+                        }
+                    }
+                } else if (rowIndex == 1) {
+                    queryExcelHead(rowList);
+                } else {
+                    errorList.add(0, rowList);
+                }
+            });
+        }
+
+        private Integer parseOrderStatus(Object value) {
+            if (ObjectUtil.isEmpty(value)) {
+                return null;
+            }
+            if (value instanceof Number) {
+                return ((Number) value).intValue();
+            }
+            String content = value.toString().trim();
+            if (StrUtil.isEmpty(content)) {
+                return null;
+            }
+            switch (content) {
+                case "草稿":
+                    return 0;
+                case "报价中":
+                    return 1;
+                case "已成交":
+                    return 2;
+                case "已关闭":
+                    return 3;
+                default:
+                    return Integer.parseInt(content);
+            }
         }
     }
 

@@ -26,9 +26,13 @@ public final class OrderFieldMetadata {
         ORDER_FIELD_NAME_MAP.put("order_number", "订单编号");
         ORDER_FIELD_NAME_MAP.put("title", "订单标题");
         ORDER_FIELD_NAME_MAP.put("order_status", "订单状态");
+        ORDER_FIELD_NAME_MAP.put("exchange_rate", "汇率换算");
         ORDER_FIELD_NAME_MAP.put("quote_amount", "报价金额");
         ORDER_FIELD_NAME_MAP.put("purchase_cost", "采购成本");
         ORDER_FIELD_NAME_MAP.put("logistics_cost", "物流成本");
+        ORDER_FIELD_NAME_MAP.put("handling_fee_cost", "平手续成本");
+        ORDER_FIELD_NAME_MAP.put("consumable_cost", "耗材成本");
+        ORDER_FIELD_NAME_MAP.put("other_cost", "其他成本");
         ORDER_FIELD_NAME_MAP.put("profit_amount", "利润金额");
         ORDER_FIELD_NAME_MAP.put("profit_rate", "利润率");
         ORDER_FIELD_NAME_MAP.put("remark", "备注");
@@ -37,9 +41,13 @@ public final class OrderFieldMetadata {
         ORDER_FIELD_SORT_NAME_MAP.put("orderNumber", "订单编号");
         ORDER_FIELD_SORT_NAME_MAP.put("title", "订单标题");
         ORDER_FIELD_SORT_NAME_MAP.put("orderStatus", "订单状态");
+        ORDER_FIELD_SORT_NAME_MAP.put("exchangeRate", "汇率换算");
         ORDER_FIELD_SORT_NAME_MAP.put("quoteAmount", "报价金额");
         ORDER_FIELD_SORT_NAME_MAP.put("purchaseCost", "采购成本");
         ORDER_FIELD_SORT_NAME_MAP.put("logisticsCost", "物流成本");
+        ORDER_FIELD_SORT_NAME_MAP.put("handlingFeeCost", "平手续成本");
+        ORDER_FIELD_SORT_NAME_MAP.put("consumableCost", "耗材成本");
+        ORDER_FIELD_SORT_NAME_MAP.put("otherCost", "其他成本");
         ORDER_FIELD_SORT_NAME_MAP.put("profitAmount", "利润金额");
         ORDER_FIELD_SORT_NAME_MAP.put("profitRate", "利润率");
         ORDER_FIELD_SORT_NAME_MAP.put("remark", "备注");
@@ -52,13 +60,17 @@ public final class OrderFieldMetadata {
         register(new OrderFieldDefinition("order_number", "订单编号", 1, 255, 1, 1, 0, null, 176, 1, 50, null, "0,0"));
         register(new OrderFieldDefinition("title", "订单标题", 1, 255, 0, 1, 1, null, 176, 1, 50, null, "0,1"));
         register(new OrderFieldDefinition("order_status", "订单状态", 3, null, 0, 0, 2, ORDER_STATUS_OPTIONS, 176, 1, 50, null, "1,0"));
-        register(new OrderFieldDefinition("quote_amount", "报价金额", 6, null, 0, 0, 3, null, 176, 1, 50, 2, "1,1"));
-        register(new OrderFieldDefinition("purchase_cost", "采购成本", 6, null, 0, 0, 4, null, 176, 1, 50, 2, "2,0"));
-        register(new OrderFieldDefinition("logistics_cost", "物流成本", 6, null, 0, 0, 5, null, 176, 1, 50, 2, "2,1"));
-        register(new OrderFieldDefinition("profit_amount", "利润金额", 6, null, 0, 0, 6, null, 176, 1, 50, 2, "3,0"));
-        register(new OrderFieldDefinition("profit_rate", "利润率", 42, null, 0, 0, 7, null, 176, 1, 50, 2, "3,1"));
-        register(new OrderFieldDefinition("remark", "备注", 2, 1000, 0, 0, 8, null, 176, 1, 50, null, "4,0"));
-        register(new OrderFieldDefinition("owner_user_id", "负责人", 28, null, 0, 1, 9, null, 176, 1, 50, null, "4,1"));
+        register(new OrderFieldDefinition("exchange_rate", "汇率换算", 6, null, 0, 0, 3, null, 176, 1, 50, 6, "1,1"));
+        register(new OrderFieldDefinition("quote_amount", "报价金额", 6, null, 0, 0, 4, null, 176, 1, 50, 2, "2,0"));
+        register(new OrderFieldDefinition("purchase_cost", "采购成本", 6, null, 0, 0, 5, null, 176, 1, 50, 2, "2,1"));
+        register(new OrderFieldDefinition("logistics_cost", "物流成本", 6, null, 0, 0, 6, null, 176, 1, 50, 2, "3,0"));
+        register(new OrderFieldDefinition("handling_fee_cost", "平手续成本", 6, null, 0, 0, 7, null, 176, 1, 50, 2, "3,1"));
+        register(new OrderFieldDefinition("consumable_cost", "耗材成本", 6, null, 0, 0, 8, null, 176, 1, 50, 2, "4,0"));
+        register(new OrderFieldDefinition("other_cost", "其他成本", 6, null, 0, 0, 9, null, 176, 1, 50, 2, "4,1"));
+        register(new OrderFieldDefinition("profit_amount", "利润金额", 6, null, 0, 0, 10, null, 176, 1, 50, 2, "5,0"));
+        register(new OrderFieldDefinition("profit_rate", "利润率", 42, null, 0, 0, 11, null, 176, 1, 50, 2, "5,1"));
+        register(new OrderFieldDefinition("remark", "备注", 2, 1000, 0, 0, 12, null, 176, 1, 50, null, "6,0"));
+        register(new OrderFieldDefinition("owner_user_id", "负责人", 28, null, 0, 1, 13, null, 176, 1, 50, null, "6,1"));
     }
 
     private OrderFieldMetadata() {
@@ -160,13 +172,14 @@ public final class OrderFieldMetadata {
         }
 
         public CrmField toField() {
+            String defaultValue = defaultValue();
             CrmField field = new CrmField()
                     .setFieldName(fieldName)
                     .setName(name)
                     .setType(type)
                     .setLabel(CrmEnum.ORDER.getType())
                     .setMaxLength(maxLength)
-                    .setDefaultValue("")
+                    .setDefaultValue(defaultValue)
                     .setIsUnique(isUnique)
                     .setIsNull(isNull)
                     .setSorting(sorting)
@@ -260,7 +273,10 @@ public final class OrderFieldMetadata {
                 changed = true;
             }
             if (field.getDefaultValue() == null) {
-                field.setDefaultValue("");
+                field.setDefaultValue(defaultValue());
+                changed = true;
+            } else if (!Objects.equals(field.getDefaultValue(), defaultValue())) {
+                field.setDefaultValue(defaultValue());
                 changed = true;
             }
             return changed;
@@ -333,6 +349,10 @@ public final class OrderFieldMetadata {
                 field.setFormAssistId(null);
                 changed = true;
             }
+            if (!Objects.equals(field.getDefaultValue(), defaultValue())) {
+                field.setDefaultValue(defaultValue());
+                changed = true;
+            }
             if (field.getOptionsData() != null) {
                 field.setOptionsData(null);
                 changed = true;
@@ -348,6 +368,13 @@ public final class OrderFieldMetadata {
                 changed = true;
             }
             return changed;
+        }
+
+        private String defaultValue() {
+            if ("exchange_rate".equals(fieldName)) {
+                return "1";
+            }
+            return "";
         }
     }
 }

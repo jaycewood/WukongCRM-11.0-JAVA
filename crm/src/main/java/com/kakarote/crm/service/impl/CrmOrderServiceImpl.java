@@ -20,6 +20,7 @@ import com.kakarote.core.field.FieldService;
 import com.kakarote.core.servlet.ApplicationContextHolder;
 import com.kakarote.core.servlet.BaseServiceImpl;
 import com.kakarote.core.servlet.upload.FileEntity;
+import com.kakarote.core.utils.ExcelParseUtil;
 import com.kakarote.core.utils.UserCacheUtil;
 import com.kakarote.core.utils.UserUtil;
 import com.kakarote.crm.common.ActionRecordUtil;
@@ -34,6 +35,7 @@ import com.kakarote.crm.entity.PO.CrmOrder;
 import com.kakarote.crm.entity.PO.CrmOrderData;
 import com.kakarote.crm.entity.PO.CrmOrderProduct;
 import com.kakarote.crm.entity.PO.CrmProduct;
+import com.kakarote.crm.entity.VO.CrmFieldSortVO;
 import com.kakarote.crm.entity.VO.CrmModelFiledVO;
 import com.kakarote.crm.mapper.CrmOrderMapper;
 import com.kakarote.crm.service.*;
@@ -41,6 +43,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
@@ -130,7 +134,7 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
                 : oldOrder != null && StrUtil.isNotEmpty(oldOrder.getBatchId()) ? oldOrder.getBatchId() : IdUtil.simpleUUID();
         List<CrmOrderProduct> orderProducts = prepareOrderProducts(crmModel.getProductList());
         mergeProductRelation(crmModel.getEntity(), orderProducts);
-        applyAmountSummary(crmOrder, orderProducts);
+        applyAmountSummary(crmOrder, oldOrder, orderProducts, crmModel.isForceExchangeConversion());
         crmOrder.setBatchId(batchId);
         actionRecordUtil.updateRecord(crmModel.getField(), Dict.create().set("batchId", batchId).set("dataTableName", "wk_crm_order_data"));
         crmOrderDataService.saveData(crmModel.getField(), batchId);
@@ -312,6 +316,56 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
     }
 
     @Override
+    public void downloadExcel(HttpServletResponse response) throws IOException {
+        List<CrmModelFiledVO> fieldList = queryField(null);
+        removeFieldByType(fieldList);
+        fieldList.removeIf(field -> Arrays.asList("product", "ownerUserId", "owner_user_id", "profitAmount", "profit_amount", "profitRate", "profit_rate")
+                .contains(field.getFieldName()));
+        int ownerIndex = 0;
+        for (int i = 0; i < fieldList.size(); i++) {
+            if ("title".equals(fieldList.get(i).getFieldName())) {
+                ownerIndex = i + 1;
+                break;
+            }
+        }
+        fieldList.add(ownerIndex, new CrmModelFiledVO("ownerUserName", FieldEnum.TEXT, "负责人", 1).setIsNull(1));
+        ExcelParseUtil.importExcel(new ExcelParseUtil.ExcelParseService() {
+            @Override
+            public void castData(Map<String, Object> record, Map<String, Integer> headMap) {
+            }
+
+            @Override
+            public String getExcelName() {
+                return "订单";
+            }
+
+            @Override
+            public String getMergeContent(String module) {
+                return super.getMergeContent(module) + "\n7、订单导入模板不包含产品明细，报价/成本按表头字段导入";
+            }
+        }, fieldList, response, "crm");
+    }
+
+    @Override
+    public void exportExcel(HttpServletResponse response, CrmSearchBO search) {
+        List<Map<String, Object>> dataList = queryList(search, true).getList();
+        List<CrmFieldSortVO> headList = crmFieldService.queryListHead(getLabel().getType());
+        ExcelParseUtil.exportExcel(dataList, new ExcelParseUtil.ExcelParseService() {
+            @Override
+            public void castData(Map<String, Object> record, Map<String, Integer> headMap) {
+                for (String fieldName : headMap.keySet()) {
+                    record.put(fieldName, ActionRecordUtil.parseValue(record.get(fieldName), headMap.get(fieldName), false));
+                }
+            }
+
+            @Override
+            public String getExcelName() {
+                return "订单";
+            }
+        }, headList, response);
+    }
+
+    @Override
     public String getOrderName(Integer orderId) {
         CrmOrder order = getById(orderId);
         if (order == null) {
@@ -468,21 +522,64 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
         return productList;
     }
 
-    private void applyAmountSummary(CrmOrder crmOrder, List<CrmOrderProduct> orderProducts) {
+    private void applyAmountSummary(CrmOrder crmOrder, CrmOrder oldOrder, List<CrmOrderProduct> orderProducts,
+                                    boolean forceExchangeConversion) {
+        BigDecimal exchangeRate = scaleExchangeRate(crmOrder.getExchangeRate());
         BigDecimal quoteAmount = BigDecimal.ZERO;
         BigDecimal purchaseCost = BigDecimal.ZERO;
         BigDecimal logisticsCost = BigDecimal.ZERO;
-        BigDecimal profitAmount = BigDecimal.ZERO;
-        for (CrmOrderProduct product : orderProducts) {
-            quoteAmount = quoteAmount.add(scale(product.getSubtotal()));
-            purchaseCost = purchaseCost.add(scale(product.getPurchaseCost()));
-            logisticsCost = logisticsCost.add(scale(product.getLogisticsCost()));
-            profitAmount = profitAmount.add(scale(product.getProfitAmount()));
+        BigDecimal handlingFeeCost = scale(crmOrder.getHandlingFeeCost());
+        BigDecimal consumableCost = scale(crmOrder.getConsumableCost());
+        BigDecimal otherCost = scale(crmOrder.getOtherCost());
+        BigDecimal finalQuoteAmount;
+        BigDecimal finalPurchaseCost;
+        BigDecimal finalLogisticsCost;
+        BigDecimal finalHandlingFeeCost;
+        BigDecimal finalConsumableCost;
+        BigDecimal finalOtherCost;
+        if (!orderProducts.isEmpty()) {
+            for (CrmOrderProduct product : orderProducts) {
+                quoteAmount = quoteAmount.add(scale(product.getSubtotal()));
+                purchaseCost = purchaseCost.add(scale(product.getPurchaseCost()));
+                logisticsCost = logisticsCost.add(scale(product.getLogisticsCost()));
+            }
+            // 订单明细和附加成本统一按订单汇率折算后，再计算订单利润。
+            finalQuoteAmount = scale(quoteAmount.multiply(exchangeRate));
+            finalPurchaseCost = scale(purchaseCost.multiply(exchangeRate));
+            finalLogisticsCost = scale(logisticsCost.multiply(exchangeRate));
+            finalHandlingFeeCost = scale(handlingFeeCost.multiply(exchangeRate));
+            finalConsumableCost = scale(consumableCost.multiply(exchangeRate));
+            finalOtherCost = scale(otherCost.multiply(exchangeRate));
+        } else if (oldOrder == null || forceExchangeConversion) {
+            // 无明细的新建订单或导入覆盖场景按录入汇率折算订单级金额。
+            finalQuoteAmount = scale(scale(crmOrder.getQuoteAmount()).multiply(exchangeRate));
+            finalPurchaseCost = scale(scale(crmOrder.getPurchaseCost()).multiply(exchangeRate));
+            finalLogisticsCost = scale(scale(crmOrder.getLogisticsCost()).multiply(exchangeRate));
+            finalHandlingFeeCost = scale(handlingFeeCost.multiply(exchangeRate));
+            finalConsumableCost = scale(consumableCost.multiply(exchangeRate));
+            finalOtherCost = scale(otherCost.multiply(exchangeRate));
+        } else {
+            // 无明细的历史订单编辑场景按当前订单金额直接保存，避免重复折算。
+            finalQuoteAmount = scale(crmOrder.getQuoteAmount());
+            finalPurchaseCost = scale(crmOrder.getPurchaseCost());
+            finalLogisticsCost = scale(crmOrder.getLogisticsCost());
+            finalHandlingFeeCost = handlingFeeCost;
+            finalConsumableCost = consumableCost;
+            finalOtherCost = otherCost;
         }
-        crmOrder.setQuoteAmount(scale(quoteAmount));
-        crmOrder.setPurchaseCost(scale(purchaseCost));
-        crmOrder.setLogisticsCost(scale(logisticsCost));
-        crmOrder.setProfitAmount(scale(profitAmount));
+        BigDecimal totalCost = finalPurchaseCost
+                .add(finalLogisticsCost)
+                .add(finalHandlingFeeCost)
+                .add(finalConsumableCost)
+                .add(finalOtherCost);
+        crmOrder.setExchangeRate(exchangeRate);
+        crmOrder.setQuoteAmount(finalQuoteAmount);
+        crmOrder.setPurchaseCost(finalPurchaseCost);
+        crmOrder.setLogisticsCost(finalLogisticsCost);
+        crmOrder.setHandlingFeeCost(finalHandlingFeeCost);
+        crmOrder.setConsumableCost(finalConsumableCost);
+        crmOrder.setOtherCost(finalOtherCost);
+        crmOrder.setProfitAmount(scale(finalQuoteAmount.subtract(totalCost)));
         crmOrder.setProfitRate(calculateRate(crmOrder.getProfitAmount(), crmOrder.getQuoteAmount()));
     }
 
@@ -561,6 +658,13 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
             return BigDecimal.ZERO.setScale(2, RoundingMode.HALF_UP);
         }
         return scale(numerator).multiply(new BigDecimal("100")).divide(denominator, 2, RoundingMode.HALF_UP);
+    }
+
+    private BigDecimal scaleExchangeRate(BigDecimal value) {
+        if (value == null || value.compareTo(BigDecimal.ZERO) <= 0) {
+            return BigDecimal.ONE.setScale(6, RoundingMode.HALF_UP);
+        }
+        return value.setScale(6, RoundingMode.HALF_UP);
     }
 
     private BigDecimal scale(BigDecimal value) {

@@ -22,6 +22,9 @@ public class CrmOrderSaveBO extends CrmModelSaveBO {
     @ApiModelProperty("订单报价明细，product 的别名")
     private List<CrmOrderProduct> quotationList;
 
+    @ApiModelProperty("是否强制按汇率重算订单级金额")
+    private Boolean forceExchangeConversion;
+
     public List<CrmOrderProduct> getProductList() {
         if (product != null) {
             return product;
@@ -30,5 +33,9 @@ public class CrmOrderSaveBO extends CrmModelSaveBO {
             return quotationList;
         }
         return Collections.emptyList();
+    }
+
+    public boolean isForceExchangeConversion() {
+        return Boolean.TRUE.equals(forceExchangeConversion);
     }
 }

@@ -13,6 +13,8 @@ import com.kakarote.crm.entity.PO.CrmOrder;
 import com.kakarote.crm.entity.PO.CrmOrderProduct;
 import com.kakarote.crm.entity.VO.CrmModelFiledVO;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -43,6 +45,10 @@ public interface ICrmOrderService extends BaseService<CrmOrder> {
     List<JSONObject> queryProfitList(Integer orderId);
 
     void deleteByIds(List<Integer> ids);
+
+    void downloadExcel(HttpServletResponse response) throws IOException;
+
+    void exportExcel(HttpServletResponse response, CrmSearchBO search);
 
     String getOrderName(Integer orderId);
 }
