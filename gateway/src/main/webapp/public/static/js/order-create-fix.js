@@ -1,53 +1,24 @@
 (function() {
   var installed = false;
-  var debugInstalled = false;
-  var LOCKED_FIELDS = {
+  var AUTO_CALC_FIELDS = {
     quoteAmount: true,
     purchaseCost: true,
     logisticsCost: true,
     profitAmount: true,
     profitRate: true
   };
-  var DEBUG_COMPONENTS = {
-    OrderCreate: true,
-    WkFormItems: true,
-    WkFormItem: true,
-    WkField: true,
-    XhProduct: true,
-    CrmRelativeCell: true
+  var HIDDEN_SYSTEM_FIELDS = {
+    createTime: true,
+    createUserName: true,
+    updateTime: true,
+    ownerUserName: true,
+    ownerDeptName: true,
+    create_time: true,
+    create_user_name: true,
+    update_time: true,
+    owner_user_name: true,
+    owner_dept_name: true
   };
-
-  function getDebugStore() {
-    if (!window.__orderCreateDebug) {
-      window.__orderCreateDebug = [];
-    }
-    return window.__orderCreateDebug;
-  }
-
-  function normalizeError(error) {
-    if (!error) {
-      return null;
-    }
-    return {
-      message: error.message || String(error),
-      stack: error.stack || null
-    };
-  }
-
-  function recordDebug(type, payload) {
-    var store = getDebugStore();
-    var entry = {
-      time: new Date().toISOString(),
-      type: type,
-      payload: payload || {}
-    };
-    store.push(entry);
-    if (store.length > 100) {
-      store.shift();
-    }
-    window.__orderCreateDebugLatest = entry;
-    return entry;
-  }
 
   function getCookie(name) {
     var encodedName = encodeURIComponent(name) + "=";
@@ -101,33 +72,11 @@
     });
   }
 
-  function installVueDebug(Vue) {
-    if (debugInstalled || !Vue || !Vue.config) {
-      return;
+  function clone(value) {
+    if (value === null || value === undefined) {
+      return value;
     }
-
-    debugInstalled = true;
-
-    var originalErrorHandler = Vue.config.errorHandler;
-    Vue.config.errorHandler = function(error, vm, info) {
-      var name = vm && vm.$options && vm.$options.name;
-      if (DEBUG_COMPONENTS[name]) {
-        recordDebug("vue-error", {
-          component: name,
-          info: info || "",
-          error: normalizeError(error)
-        });
-        console.error("order create vue error", {
-          component: name,
-          info: info,
-          error: error
-        });
-      }
-      if (typeof originalErrorHandler === "function") {
-        return originalErrorHandler.call(this, error, vm, info);
-      }
-      throw error;
-    };
+    return JSON.parse(JSON.stringify(value));
   }
 
   function installPatch() {
@@ -136,7 +85,7 @@
     }
 
     installed = true;
-    installVueDebug(window.app.constructor);
+    window.__orderCreatePatchVersion = "2026-04-20";
 
     window.app.constructor.mixin({
       beforeCreate: function() {
@@ -145,10 +94,6 @@
         }
 
         this.__orderCreatePatched__ = true;
-        recordDebug("before-create", {
-          actionType: this.action && this.action.type,
-          hasActionData: !!(this.action && this.action.data)
-        });
 
         this.getField = function() {
           var vm = this;
@@ -157,11 +102,6 @@
           var payload = isUpdate ? { id: vm.action.id } : {};
 
           vm.loading = true;
-          recordDebug("fetch-start", {
-            url: url,
-            isUpdate: isUpdate,
-            actionType: vm.action && vm.action.type
-          });
 
           fetch(url, {
             method: "POST",
@@ -181,39 +121,46 @@
             var fieldList = [];
             var fieldForm = {};
             var fieldRules = {};
-            var visibleFieldNames = [];
 
             rows.forEach(function(row) {
               var parsedRow = [];
 
               row.forEach(function(field) {
-                try {
-                  if (!field || !field.fieldName || field.fieldName === "product") {
-                    return;
-                  }
+                if (!field || !field.fieldName || !field.formType || field.fieldName === "product") {
+                  return;
+                }
 
-                  var item = vm.getFormItemDefaultProperty(field);
-                  var canEdit = vm.getItemIsCanEdit(field, vm.action.type);
+                var item = vm.getFormItemDefaultProperty(field);
+                var canEdit = vm.getItemIsCanEdit(field, vm.action.type);
 
-                  item.show = assistIds.indexOf(field.formAssistId) === -1;
-                  if (item.show && canEdit) {
+                item.show = assistIds.indexOf(field.formAssistId) === -1;
+                if (HIDDEN_SYSTEM_FIELDS[item.field] || HIDDEN_SYSTEM_FIELDS[field.fieldName]) {
+                  item.show = false;
+                }
+
+                if (item.show && canEdit) {
+                  if (field.autoGeneNumber == 1) {
+                    item.placeholder = "根据编号规则自动生成，支持手动输入";
+                    var copyField = clone(field);
+                    copyField.isNull = 0;
+                    fieldRules[item.field] = vm.getRules(copyField);
+                  } else {
                     fieldRules[item.field] = vm.getRules(field);
                   }
-                  item.disabled = !canEdit || !!LOCKED_FIELDS[item.field];
-                  if (item.show) {
-                    fieldForm[item.field] = vm.getItemValue(field, vm.action.data, vm.action.type);
-                    visibleFieldNames.push(item.field);
-                  }
-
-                  parsedRow.push(item);
-                  baseFields.push(field);
-                } catch (error) {
-                  recordDebug("field-parse-error", {
-                    fieldName: field && field.fieldName,
-                    error: normalizeError(error)
-                  });
-                  console.error("order create field parse error", field, error);
                 }
+
+                if (typeof vm.getItemRadio === "function") {
+                  vm.getItemRadio(field, item);
+                }
+
+                item.disabled = !canEdit || !!AUTO_CALC_FIELDS[item.field];
+
+                if (item.show) {
+                  fieldForm[item.field] = vm.getItemValue(field, vm.action.data, vm.action.type);
+                }
+
+                parsedRow.push(item);
+                baseFields.push(field);
               });
 
               if (parsedRow.length > 0) {
@@ -239,37 +186,8 @@
             vm.fieldForm = fieldForm;
             vm.fieldRules = fieldRules;
             vm.loading = false;
-            recordDebug("fetch-success", {
-              rowCount: rows.length,
-              renderedRowCount: fieldList.length,
-              baseFieldCount: baseFields.length,
-              visibleFieldNames: visibleFieldNames
-            });
-            vm.$nextTick(function() {
-              var formItemCount = document.querySelectorAll(".wk-form-item").length;
-              recordDebug("next-tick", {
-                fieldListLength: vm.fieldList ? vm.fieldList.length : 0,
-                formItemCount: formItemCount,
-                hasFieldForm: !!vm.fieldForm
-              });
-              if (vm.fieldList && vm.fieldList.length > 0 && formItemCount === 0) {
-                console.warn("order create fields loaded but no form items rendered", {
-                  fieldList: vm.fieldList,
-                  debug: window.__orderCreateDebug
-                });
-              }
-            });
           }).catch(function(error) {
-            recordDebug("fetch-error", {
-              error: normalizeError(error),
-              hasToken: !!getAdminToken(),
-              actionType: vm.action && vm.action.type
-            });
-            console.error("order create init error", {
-              error: error,
-              hasToken: !!getAdminToken(),
-              action: vm.action
-            });
+            console.error("order create init error", error);
             vm.loading = false;
             if (vm.$message && typeof vm.$message.error === "function") {
               vm.$message.error(error && error.msg ? error.msg : "订单表单初始化失败，请刷新后重试");

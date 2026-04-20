@@ -198,6 +198,14 @@ public class CrmRoleFieldServiceImpl extends BaseServiceImpl<CrmRoleFieldMapper,
                         }
                         break;
                     }
+                    case 19: {
+                        if ("order_number".equals(crmField.getFieldName())) {
+                            roleField.setOperateType(3);
+                        } else {
+                            roleField.setOperateType(1);
+                        }
+                        break;
+                    }
                 }
 
                 roleField.setFieldType(crmField.getFieldType());
