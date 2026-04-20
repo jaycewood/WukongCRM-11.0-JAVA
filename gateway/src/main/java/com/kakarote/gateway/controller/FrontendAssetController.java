@@ -4,6 +4,7 @@ import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.util.StreamUtils;
 import org.springframework.http.MediaType;
 import org.springframework.http.MediaTypeFactory;
 import org.springframework.http.ResponseEntity;
@@ -68,7 +69,7 @@ public class FrontendAssetController {
 
     private Resource sanitizeIndexHtml(Resource resource) {
         try {
-            String html = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+            String html = new String(StreamUtils.copyToByteArray(resource.getInputStream()), StandardCharsets.UTF_8);
             if (html.contains(LOGIN_RESET_SNIPPET)) {
                 html = html.replace(LOGIN_RESET_SNIPPET, "");
             }
