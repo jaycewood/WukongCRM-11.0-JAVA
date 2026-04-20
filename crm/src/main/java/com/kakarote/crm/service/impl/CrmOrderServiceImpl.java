@@ -133,8 +133,9 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
         String batchId = StrUtil.isNotEmpty(crmOrder.getBatchId()) ? crmOrder.getBatchId()
                 : oldOrder != null && StrUtil.isNotEmpty(oldOrder.getBatchId()) ? oldOrder.getBatchId() : IdUtil.simpleUUID();
         List<CrmOrderProduct> orderProducts = prepareOrderProducts(crmModel.getProductList());
+        BigDecimal manualQuoteAmount = getEntityBigDecimal(crmModel.getEntity(), "totalPrice");
         mergeProductRelation(crmModel.getEntity(), orderProducts);
-        applyAmountSummary(crmOrder, oldOrder, orderProducts, crmModel.isForceExchangeConversion());
+        applyAmountSummary(crmOrder, oldOrder, orderProducts, crmModel.isForceExchangeConversion(), manualQuoteAmount);
         crmOrder.setBatchId(batchId);
         actionRecordUtil.updateRecord(crmModel.getField(), Dict.create().set("batchId", batchId).set("dataTableName", "wk_crm_order_data"));
         crmOrderDataService.saveData(crmModel.getField(), batchId);
@@ -523,7 +524,7 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
     }
 
     private void applyAmountSummary(CrmOrder crmOrder, CrmOrder oldOrder, List<CrmOrderProduct> orderProducts,
-                                    boolean forceExchangeConversion) {
+                                    boolean forceExchangeConversion, BigDecimal manualQuoteAmount) {
         BigDecimal exchangeRate = scaleExchangeRate(crmOrder.getExchangeRate());
         BigDecimal quoteAmount = BigDecimal.ZERO;
         BigDecimal purchaseCost = BigDecimal.ZERO;
@@ -543,8 +544,9 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
                 purchaseCost = purchaseCost.add(scale(product.getPurchaseCost()));
                 logisticsCost = logisticsCost.add(scale(product.getLogisticsCost()));
             }
+            BigDecimal effectiveQuoteAmount = manualQuoteAmount == null ? quoteAmount : scale(manualQuoteAmount);
             // 订单明细和附加成本统一按订单汇率折算后，再计算订单利润。
-            finalQuoteAmount = scale(quoteAmount.multiply(exchangeRate));
+            finalQuoteAmount = scale(effectiveQuoteAmount.multiply(exchangeRate));
             finalPurchaseCost = scale(purchaseCost.multiply(exchangeRate));
             finalLogisticsCost = scale(logisticsCost.multiply(exchangeRate));
             finalHandlingFeeCost = scale(handlingFeeCost.multiply(exchangeRate));
@@ -637,6 +639,9 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
     }
 
     private BigDecimal calculateSubtotal(BigDecimal salesPrice, BigDecimal num, BigDecimal discount, BigDecimal subtotal) {
+        if (subtotal != null) {
+            return scale(subtotal);
+        }
         if (salesPrice != null && num != null) {
             return salesPrice
                     .multiply(num)
@@ -672,5 +677,27 @@ public class CrmOrderServiceImpl extends BaseServiceImpl<CrmOrderMapper, CrmOrde
             return BigDecimal.ZERO.setScale(2, RoundingMode.HALF_UP);
         }
         return value.setScale(2, RoundingMode.HALF_UP);
+    }
+
+    private BigDecimal getEntityBigDecimal(Map<String, Object> entity, String field) {
+        if (entity == null || StrUtil.isBlank(field)) {
+            return null;
+        }
+        Object value = entity.get(field);
+        if (value == null) {
+            return null;
+        }
+        if (value instanceof BigDecimal) {
+            return (BigDecimal) value;
+        }
+        String text = value.toString();
+        if (StrUtil.isBlank(text)) {
+            return null;
+        }
+        try {
+            return new BigDecimal(text);
+        } catch (NumberFormatException ex) {
+            return null;
+        }
     }
 }
