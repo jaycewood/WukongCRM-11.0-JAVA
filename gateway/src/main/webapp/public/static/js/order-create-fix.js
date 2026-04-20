@@ -34,7 +34,18 @@
 
   function getStorageValue(storage, key) {
     try {
-      return storage && typeof storage.getItem === "function" ? storage.getItem(key) || "" : "";
+      if (!storage || typeof storage.getItem !== "function") {
+        return "";
+      }
+      var rawValue = storage.getItem(key);
+      if (!rawValue) {
+        return "";
+      }
+      try {
+        return JSON.parse(rawValue);
+      } catch (e) {
+        return rawValue;
+      }
     } catch (e) {
       return "";
     }
