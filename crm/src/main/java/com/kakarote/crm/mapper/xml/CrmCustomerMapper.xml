@@ -61,7 +61,7 @@
     </select>
 
     <select id="queryOrder" resultType="com.alibaba.fastjson.JSONObject">
-        select distinct a.order_id,a.order_number,a.title,a.order_status,a.quote_amount,a.purchase_cost,a.logistics_cost,
+        select distinct a.order_id,a.order_number,a.title,a.order_status,a.logistics_number,a.quote_amount,a.purchase_cost,a.logistics_cost,
         a.profit_amount,a.profit_rate,a.owner_user_id,a.create_time,a.update_time
         from wk_crm_order_relation as r
         inner join wk_crm_order as a on r.order_id = a.order_id

@@ -1027,10 +1027,18 @@ public class CrmUploadExcelServiceImpl implements CrmUploadExcelService {
                     return 0;
                 case "报价中":
                     return 1;
-                case "已成交":
+                case "生成中":
                     return 2;
-                case "已关闭":
+                case "出货中":
                     return 3;
+                case "运输中":
+                    return 4;
+                case "货物妥投":
+                    return 5;
+                case "已成交":
+                    return 6;
+                case "已关闭":
+                    return 7;
                 default:
                     return Integer.parseInt(content);
             }

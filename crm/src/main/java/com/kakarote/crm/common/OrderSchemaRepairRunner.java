@@ -38,6 +38,7 @@ public class OrderSchemaRepairRunner implements ApplicationRunner {
                 + "`order_number` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '订单编号',"
                 + "`title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '订单标题',"
                 + "`order_status` int(0) DEFAULT 0 COMMENT '订单状态',"
+                + "`logistics_number` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '物流单号',"
                 + "`exchange_rate` decimal(12,6) DEFAULT 1.000000 COMMENT '汇率换算',"
                 + "`quote_amount` decimal(10,2) DEFAULT 0.00 COMMENT '报价金额',"
                 + "`purchase_cost` decimal(10,2) DEFAULT 0.00 COMMENT '采购成本',"
@@ -109,6 +110,7 @@ public class OrderSchemaRepairRunner implements ApplicationRunner {
             return;
         }
         Map<String, String> columnSqlMap = new LinkedHashMap<>();
+        columnSqlMap.put("logistics_number", "ALTER TABLE `wk_crm_order` ADD COLUMN `logistics_number` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '物流单号' AFTER `order_status`");
         columnSqlMap.put("exchange_rate", "ALTER TABLE `wk_crm_order` ADD COLUMN `exchange_rate` decimal(12,6) DEFAULT 1.000000 COMMENT '汇率换算' AFTER `order_status`");
         columnSqlMap.put("handling_fee_cost", "ALTER TABLE `wk_crm_order` ADD COLUMN `handling_fee_cost` decimal(10,2) DEFAULT 0.00 COMMENT '平手续成本' AFTER `logistics_cost`");
         columnSqlMap.put("consumable_cost", "ALTER TABLE `wk_crm_order` ADD COLUMN `consumable_cost` decimal(10,2) DEFAULT 0.00 COMMENT '耗材成本' AFTER `handling_fee_cost`");

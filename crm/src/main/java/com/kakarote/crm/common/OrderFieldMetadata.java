@@ -14,7 +14,7 @@ import java.util.*;
  */
 public final class OrderFieldMetadata {
 
-    public static final String ORDER_STATUS_OPTIONS = "草稿,报价中,已成交,已关闭";
+    public static final String ORDER_STATUS_OPTIONS = "草稿,报价中,生成中,出货中,运输中,货物妥投,已成交,已关闭";
 
     private static final Map<String, String> ORDER_FIELD_NAME_MAP = new LinkedHashMap<>();
 
@@ -26,6 +26,7 @@ public final class OrderFieldMetadata {
         ORDER_FIELD_NAME_MAP.put("order_number", "订单编号");
         ORDER_FIELD_NAME_MAP.put("title", "订单标题");
         ORDER_FIELD_NAME_MAP.put("order_status", "订单状态");
+        ORDER_FIELD_NAME_MAP.put("logistics_number", "物流单号");
         ORDER_FIELD_NAME_MAP.put("exchange_rate", "汇率换算");
         ORDER_FIELD_NAME_MAP.put("quote_amount", "报价金额");
         ORDER_FIELD_NAME_MAP.put("purchase_cost", "采购成本");
@@ -41,6 +42,7 @@ public final class OrderFieldMetadata {
         ORDER_FIELD_SORT_NAME_MAP.put("orderNumber", "订单编号");
         ORDER_FIELD_SORT_NAME_MAP.put("title", "订单标题");
         ORDER_FIELD_SORT_NAME_MAP.put("orderStatus", "订单状态");
+        ORDER_FIELD_SORT_NAME_MAP.put("logisticsNumber", "物流单号");
         ORDER_FIELD_SORT_NAME_MAP.put("exchangeRate", "汇率换算");
         ORDER_FIELD_SORT_NAME_MAP.put("quoteAmount", "报价金额");
         ORDER_FIELD_SORT_NAME_MAP.put("purchaseCost", "采购成本");
@@ -60,17 +62,18 @@ public final class OrderFieldMetadata {
         register(new OrderFieldDefinition("order_number", "订单编号", 1, 255, 1, 1, 0, null, 176, 1, 50, null, "0,0"));
         register(new OrderFieldDefinition("title", "订单标题", 1, 255, 0, 1, 1, null, 176, 1, 50, null, "0,1"));
         register(new OrderFieldDefinition("order_status", "订单状态", 3, null, 0, 0, 2, ORDER_STATUS_OPTIONS, 176, 1, 50, null, "1,0"));
-        register(new OrderFieldDefinition("exchange_rate", "汇率换算", 6, null, 0, 0, 3, null, 176, 1, 50, 6, "1,1"));
-        register(new OrderFieldDefinition("quote_amount", "报价金额", 6, null, 0, 0, 4, null, 176, 1, 50, 2, "2,0"));
-        register(new OrderFieldDefinition("purchase_cost", "采购成本", 6, null, 0, 0, 5, null, 176, 1, 50, 2, "2,1"));
-        register(new OrderFieldDefinition("logistics_cost", "物流成本", 6, null, 0, 0, 6, null, 176, 1, 50, 2, "3,0"));
-        register(new OrderFieldDefinition("handling_fee_cost", "平手续成本", 6, null, 0, 0, 7, null, 176, 1, 50, 2, "3,1"));
-        register(new OrderFieldDefinition("consumable_cost", "耗材成本", 6, null, 0, 0, 8, null, 176, 1, 50, 2, "4,0"));
-        register(new OrderFieldDefinition("other_cost", "其他成本", 6, null, 0, 0, 9, null, 176, 1, 50, 2, "4,1"));
-        register(new OrderFieldDefinition("profit_amount", "利润金额", 6, null, 0, 0, 10, null, 176, 1, 50, 2, "5,0"));
-        register(new OrderFieldDefinition("profit_rate", "利润率", 42, null, 0, 0, 11, null, 176, 1, 50, 2, "5,1"));
-        register(new OrderFieldDefinition("remark", "备注", 2, 1000, 0, 0, 12, null, 176, 1, 50, null, "6,0"));
-        register(new OrderFieldDefinition("owner_user_id", "负责人", 28, null, 0, 1, 13, null, 176, 1, 50, null, "6,1"));
+        register(new OrderFieldDefinition("logistics_number", "物流单号", 1, 255, 0, 0, 3, null, 176, 1, 50, null, "1,1"));
+        register(new OrderFieldDefinition("exchange_rate", "汇率换算", 6, null, 0, 0, 4, null, 176, 1, 50, 6, "2,0"));
+        register(new OrderFieldDefinition("quote_amount", "报价金额", 6, null, 0, 0, 5, null, 176, 1, 50, 2, "2,1"));
+        register(new OrderFieldDefinition("purchase_cost", "采购成本", 6, null, 0, 0, 6, null, 176, 1, 50, 2, "3,0"));
+        register(new OrderFieldDefinition("logistics_cost", "物流成本", 6, null, 0, 0, 7, null, 176, 1, 50, 2, "3,1"));
+        register(new OrderFieldDefinition("handling_fee_cost", "平手续成本", 6, null, 0, 0, 8, null, 176, 1, 50, 2, "4,0"));
+        register(new OrderFieldDefinition("consumable_cost", "耗材成本", 6, null, 0, 0, 9, null, 176, 1, 50, 2, "4,1"));
+        register(new OrderFieldDefinition("other_cost", "其他成本", 6, null, 0, 0, 10, null, 176, 1, 50, 2, "5,0"));
+        register(new OrderFieldDefinition("profit_amount", "利润金额", 6, null, 0, 0, 11, null, 176, 1, 50, 2, "5,1"));
+        register(new OrderFieldDefinition("profit_rate", "利润率", 42, null, 0, 0, 12, null, 176, 1, 50, 2, "6,0"));
+        register(new OrderFieldDefinition("remark", "备注", 2, 1000, 0, 0, 13, null, 176, 1, 50, null, "6,1"));
+        register(new OrderFieldDefinition("owner_user_id", "负责人", 28, null, 0, 1, 14, null, 176, 1, 50, null, "7,0"));
     }
 
     private OrderFieldMetadata() {

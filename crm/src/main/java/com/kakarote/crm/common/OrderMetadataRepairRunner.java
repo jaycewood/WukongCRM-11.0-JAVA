@@ -1,6 +1,7 @@
 package com.kakarote.crm.common;
 
 import cn.hutool.core.util.StrUtil;
+import com.kakarote.core.common.Const;
 import com.kakarote.crm.constant.CrmEnum;
 import com.kakarote.crm.entity.PO.CrmField;
 import com.kakarote.crm.entity.PO.CrmFieldSort;
@@ -11,9 +12,12 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 修复历史订单模块字段在错误字符集下导入后出现的乱码和脏元数据。
@@ -36,6 +40,7 @@ public class OrderMetadataRepairRunner implements ApplicationRunner {
         ensureBaseOrderFields();
         repairOrderFields();
         repairOrderFieldSorts();
+        ensureOrderFieldSorts();
     }
 
     private void ensureBaseOrderFields() {
@@ -108,6 +113,56 @@ public class OrderMetadataRepairRunner implements ApplicationRunner {
         }
         if (repaired > 0) {
             log.info("repaired {} order field sort rows", repaired);
+        }
+    }
+
+    private void ensureOrderFieldSorts() {
+        List<CrmField> fields = crmFieldService.lambdaQuery()
+                .eq(CrmField::getLabel, CrmEnum.ORDER.getType())
+                .eq(CrmField::getIsHidden, 0)
+                .orderByAsc(CrmField::getSorting)
+                .list();
+        if (fields.isEmpty()) {
+            return;
+        }
+        List<CrmFieldSort> fieldSorts = crmFieldSortService.lambdaQuery()
+                .eq(CrmFieldSort::getLabel, CrmEnum.ORDER.getType())
+                .list();
+        Map<Long, Set<String>> userFieldNameMap = new LinkedHashMap<>();
+        for (CrmFieldSort fieldSort : fieldSorts) {
+            if (fieldSort.getUserId() == null) {
+                continue;
+            }
+            userFieldNameMap.computeIfAbsent(fieldSort.getUserId(), key -> new HashSet<>()).add(fieldSort.getFieldName());
+        }
+        if (userFieldNameMap.isEmpty()) {
+            return;
+        }
+        List<CrmFieldSort> missingFieldSorts = new ArrayList<>();
+        for (Map.Entry<Long, Set<String>> entry : userFieldNameMap.entrySet()) {
+            Long userId = entry.getKey();
+            Set<String> fieldNames = entry.getValue();
+            for (CrmField field : fields) {
+                String fieldName = StrUtil.toCamelCase(field.getFieldName());
+                if (fieldNames.contains(fieldName)) {
+                    continue;
+                }
+                CrmFieldSort fieldSort = new CrmFieldSort();
+                fieldSort.setFieldId(field.getFieldId());
+                fieldSort.setFieldName(fieldName);
+                fieldSort.setName(field.getName());
+                fieldSort.setSort(field.getSorting());
+                fieldSort.setUserId(userId);
+                fieldSort.setStyle(100);
+                fieldSort.setIsHide(0);
+                fieldSort.setLabel(CrmEnum.ORDER.getType());
+                fieldSort.setType(field.getType());
+                missingFieldSorts.add(fieldSort);
+            }
+        }
+        if (!missingFieldSorts.isEmpty()) {
+            crmFieldSortService.saveBatch(missingFieldSorts, Const.BATCH_SAVE_SIZE);
+            log.info("created {} missing order field sort rows", missingFieldSorts.size());
         }
     }
 

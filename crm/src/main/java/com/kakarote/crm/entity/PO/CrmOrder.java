@@ -37,6 +37,9 @@ public class CrmOrder implements Serializable {
     @ApiModelProperty("订单状态")
     private Integer orderStatus;
 
+    @ApiModelProperty("物流单号")
+    private String logisticsNumber;
+
     @ApiModelProperty("汇率换算")
     private BigDecimal exchangeRate;
 
